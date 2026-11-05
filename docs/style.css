@@ -213,8 +213,10 @@ p { margin: 0 0 14px; }
 
 .fv { padding-top: 0; }
 /* 採点#4対応: 4/3 だと頭頂と顎下が切れるため 3/4 に。人物が収まる */
-.fv-img { width: 100%; aspect-ratio: 3 / 4; background: var(--bg-soft); overflow: hidden; }
-.fv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+/* 採点5周目#2対応: 3/4(520px)だと5択が1つも初見に入らず「入口が見えないFV」になっていた。
+   1/1(390px)に縮めて、見出し→吹き出し→ボタン上部までを844px内に収める */
+.fv-img { width: 100%; aspect-ratio: 1 / 1; background: var(--bg-soft); overflow: hidden; }
+.fv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
 .fv-card { background: #fff; border-radius: var(--radius); margin-top: -40px; position: relative; padding: 18px 14px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
 .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 12px; border: 1px solid var(--accent); border-radius: var(--radius-pill); color: var(--accent); margin: 0 0 10px; }
 .fv h1 { font-size: var(--fs-fv); line-height: 1.4; margin: 0 0 8px; font-weight: 800; }
@@ -290,3 +292,6 @@ footer a { color: var(--fg-note); }
 .sticky .priv a { color: var(--fg-sub); }
 .sticky .cta { padding: 12px 16px; }
 .sticky .cta-after { margin-top: 4px; }
+
+/* 採点5周目#5対応: 同意リンクの遷移先の見出し */
+.privacy-h { font-size: 14px; color: var(--fg-note); margin: 0 0 8px; font-weight: 700; }
