@@ -226,7 +226,10 @@ p { margin: 0 0 14px; }
 .lead { color: var(--fg-sub); }
 
 .pic { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); margin: 0 0 14px; background: var(--bg-soft); }
-.pic-fv { aspect-ratio: 4 / 3; object-position: center 55%; }
+/* 採点3周目#1対応: 画像を1200x675(16:9)で作り直したので枠も16/9に。
+   4/3のままだと横25%が切れ、ペン先・マグ・眼鏡のテンプルが画面外に出ていた。
+   object-position は16:9を16:9に入れる限り無意味なので削除 */
+.pic-fv { aspect-ratio: 16 / 9; }
 
 .lost { list-style: none; margin: 0; padding: 0; }
 .lost li { border-top: 1px solid var(--accent); padding: 16px 0; }
