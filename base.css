@@ -1,0 +1,205 @@
+/* 人材LP 共通ベース（りこ/みな共用）
+   設計根拠: result2.md 23社分析
+   - 390px幅（iPhone基準）で横スクロールを出さない
+   - 追従CTAは全社共通の必須要素
+   - 注釈(※)は小さいほど本物に見える = 読める最小サイズを確保する
+*/
+
+:root {
+  /* 共通トークン（色はLP別に上書き） */
+  --fg: #1a1a1a;
+  --fg-sub: #555;
+  --fg-note: #767676;      /* 注釈。コントラスト比4.5:1を確保 */
+  --bg: #fff;
+  --bg-soft: #f7f7f7;
+  --line: #e4e4e4;
+
+  --accent: #e8486b;        /* りこ既定。みなで上書き */
+  --accent-dark: #c53757;
+  --cta: #06c755;           /* LINE緑 */
+  --cta-dark: #04a344;
+
+  --radius: 12px;
+  --radius-pill: 999px;
+  --gutter: 16px;           /* 全23社が左右16px前後 */
+  --maxw: 420px;
+  --sticky-h: 72px;         /* 追従バーの高さ。本文末尾の余白に使う */
+
+  --fs-fv: 28px;
+  --fs-h2: 22px;
+  --fs-body: 15px;
+  --fs-note: 11px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;       /* 横スクロール禁止（DoD項目） */
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+               "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-size: var(--fs-body);
+  line-height: 1.75;        /* 日本語は1.7以上でないと詰まって見える */
+  -webkit-text-size-adjust: 100%;
+  padding-bottom: calc(var(--sticky-h) + 16px); /* 追従バーに隠れない */
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* セクション */
+section { padding: 36px 0; }
+section.soft { background: var(--bg-soft); }
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: 1.5;
+  margin: 0 0 16px;
+  font-weight: 800;
+}
+h2 .em { color: var(--accent); }
+
+p { margin: 0 0 14px; }
+
+/* 注釈（C12/C15/C16型。期間・母数・定義を必ず書く） */
+.note {
+  font-size: var(--fs-note);
+  line-height: 1.6;
+  color: var(--fg-note);
+  margin: 6px 0 0;
+}
+
+/* CTAボタン（C12型: 最も軽い言葉を入れる） */
+.cta {
+  display: block;
+  width: 100%;
+  padding: 17px 16px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--cta);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 0 var(--cta-dark);
+  cursor: pointer;
+}
+.cta:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--cta-dark); }
+
+/* ボタン下の予告（押した先に何が起きるかを必ず書く＝C9型） */
+.cta-after {
+  font-size: 12px;
+  color: var(--fg-note);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 追従バー（全社共通要素） */
+.sticky {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--line);
+  padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
+}
+
+/* 演者の追従アイコン（C12型。実在する演者なので競合より強い） */
+.face-fixed {
+  position: fixed;
+  right: 12px; top: 12px;
+  z-index: 40;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: #ddd center/cover no-repeat;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+}
+
+/* ○△比較表（C12 Difference型。画像にせずHTMLで作る＝文字が崩れない） */
+.cmp { width: 100%; border-collapse: separate; border-spacing: 4px; }
+.cmp th, .cmp td {
+  padding: 12px 6px;
+  text-align: center;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+.cmp thead th.ours { background: var(--accent); color: #fff; font-weight: 800; }
+.cmp thead th.theirs { background: #9a9a9a; color: #fff; font-weight: 700; }
+.cmp tbody th { background: var(--accent); color: #fff; font-size: 12px; width: 26%; }
+.cmp .o { color: var(--accent); font-size: 22px; font-weight: 800; line-height: 1.2; }
+.cmp .x { color: #8a8a8a; font-size: 20px; font-weight: 700; line-height: 1.2; }
+.cmp .sub { display: block; font-size: 11px; color: var(--fg-sub); margin-top: 2px; }
+
+/* 比較の棒グラフ（C12型。数字は単体では動かない） */
+.bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.bar-label { font-size: 12px; width: 92px; flex: none; color: var(--fg-sub); }
+.bar { height: 30px; border-radius: 6px; display: flex; align-items: center;
+       padding: 0 8px; font-size: 12px; font-weight: 700; color: #fff; }
+.bar.them { background: #b4b4b4; }
+.bar.us { background: var(--accent); }
+
+/* LINE風チャット（C12 FV型 + C9の登録後プレビュー型） */
+.talk { background: #7a9fc4; border-radius: var(--radius); padding: 14px 12px; }
+.talk .bubble {
+  background: #fff; border-radius: 14px; padding: 10px 13px;
+  font-size: 14px; line-height: 1.6; display: inline-block;
+  max-width: 88%; margin-bottom: 8px;
+}
+.talk .bubble.me { background: var(--cta); color: #fff; margin-left: auto; display: block; width: fit-content; }
+.talk .time { font-size: 10px; color: rgba(255,255,255,.85); }
+
+/* 悩みタップ（FVの入口。「相談」は決断、「選択」は決断でない） */
+.pick { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.pick button {
+  width: 100%; text-align: left; padding: 13px 14px;
+  border: 2px solid #fff; border-radius: var(--radius-pill);
+  background: #fff; font-size: 14px; font-weight: 700; color: var(--fg);
+  font-family: inherit; cursor: pointer;
+}
+.pick button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* 事例カード（C15型: 悩み別 × 属性5点） */
+.case { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; background: #fff; }
+.case .worry { font-size: 14px; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
+.case dl { display: grid; grid-template-columns: 5.5em 1fr; gap: 4px 8px; margin: 0; font-size: 13px; }
+.case dt { color: var(--fg-note); }
+.case dd { margin: 0; }
+
+/* FAQ（C16型: 行く直前の小さな不安を入れる） */
+.faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+.faq summary { font-weight: 700; cursor: pointer; font-size: 14px; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "＋"; float: right; color: var(--accent); }
+.faq details[open] summary::after { content: "−"; }
+.faq .a { font-size: 13px; color: var(--fg-sub); margin-top: 10px; }
+
+/* 今日登録しない人用の出口（C12型。離脱先を自社に持つ） */
+.exit { border: 2px dashed var(--line); border-radius: var(--radius); padding: 16px; text-align: center; }
+
+/* 第三者提供の同意（法務必須。個人情報が提携人材会社へ渡る） */
+.consent { font-size: 12px; color: var(--fg-sub); line-height: 1.7; }
+.consent a { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

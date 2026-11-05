@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>転職の裏技｜辞める前に、応募する前に</title>
+<meta name="description" content="辞める前に知っておきたいことと、気になる求人票の見方を、LINEで届けます。応募しなくてOK。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 流入経路の受け口。?src= を読んで JS が値を入れる(画面には出さない)。UTAGE側フォームで受け取る前提 -->
+<form id="lp-params" hidden aria-hidden="true"><input type="hidden" name="src" value="direct"><input type="hidden" name="worry" value=""></form>
+
+<!-- ============ 1 FV ============ -->
+<section class="fv">
+  <!-- 画像: AI生成の顔出し写真(2026-11-06 ユーザー判断)。?src=mina のとき mina_face.png に差し替え、無ければ riko_face.png -->
+  <div class="fv-img">
+    <img id="face" src="img/riko_face.jpg" width="900" height="1200" alt="" loading="eager" decoding="async">
+  </div>
+  <div class="wrap">
+    <div class="fv-card">
+      <p class="pill">20代・高卒・未経験でもOK</p>
+      <h1>辞める前に、これだけは知っといて。</h1>
+      <p class="lead-sub">気になる求人も、見るだけ見ます。</p>
+      <p class="tags">#今の会社に言わなくていい　#応募しなくていい　#経歴に自信なくてOK</p>
+      <p class="who" data-name>りこ</p>
+      <div class="talk">
+        <div class="bubble">お悩みをえらぶと、続きが見られます</div>
+        <div class="bubble me">いま いちばん知りたいのは <span class="time">23:08</span></div>
+        <div class="pick" role="group" aria-label="いま いちばん知りたいこと">
+          <button type="button" aria-pressed="false" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
+          <button type="button" aria-pressed="false" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
+          <button type="button" aria-pressed="false" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
+          <button type="button" aria-pressed="false" data-worry="気になる求人がある">気になる求人がある</button>
+          <button type="button" aria-pressed="false" data-worry="判定の仕方を覚えたい">判定の仕方を覚えたい</button>
+        </div>
+      </div>
+      <p class="pick-sub">どれでもない人も、そのまま聞けます</p>
+      <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 辞める前に(不安を扱う) ============ -->
+<section id="loss">
+  <div class="wrap">
+    <h2>辞める前に知らないと損する3選</h2>
+    <p>順番をまちがえると、もらえるものがもらえません。ここだけ先に置いておきます。</p>
+    <ol class="lost">
+      <li><span class="no">01</span><h3>有休は、申し出のタイミングで消える</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。先に残日数を確認してから、退職日を相談する順番にします。</p></li>
+      <li><span class="no">02</span><h3>離職票は、自分から言わないと遅れる</h3><p>手続きが止まると、次の手続きも全部うしろにずれます。最後の出勤日に「いつ届きますか」と一言聞いておくだけで変わります。</p></li>
+      <li><span class="no">03</span><h3>先に辞めると、選べる求人が変わる</h3><p>在職中か離職後かで、こちらの立場が変わります。急いで決めなくていい状態を先に作るほうが、条件は見やすくなります。</p></li>
+    </ol>
+    <p><strong>ここまでは、知っていれば自分でできます。</strong></p>
+    <!-- 要確認: 退職・有休・離職票の記述は社会保険労務士または提携先の確認が必要。このセクションにCTAは置かない -->
+  </div>
+</section>
+
+<section class="soft" id="permit">
+  <div class="wrap">
+    <h2>まだ辞めるか決まってなくて、だいじょうぶです</h2>
+    <img class="pic" src="img/hand_note.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
+    <div class="frame">
+      <p>「こんなこと聞いていいのかな」で止まる人がいちばん多いです。</p>
+      <p>決めてから来る人より、決まってない人のほうが多いです。</p>
+      <p>資格を取ってから、職歴をきれいにしてから、じゃなくていい。今のままで聞けます。</p>
+    </div>
+    <p class="note" style="font-size:13px;margin-top:14px;">ひとまず聞くだけにして、そのまま今の会社にいる人もいます。それでいいです。</p>
+  </div>
+</section>
+
+<!-- ============ 3 求人票の見方(具体的な道具) ============ -->
+<section id="sheet">
+  <div class="wrap">
+    <h2>求人票で最初に見るところ4選</h2>
+    <p class="lead">次に、求人を見るときの道具です。これだけ知っていれば、だいぶ避けられます。</p>
+    <img class="pic pic-fv" id="fvcut" src="img/riko_fv.jpg" width="941" height="1672" alt="" loading="lazy" decoding="async">
+    <ol class="points">
+      <li><h3>「年間休日120日以上」の以上を見る</h3><p>120日はだいたい土日祝が休みの計算です。「120日以上」ではなく「110日」なら、月1回は土曜出勤がある計算になります。数字そのものより、何日からの話なのかを見ます。</p></li>
+      <li><h3>「みなし残業」は、何時間分かを見る</h3><p>固定残業代・みなし残業と書いてある場合、何時間分が含まれているかが必ず書いてあります。そこが長いと、その時間までは働く前提の設計です。</p></li>
+      <li><h3>「アットホームな職場」は情報ではない</h3><p>書いてあっても減点にはしません。ただし、それ以外に書いてあることが少ない求人票は、書けることが少ないということです。</p></li>
+      <li><h3>離職率は、求人票の外で調べられる</h3><p>求人票に載っていなくても、会社の採用ページや口コミで人の入れ替わりの速さは見えます。どこを見るかだけ覚えておけば自分で確かめられます。</p></li>
+    </ol>
+    <p class="closing">ここまでは、自分でできます。</p>
+    <div class="mute-bubble">
+      <p>求人票は、書いてあることを読むだけなら10分で終わります。<br>書いていないことを確かめるのに時間がかかります。<br>そこだけ、送ってくれたら見ます。</p>
+    </div>
+    <p style="margin-top:16px">「こんな求人を見てもらうほどじゃないかな」で止まる人がいます。1件でもいいです。<br>見てもらったあとで応募しなくても、問題ありません。</p>
+    <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+  </div>
+</section>
+
+<!-- ============ 4 比較表(1つに統合) ============ -->
+<section class="soft" id="compare">
+  <div class="wrap">
+    <h2>自分で調べるのと、どう違う？</h2>
+    <p>他社と比べる話ではありません。「自分でやる」と比べます。</p>
+    <table class="cmp">
+      <thead>
+        <tr><th></th><th class="theirs">自分で転職サイト・求人票を見る</th><th class="ours"><span data-name>りこ</span>と一緒に見る</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">求人の探し方</th><td><span class="x">△</span><span class="sub">条件で絞って自分で選ぶ</span></td><td><span class="o">○</span><span class="sub">条件の裏側（休日の数え方・残業の実態）から一緒に絞る</span></td></tr>
+        <tr><th scope="row">休日・残業・離職率</th><td><span class="x">△</span><span class="sub">書き方で分からない、見落としやすい、求人票には載っていない</span></td><td><span class="o">○</span><span class="sub">書き方から読み分けて、必ず確認する。調べ方を使って確かめる</span></td></tr>
+        <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを見て直す</span></td></tr>
+        <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">代わりに調整する</span></td></tr>
+        <tr><th scope="row">辞め方・引き継ぎ</th><td><span class="x">△</span><span class="sub">調べて自分で判断する</span></td><td><span class="o">○</span><span class="sub">順番を一緒に決める</span></td></tr>
+        <tr class="last"><th scope="row">求人票に書いていないこと</th><td><span class="x">△</span><span class="sub">入社してから分かる</span></td><td><span class="o">○</span><span class="sub">聞いて確かめられる</span></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px;">年間休日の日数のように、書いてあることは自分で分かります。右の列は「自分だとしんどいところ」だけ書いています。</p>
+    <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+  </div>
+</section>
+
+<!-- ============ 5 登録後に届くもの ============ -->
+<section id="inbox">
+  <div class="wrap">
+    <h2>登録したら、これが届きます</h2>
+    <p>押したあとに何が起きるか、先に全部見せます。</p>
+    <p class="flow"><span>①届く</span><span>②送る・書く</span><span>③返ってくる</span></p>
+    <!-- IMG(実機スクショ): 1通目トーク画面 / 求人票を送っている画面 / 返ってきた画面。実機LINEで撮影、AI生成・合成は禁止。img/line_1.png line_2.png line_3.png -->
+    <ul class="checks">
+      <li>トークの内容は、他の人には見えません</li>
+      <li>名前はLINEの表示名のままでOK。本名を入れる場所はありません</li>
+      <li>返信しなくても、届いたものは読めます</li>
+      <li>見てもらったあと、応募しなくていいです</li>
+    </ul>
+    <p>見た結果を返したあと、お仕事のご紹介に進みたい方だけ、送り先をうかがいます。</p>
+    <!-- 入力項目数・所要時間は未確定のため数字を書かない(spec/form_utage_renkei.md §0-B) -->
+    <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+  </div>
+</section>
+
+<!-- ============ 6 事例: 実在事例と本人許可が揃うまで出さない(構造のみ保存) ============
+<section id="cases">
+  <div class="wrap">
+    <h2>同じところで止まっていた人</h2>
+    悩み別に3ブロック(辞めるって言い出せなかった／経歴に自信がなかった／気になる求人があった)。
+    各ブロック: 年齢・前職・学歴・変わったところ(dl.case)＋「ご本人の許可」「個人の事例」注記。「見た結果、応募しなかった」事例を必ず1つ同列に置く。
+    各ブロックの間に consent → cta → cta-after。年収・金額は書かない。
+  </div>
+</section>
+-->
+
+<!-- ============ 7 ここまで ============ -->
+<section class="inv" id="rest">
+  <div class="wrap">
+    <h2>このページに置けるのは、ここまでです</h2>
+    <p>会社名が入る話と、辞め方の具体的な順番は、ここに書けません。</p>
+    <p>見られる場所を選べないページに書くと、いまの職場の人にも見えてしまうからです。</p>
+    <p>続きはLINEにしか置いていません。</p>
+    <img class="pic" src="img/desk_quiet.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
+    <div class="sheet">
+      <p class="t">求人票の見方チェックシート（12項目）</p>
+      <ol><li>年間休日の実数</li><li>休日の内訳</li><li>みなし残業の時間数</li><li>実際の残業時間</li><li>試用期間の条件</li><li>賞与の実績</li><li>昇給の仕組み</li><li>離職率</li><li>直近の採用人数</li><li>配属先と人数</li><li>未経験者の受け入れ実績</li><li>求人票に書いていないこと</li></ol>
+    </div>
+    <ul>
+      <li>言い出す日の決め方（引き継ぎのどこで言うか）</li>
+      <li>在職中のまま進める順番</li>
+      <li>求人票のどこを見れば残業の実態が分かるか</li>
+      <li>誰でも見られる場所に出ていない求人</li>
+      <li>リールで出していた会社名が入る話</li>
+    </ul>
+    <p>ぜんぶ読んで、そのまま今の会社にいてもいいです。送る求人がなくても、チェックシートだけ受け取れます。</p>
+    <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+  </div>
+</section>
+
+<!-- ============ 8 FAQ ============ -->
+<section id="faq">
+  <div class="wrap faq">
+    <h2>よくある質問</h2>
+    <details open><summary>Q 今の会社にバレませんか？</summary><div class="a">A こちらから今の会社へ連絡することはありません。連絡はLINEのみです。</div></details>
+    <details open><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 決まっていない人のほうが多いです。聞くだけで終わってかまいません。</div></details>
+    <details open><summary>Q 相談だけでもいいですか？</summary><div class="a">A はい。求人を見ずに終わっても問題ありません。</div></details>
+    <details open><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A その方が多いです。応募前のほうが選び直せます。</div></details>
+    <details open><summary>Q 他社のエージェント経由の求人でもいいですか？</summary><div class="a">A 見るだけなら問題ありません。応募の進め方は、そのエージェントの流れを優先してください。</div></details>
+    <details open><summary>Q 見てもらったら、応募しなきゃダメですか？</summary><div class="a">A 不要です。見た結果、やめた人もいます。</div></details>
+    <details open><summary>Q スクショでもいいですか？</summary><div class="a">A スクショでもURLでも、会社名だけでも見られます。</div></details>
+    <details open><summary>Q 何件まで見てもらえますか？</summary><div class="a">A 件数の上限は決めていません。1件でも、3件並べてでも大丈夫です。</div></details>
+    <details open><summary>Q しつこく連絡が来ませんか？</summary><div class="a">A 返信がなければ追いかけません。配信を止めたいときは「停止」と送ってください。</div></details>
+    <details open><summary>Q 本当に無料ですか？</summary><div class="a">A 無料です。採用が決まったときに、企業側から紹介手数料をいただく仕組みです。</div></details>
+    <details open><summary>Q 電話がかかってきますか？</summary><div class="a">A まずLINEのテキストです。電話で話したい方は、つながりやすい時間帯を教えてください。</div></details>
+    <details open><summary>Q 何を準備すればいいですか？</summary><div class="a">A 何もいりません。職務経歴書は、なければ一緒に作ります。</div></details>
+    <details open><summary>Q オンラインで話すとき、どんな格好ですか？</summary><div class="a">A 部屋着でもスッピンでも平気です。カメラを切ったままでもできます。</div></details>
+    <details open><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A 対象です。経歴を先に整えてから来る必要はありません。</div></details>
+    <details open><summary>Q 送るときに個人情報はいりますか？</summary><div class="a">A 求人票を見るだけなら不要です。お仕事のご紹介に進みたいときに、送り先をうかがいます。</div></details>
+    <details open><summary>Q 入力した情報はどこへ行きますか？</summary><div class="a">A お仕事のご紹介のため、提携する人材紹介会社へ提供します。提供をご希望されない場合はLINEでお知らせください。その場合もご相談のみ承ります。</div></details>
+  </div>
+</section>
+
+<!-- ============ 9 最後のCTA + 出口 ============ -->
+<section class="final" id="last">
+  <div class="wrap">
+    <h2>決めてなくていいので、聞くだけどうぞ</h2>
+    <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+  </div>
+</section>
+<section class="exit-box">
+  <div class="wrap">
+    <div class="exit">
+      <h3>今日はまだ、という人へ</h3>
+      <p>いま決めなくていいです。</p>
+      <ul class="links">
+        <!-- リンク先URLは未確定(要確認) -->
+        <li><a href="#">この話をしたリールを見る</a></li>
+        <li><a href="#"><span data-name>りこ</span>のプロフィールを見る</a></li>
+      </ul>
+      <a class="cta-sub" href="#" data-cta>チェックシートだけ受け取る</a>
+      <p class="note">辞める前にやること／求人票の見方チェックシート（読むだけ・返信なしでOK）</p>
+      <p class="note">リールとプロフィールは、登録しないで見られます。</p>
+    </div>
+  </div>
+</section>
+
+<footer id="privacy">
+  <div class="wrap">
+    <!-- 要確認: 運営会社名・厚生労働大臣許可番号・実績ページのリンク先。判明後に実名で記載 -->
+    <p><a href="#privacy">個人情報の取り扱いについて</a></p>
+    <p>お預かりした氏名・連絡先・ご希望条件などの個人情報は、お仕事のご紹介および求人企業へのご推薦のため、提携する人材紹介会社（厚生労働大臣許可を受けた有料職業紹介事業者）へ提供します。提供をご希望されない場合は、LINEでお知らせください。その場合もご相談のみ承ります。</p>
+    <p>当社の職業紹介の実績は、厚生労働省「人材サービス総合サイト」でご確認いただけます。</p>
+  </div>
+</footer>
+
+<div class="face-fixed" aria-hidden="true"></div>
+<div class="sticky" id="sticky">
+  <div class="wrap">
+    <p class="consent priv"><a href="#privacy">個人情報の取り扱い</a></p>
+    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <p class="cta-after">読むだけでOK／返信は自由</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  // ---- 流入経路: ?src= を読む。無ければ direct。値は画面に出さない ----
+  var q = new URLSearchParams(window.location.search);
+  var src = (q.get('src') || '').toLowerCase();
+  if (!/^[a-z0-9_-]{1,32}$/.test(src)) src = 'direct';
+
+  // ---- 演者の出し分け: mina のみ「みな」、それ以外(riko・無指定・その他)は「りこ」 ----
+  var who = src === 'mina' ? 'mina' : 'riko';
+  var nameJa = who === 'mina' ? 'みな' : 'りこ';
+  var names = document.querySelectorAll('[data-name]');
+  for (var n = 0; n < names.length; n++) names[n].textContent = nameJa;
+
+  // 画像差し替え。mina 側が無い(404)ときは riko にフォールバック
+  function swap(id, file, fallback) {
+    var img = document.getElementById(id);
+    if (!img || who === 'riko') return;
+    img.onerror = function () { img.onerror = null; img.src = fallback; };
+    img.src = file;
+  }
+  swap('face', 'img/mina_face.jpg', 'img/riko_face.jpg');
+  swap('fvcut', 'img/mina_fv.jpg', 'img/riko_fv.jpg');
+  if (who === 'mina') document.getElementById('face').setAttribute('alt', nameJa);
+  else document.getElementById('face').setAttribute('alt', nameJa);
+
+  // ---- hidden input と CTA href への引き継ぎ ----
+  var form = document.getElementById('lp-params');
+  var links = document.querySelectorAll('a[data-cta]');
+  var selected = '';
+
+  function apply() {
+    form.elements['src'].value = src;
+    form.elements['worry'].value = selected;
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      if (!a.hasAttribute('data-base')) a.setAttribute('data-base', a.getAttribute('href'));
+      var base = a.getAttribute('data-base');
+      var hash = '';
+      var h = base.indexOf('#');
+      if (h > -1) { hash = base.slice(h); base = base.slice(0, h); }
+      var add = 'src=' + encodeURIComponent(src);
+      if (selected) add += '&worry=' + encodeURIComponent(selected);
+      a.setAttribute('href', base + (base.indexOf('?') > -1 ? '&' : '?') + add + hash);
+    }
+  }
+
+  var buttons = document.querySelectorAll('.pick button');
+  for (var b = 0; b < buttons.length; b++) {
+    buttons[b].addEventListener('click', function () {
+      for (var j = 0; j < buttons.length; j++) buttons[j].setAttribute('aria-pressed', 'false');
+      this.setAttribute('aria-pressed', 'true');
+      selected = this.getAttribute('data-worry');
+      apply();
+    });
+  }
+  apply();
+
+  // ---- 追従バーはFVを過ぎてから ----
+  var sticky = document.getElementById('sticky');
+  var fv = document.querySelector('.fv');
+  function onScroll() { sticky.className = fv.getBoundingClientRect().bottom < 0 ? 'sticky on' : 'sticky'; }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
