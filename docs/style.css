@@ -264,7 +264,9 @@ p { margin: 0 0 14px; }
 .inv .consent, .inv .cta-after, .final .consent, .final .cta-after { color: rgba(255,255,255,.88); }
 .inv .consent a, .final .consent a { color: #fff; }
 .sheet { background: #fff; color: var(--fg); border-radius: var(--radius); padding: 14px; margin: 0 0 16px; }
-.sheet .t { font-size: 13px; font-weight: 800; margin: 0 0 8px; }
+.sheet .t { font-size: 15px; font-weight: 800; margin: 0 0 8px; }
+/* 採点2周目#6対応: 2つのリストの境目を作る見出し */
+#rest .t2 { font-size: 15px; font-weight: 800; margin: 24px 0 8px; }
 .sheet ol { margin: 0; padding-left: 1.6em; font-size: 12px; line-height: 1.7; }
 
 .exit-box { padding-top: 24px; }
