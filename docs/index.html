@@ -15,20 +15,20 @@
 <!-- ============ 1 FV ============ -->
 <section class="fv">
   <!-- 画像: AI生成の顔出し写真(2026-11-06 ユーザー判断)。?src=mina のとき mina_face.png に差し替え、無ければ riko_face.png -->
-  <div class="fv-img">
-    <img id="face" src="img/riko_face.jpg" width="840" height="1120" alt="" loading="eager" decoding="async">
-  </div>
   <div class="wrap">
     <div class="fv-card">
+      <!-- 2026-11-06: 顔を横に置く。縦に積むと「顔が見える」と「CTAが初見に入る」が
+           両立せず、比率の往復で顔が切れ続けていた -->
+      <div class="fv-head">
+        <img id="face" src="img/riko_face.jpg" width="840" height="1120" alt="" loading="eager" decoding="async">
+        <p class="who"><b><span data-name>りこ</span></b>キャリアハック／転職の相談担当</p>
+      </div>
       <p class="pill">20代・高卒・未経験でもOK</p>
-      <h1>辞める前に、これだけは知っといて。</h1>
+      <h1>辞める前に、<br>これだけは知っといて。</h1>
       <p class="lead-sub">気になる求人も、見るだけ見ます。</p>
-      <!-- 採点8周目#3対応: FVの主役を「整った人物写真」から「実際に始まっている会話」へ。
-           話し手を明示して、チャットを添え物でなく入口にする -->
-      <p class="who"><span data-name>りこ</span>／キャリアハック</p>
       <div class="talk">
         <div class="bubble">辞めるかどうかは、まだ決めてなくていいです。いま引っかかってるところだけ教えてください</div>
-        <div class="bubble me">いま いちばん知りたいのは <span class="time">23:08</span></div>
+        <div class="bubble me">いま いちばん知りたいのは <span class="time" aria-hidden="true">23:08</span></div>
         <div class="pick" role="group" aria-label="いま いちばん知りたいこと">
           <button type="button" aria-pressed="false" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
           <button type="button" aria-pressed="false" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
@@ -51,7 +51,7 @@
     <h2>辞める前に知らないと損する3選</h2>
     <p>順番をまちがえると、もらえるものがもらえません。ここだけ先に置いておきます。</p>
     <ol class="lost">
-      <li><span class="no">01</span><h3>有休は、申し出のタイミングで消える</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。順番はこれだけ。</strong></p></li>
+      <li><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。順番はこれだけ。</strong></p></li>
       <li><span class="no">02</span><h3>離職票は、自分から言わないと遅れる</h3><p>手続きが止まると、次の手続きも全部うしろにずれていく。最後の出勤日に「いつ届きますか」と一言聞いておくだけで変わります。</p></li>
       <li><span class="no">03</span><h3>先に辞めると、選べる求人が変わる</h3><p>在職中か離職後かで、こちらの立場は変わります。急いで決めなくていい状態を先に作るほど、条件は見やすくなる。</p></li>
     </ol>
@@ -67,7 +67,7 @@
     <p class="tags">#今の会社に言わなくていい　#応募しなくていい　#経歴に自信なくてOK</p>
     <img class="pic" src="img/hand_note.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
     <div class="frame">
-      <p>「こんなこと聞いていいのかな」で止まる人がいちばん多いです。</p>
+      <p>「こんなこと聞いていいのかな」で止まったまま、という相談をよく受けます。</p>
       <!-- 採点3周目#2対応: 主張ではなく従属節で前提化する。読者は主節だけを審査するので、従属節は無審査で通る -->
       <p>決まってない状態で聞きに来る人のほうが多いので、最初に「まだ決めてません」と書いてもらって大丈夫です。</p>
       <p>資格を取ってから、職歴をきれいにしてから、じゃなくていい。今のままで聞けます。</p>
@@ -190,8 +190,8 @@
       <li>言い出す日の決め方（引き継ぎのどこで言うか）</li>
       <li>在職中のまま進める順番</li>
       <li>求人票のどこを見れば残業の実態が分かるか</li>
-      <li>誰でも見られる場所に出ていない求人</li>
-      <li>動画では社名を伏せた会社の話（なぜ伏せたのかも含めて）</li>
+      <li>承諾する前に、求人票のどこを確認しておくか</li>
+      <li>動画で社名を伏せた会社について、伏せた理由</li>
     </ul>
     <p>ぜんぶ読んで、そのまま今の会社にいてもいいです。送る求人がなくても、チェックシートだけ受け取れます。</p>
     <p class="consent">ご登録いただいた内容は、お仕事のご紹介のため提携する人材紹介会社へ提供します。詳しくは<a href="#privacy">個人情報の取り扱いについて</a>をご覧ください。</p>
@@ -204,20 +204,20 @@
 <section id="faq">
   <div class="wrap faq">
     <h2>よくある質問</h2>
-    <details open><summary>Q 今の会社にバレませんか？</summary><div class="a">A 当社および提携先から、今の会社へ連絡することはありません。連絡はLINEのみです。</div></details>
-    <details><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 決まっていない人のほうが多いです。聞くだけで終わってかまいません。</div></details>
+    <details open><summary>Q 今の会社にバレませんか？</summary><div class="a">A ご本人の同意なく、今の会社へ連絡することはありません。在職中であることは提携先にも共有したうえで進めます。こちらからの連絡はLINEのみです。</div></details>
+    <details><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 決まっていない状態で聞きに来る方がほとんどです。聞くだけで終わってかまいません。</div></details>
     <details><summary>Q 相談だけでもいいですか？</summary><div class="a">A はい。求人を見ずに終わっても問題ありません。</div></details>
-    <details><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A その方が多いです。応募前のほうが選び直せます。</div></details>
+    <details><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A むしろ応募前のほうが、選び直せます。</div></details>
     <details><summary>Q 他社のエージェント経由の求人でもいいですか？</summary><div class="a">A 見るだけなら問題ありません。応募の進め方は、そのエージェントの流れを優先してください。</div></details>
-    <details><summary>Q 見てもらったら、応募しなきゃダメですか？</summary><div class="a">A 不要です。見た結果、やめた人もいます。</div></details>
+    <details><summary>Q 見てもらったら、応募しなきゃダメですか？</summary><div class="a">A 不要です。見たうえで応募しない、という結論でかまいません。</div></details>
     <details><summary>Q スクショでもいいですか？</summary><div class="a">A スクショでもURLでも、会社名だけでも見られます。</div></details>
     <details><summary>Q 何件まで見てもらえますか？</summary><div class="a">A いまのところ上限は設けていません。1件でも、3件並べてでも大丈夫です。</div></details>
     <details><summary>Q しつこく連絡が来ませんか？</summary><div class="a">A 個別の電話や催促はしません。お知らせの配信は自動で届きます。止めたいときは「停止」と送ってください。</div></details>
     <details><summary>Q 本当に無料ですか？</summary><div class="a">A 無料です。採用が決まったときに、企業側から紹介手数料をいただく仕組みです。</div></details>
-    <details><summary>Q 電話がかかってきますか？</summary><div class="a">A まずLINEのテキストです。電話で話したい方は、つながりやすい時間帯を教えてください。</div></details>
+    <details><summary>Q 電話がかかってきますか？</summary><div class="a">A やり取りはLINEの文字から始めます。電話で話したい方は、つながりやすい時間帯を教えてください。</div></details>
     <details><summary>Q 何を準備すればいいですか？</summary><div class="a">A 何もいりません。職務経歴書は、なければ一緒に作ります。</div></details>
     <details><summary>Q オンラインで話すとき、どんな格好ですか？</summary><div class="a">A 部屋着でもスッピンでも平気です。カメラを切ったままでもできます。</div></details>
-    <details><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A 対象です。経歴を先に整えてから来る必要はありません。</div></details>
+    <details><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A どちらも対象に含みます。経歴を先に整えてから来る必要はありません。</div></details>
     <details><summary>Q 送るときに個人情報はいりますか？</summary><div class="a">A 求人票を見るだけなら不要です。お仕事のご紹介に進みたいときに、送り先をうかがいます。</div></details>
     <details><summary>Q 入力した情報はどこへ行きますか？</summary><div class="a">A お仕事のご紹介のため、提携する人材紹介会社へ提供します。提供をご希望されない場合はLINEでお知らせください。その場合もご相談のみ承ります。</div></details>
   </div>
@@ -259,14 +259,19 @@
     <!-- 採点5周目#5対応: 自己参照リンク(#privacy内から#privacyへ)を削除し、
          同意リンクの遷移先として実体のある見出しにした -->
     <h2 class="privacy-h">個人情報の取り扱いについて</h2>
-    <p>お預かりした氏名・連絡先・ご希望条件などの個人情報は、お仕事のご紹介および求人企業へのご推薦のため、下記の提携先へ提供します。提供をご希望されない場合は、LINEでお知らせください。その場合もご相談のみ承ります。</p>
+    <!-- 2026-11-06 修正: オプトアウト形式だったため事前同意形式に変更。
+         個人情報保護法27条の第三者提供は、本人の事前同意が原則（オプトアウトは
+         要配慮個人情報を含まない等の要件を満たし、個人情報保護委員会への届出が前提）。
+         あわせて、本文が「求人企業へのご推薦」と書きながら提供先の枠に求人企業が
+         無かったため追加した。 -->
+    <p>LINEでのご登録をもって、お預かりした個人情報を下記の提供先へ提供することにご同意いただいたものとして取り扱います。ご相談のみをご希望で、提供を望まれない場合は、LINEでその旨をお知らせください。提供せずにご相談のみ承ります。</p>
     <!-- 採点8周目#2対応: 個人情報保護法27条の第三者提供は、本人が「どこへ渡るのか」を特定できる必要がある。
          「提携する人材紹介会社」とだけ書くと同意の対象が特定できないため、枠を作った。
          提供項目・提供方法は確定済みなので先に記載。社名と許可番号のみ要確認として残す -->
     <dl class="partner">
-      <dt>提供先</dt><dd>（提携人材紹介会社名 ※確定後に記載）</dd>
+      <dt>提供先</dt><dd>①提携人材紹介会社（社名 ※確定後に記載）<br>②①を通じてご推薦する求人企業</dd>
       <dt>許可番号</dt><dd>（厚生労働大臣許可 第◯◯-ユ-◯◯◯◯◯◯号 ※確定後に記載）</dd>
-      <dt>提供する項目</dt><dd>氏名／連絡先／希望条件／ご相談内容</dd>
+      <dt>提供する項目</dt><dd>氏名／連絡先／希望条件／ご相談内容／職務経歴（ご推薦に進む場合）</dd>
       <dt>提供の方法</dt><dd>電磁的記録の送信</dd>
     </dl>
     <p>上記の許可番号は、厚生労働省「人材サービス総合サイト」の事業所検索でご確認いただけます。</p>
@@ -312,8 +317,8 @@
   }
   swap('face', 'img/mina_face.jpg', 'img/riko_face.jpg');
   // 採点6周目#2対応: #sheet の画像は演者で出し分けなくなったため swap を削除（対象idが存在しない）
-  if (who === 'mina') document.getElementById('face').setAttribute('alt', nameJa);
-  else document.getElementById('face').setAttribute('alt', nameJa);
+  // 2026-11-06: if/else の両方が同じ処理だったため1行にした（分岐の意味がなかった）
+  document.getElementById('face').setAttribute('alt', nameJa);
 
   // ---- hidden input と CTA href への引き継ぎ ----
   var form = document.getElementById('lp-params');
@@ -337,6 +342,15 @@
     }
   }
 
+  // ---- 追従バー（FVを過ぎたとき、または悩みを選んだとき）----
+  var sticky = document.getElementById('sticky');
+  var fv = document.querySelector('.fv');
+  var pinSticky = false;
+  function onScroll() {
+    var past = fv.getBoundingClientRect().bottom < 0;
+    sticky.className = (past || pinSticky) ? 'sticky on' : 'sticky';
+  }
+
   var buttons = document.querySelectorAll('.pick button');
   for (var b = 0; b < buttons.length; b++) {
     buttons[b].addEventListener('click', function () {
@@ -344,6 +358,11 @@
       this.setAttribute('aria-pressed', 'true');
       selected = this.getAttribute('data-worry');
       apply();
+      // 2026-11-06 修正: 選んだ直後に追従バーを出す。
+      // 「選ばせて心理的ハードルを下げる」設計なのに、押しても画面上にボタンが
+      // 1つも現れず、同意文(61px)を越えてスクロールするまで入口が存在しなかった。
+      pinSticky = true;
+      onScroll();
     });
   }
   // 2026-11-06 修正(深刻度1): CTAを押す→戻る/リロードで、選んだ悩みが消えていた。
@@ -357,12 +376,10 @@
       }
     }
   }
+  // ?worry= 付きで戻ってきた場合も、選択済みとして追従バーを出す
+  if (selected) pinSticky = true;
   apply();
 
-  // ---- 追従バーはFVを過ぎてから ----
-  var sticky = document.getElementById('sticky');
-  var fv = document.querySelector('.fv');
-  function onScroll() { sticky.className = fv.getBoundingClientRect().bottom < 0 ? 'sticky on' : 'sticky'; }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();

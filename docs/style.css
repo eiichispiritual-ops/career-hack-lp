@@ -76,9 +76,10 @@ h2 .em { color: var(--accent); }
 p { margin: 0 0 14px; }
 
 /* 注釈（C12/C15/C16型。期間・母数・定義を必ず書く） */
+/* 2026-11-06: 本文扱いの注釈なので行間を1.7へ（見出しの1.4-1.5は意図通り） */
 .note {
   font-size: var(--fs-note);
-  line-height: 1.6;
+  line-height: 1.75;
   color: var(--fg-note);
   margin: 6px 0 0;
 }
@@ -217,18 +218,30 @@ p { margin: 0 0 14px; }
 /* 採点#4対応: 4/3 だと頭頂と顎下が切れるため 3/4 に。人物が収まる */
 /* 採点5周目#2対応: 3/4(520px)だと5択が1つも初見に入らず「入口が見えないFV」になっていた。
    1/1(390px)に縮めて、見出し→吹き出し→ボタン上部までを844px内に収める */
-/* 採点8周目#3対応: 顔写真を主役から降ろし、会話を主役にする */
-/* ブラインド採点対応: CTAが初見(844px)に入らなかったため16/7まで圧縮 */
-.fv-img { width: 100%; aspect-ratio: 16 / 7; background: var(--bg-soft); overflow: hidden; }
-.fv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
-.fv-card { background: #fff; border-radius: var(--radius); margin-top: -28px; position: relative; padding: 14px 14px 14px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+/* 2026-11-06 全面見直し:
+   4/3→3/4→1/1→16/7 と比率だけを往復させた結果、16/7では顔が completely 切れ、
+   髪の毛だけが写る状態になっていた（顔出しにした意味が消えていた）。
+   縦に積む限り「顔が見える」と「CTAが初見に入る」は両立しない。
+   →顔を横に置く。高さを使わずに顔が出る。 */
+.fv-img { display: none; }
+.fv-head { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; }
+.fv-head img {
+  width: 84px; height: 84px; flex: 0 0 84px;
+  border-radius: 50%; object-fit: cover; object-position: center 30%;
+  background: var(--bg-soft);
+}
+.fv-head .who { margin: 0; font-size: 13px; color: var(--fg-note); line-height: 1.6; }
+.fv-head .who b { display: block; font-size: 15px; color: var(--fg); font-weight: 700; }
+.fv-card { background: #fff; border-radius: var(--radius); margin-top: 0; position: relative; padding: 16px 14px 14px; }
 .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 12px; border: 1px solid var(--accent); border-radius: var(--radius-pill); color: var(--accent); margin: 0 0 10px; }
 .fv h1 { font-size: var(--fs-fv); line-height: 1.4; margin: 0 0 8px; font-weight: 800; }
 .fv .lead-sub { font-size: 14px; color: var(--fg-sub); margin: 0 0 10px; }
 .tags { font-size: 12px; color: var(--fg-sub); margin: 0 0 14px; }
 .who { font-size: 12px; color: var(--fg-note); margin: 0 0 8px; }
 .pick-sub { font-size: 12px; color: var(--fg-note); margin: 8px 0 14px; }
-.talk .bubble.me .time { display: block; text-align: right; }
+/* 2026-11-06: 時刻はLINEらしさの装飾で、読ませる情報ではない。
+   コントラストが本文基準に届かないため、読み上げからは外し、視認性だけ上げる */
+.talk .bubble.me .time { display: block; text-align: right; color: rgba(255,255,255,.85); }
 .lead { color: var(--fg-sub); }
 
 .pic { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); margin: 0 0 14px; background: var(--bg-soft); }
