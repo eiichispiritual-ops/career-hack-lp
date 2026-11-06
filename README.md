@@ -8,6 +8,7 @@
 - 一時上書き: `?line=<URLエンコードしたURL>`（`lineHosts` のドメインの https のみ有効）
 - 社名・許可番号: `docs/config.js` の `operator` / `partner` / `permit`
 - LINE 1通目の文面: `line/first_message.md`
+- FV人物（男女ペア）: `docs/img/fv_pair.png`（透過PNG）を置けば表示。無い間は差し替え枠の図。生成指示は `~/lp_research/goal/PROMPT_IMG_CAREER.md`
 
 ## ローカルで見る
 ```
