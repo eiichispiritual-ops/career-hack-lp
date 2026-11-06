@@ -19,7 +19,6 @@
   --mute: #6b6e78;
   --rule: #e7e0d4;
   --num: 'Oswald', 'Noto Sans JP', sans-serif;
-  --hand: 'Zen Kurenaido', 'Noto Sans JP', sans-serif;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { -webkit-text-size-adjust: 100%; }
@@ -76,7 +75,7 @@ p, li, h1, h2, h3, dd, summary, figcaption { word-break: auto-phrase; line-break
 .fv-left .bar { width: max-content; margin-top: 6px; background: var(--navy); color: #fff; font-weight: 900; font-size: 24px; line-height: 1.5; letter-spacing: .03em;
   padding: 2px 20px 2px 10px; clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%); }
 .fv-left .bar em { color: var(--sun); }
-.hash { margin-top: 12px; font-family: var(--hand); font-size: 20px; line-height: 1.6; color: var(--navy-d); }
+.hash { margin-top: 12px; font-size: 19px; font-weight: 700; line-height: 1.65; letter-spacing: .06em; color: var(--navy-d); }
 .hash li::after { content: ' ✓'; color: var(--coral); font-family: 'Noto Sans JP', sans-serif; font-weight: 900; }
 .medals { position: relative; z-index: 3; display: flex; justify-content: center; gap: 6px; margin-top: -8px; padding: 0 8px; letter-spacing: 0; }
 .medals li { position: relative; flex: 0 1 116px; aspect-ratio: 1; border-radius: 50%; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -221,13 +220,13 @@ p, li, h1, h2, h3, dd, summary, figcaption { word-break: auto-phrase; line-break
 /* ---------- 4 何から始めれば ---------- */
 .how { padding: 36px 16px 36px; text-align: center; background: #fff; }
 .how-h { font-weight: 900; font-size: 24px; color: var(--navy-d); line-height: 1.4; letter-spacing: .04em; }
-.how-h small { display: block; font-family: var(--hand); font-weight: 400; font-size: 18px; color: var(--coral); }
+.how-h small { display: block; font-weight: 700; font-size: 15px; letter-spacing: .12em; color: var(--coral); }
 .checks { text-align: left; margin-top: 18px; background: #fff; border: 1.5px solid var(--navy); border-radius: 8px; padding: 8px 14px; }
 .checks li { font-weight: 700; font-size: 14px; line-height: 1.6; padding: 9px 0 9px 28px; position: relative; border-bottom: 1px dashed var(--rule); }
 .checks li:last-child { border: 0; }
 .checks li::before { content: ''; position: absolute; left: 0; top: 12px; width: 17px; height: 17px; border-radius: 3px; background: var(--navy); }
 .checks li::after { content: ''; position: absolute; left: 6px; top: 13px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2.5px 2.5px 0; transform: rotate(45deg); }
-.hand-lead { font-family: var(--hand); font-size: 20px; margin-top: 28px; color: var(--coral); }
+.hand-lead { font-weight: 700; font-size: 15px; letter-spacing: .08em; margin-top: 30px; color: var(--coral); }
 .how-ans { font-weight: 900; font-size: 25px; line-height: 1.45; letter-spacing: .04em; color: var(--navy-d); }
 .how-ans b { color: var(--coral); background: linear-gradient(transparent 66%, var(--sun) 66%); }
 .caution { text-align: left; margin-top: 22px; border: 2px solid var(--coral); background: #fff; border-radius: 8px; padding: 0 14px 14px; font-size: 14px; line-height: 1.75; }
@@ -279,7 +278,9 @@ p, li, h1, h2, h3, dd, summary, figcaption { word-break: auto-phrase; line-break
 .jobs-band h2 { font-size: 24px; font-weight: 900; line-height: 1.45; margin-top: 12px; letter-spacing: .05em; }
 .jobs-band p:last-child { font-size: 14px; margin-top: 4px; font-weight: 700; color: #d9dcf0; }
 .job-list { margin: -32px 16px 0; }
-.job-list > li { background: #fff; border-radius: 10px; border-top: 4px solid var(--coral); padding: 14px 14px 16px; margin-top: 12px; box-shadow: 0 1px 0 var(--rule); }
+.job-list > li { position: relative; background: #fff; border-radius: 10px; border-top: 4px solid var(--coral); padding: 14px 14px 16px; margin-top: 12px; box-shadow: 0 1px 0 var(--rule); }
+.j-ic { position: absolute; right: 12px; top: 14px; width: 48px; height: 48px; padding: 6px; background: #fff6d6; border-radius: 50%; }
+.job-list h3, .j-for { padding-right: 56px; }
 .j-for { font-size: 11.5px; font-weight: 700; color: var(--coral-d); letter-spacing: .04em; line-height: 1.4; }
 .job-list h3 { font-size: 18px; font-weight: 900; line-height: 1.5; color: var(--navy-d); letter-spacing: .03em; }
 .tg { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
