@@ -273,7 +273,14 @@ p, li, h1, h2, h3, dd, summary, figcaption { word-break: auto-phrase; line-break
 .chat li { position: relative; text-align: left; background: #fff; color: var(--ink); font-weight: 700; font-size: 15px; line-height: 1.5; border-radius: 4px 14px 14px 14px; padding: 10px 14px; margin: 12px 40px 0 0; }
 .chat li small { display: block; font-size: 11px; font-weight: 700; color: var(--coral-d); letter-spacing: .04em; }
 .chat li:nth-child(2) { margin: 12px 0 0 40px; border-radius: 14px 4px 14px 14px; }
-.okay { font-size: 32px; font-weight: 900; line-height: 1.3; color: var(--sun); margin-top: 26px; letter-spacing: .06em; }
+.chat li { padding-left: 60px; min-height: 60px; }
+.chat li::before { content: ''; position: absolute; left: 10px; top: 50%; width: 40px; height: 40px; margin-top: -20px; background: center / contain no-repeat; }
+.chat .m1::before { background-image: url(img/il_w1.svg); } .chat .f1::before { background-image: url(img/il_w2.svg); }
+.chat .m2::before { background-image: url(img/il_w3.svg); } .chat .f2::before { background-image: url(img/il_w4.svg); }
+.okay-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 26px; }
+.okay-row img { flex: none; width: 92px; height: 92px; }
+.okay { font-size: 32px; font-weight: 900; line-height: 1.3; color: var(--sun); letter-spacing: .06em; text-align: left; }
+.okay small { display: block; font-size: 12px; font-weight: 700; color: #d9dcf0; letter-spacing: .08em; }
 .okay-t { font-size: 14px; line-height: 1.85; margin-top: 8px; }
 
 /* ---------- 9 流れ ---------- */
