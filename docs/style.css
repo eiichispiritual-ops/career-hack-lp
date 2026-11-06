@@ -175,12 +175,20 @@ p { margin: 0 0 14px; }
 /* 悩みタップ（FVの入口。「相談」は決断、「選択」は決断でない） */
 .pick { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
 .pick button {
-  width: 100%; text-align: left; padding: 13px 14px;
+  /* 2026-11-06: padding 13px→11px。1ボタン46px（文字20+上下22+枠4）で
+     タップ領域44pxは確保したまま、5個で10px分をFVに返す */
+  width: 100%; text-align: left; padding: 11px 14px;
   border: 2px solid #fff; border-radius: var(--radius-pill);
   background: #fff; font-size: 14px; font-weight: 700; color: var(--fg);
   font-family: inherit; cursor: pointer;
 }
-.pick button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+/* 2026-11-06: 選択色(#2b3a55)と親の.talk背景(#3d5173)のコントラストが1.43しかなく、
+   選んだ瞬間にボタンの輪郭が背景へ溶けていた（実測）。白い枠とチェックで輪郭を立てる */
+.pick button[aria-pressed="true"] {
+  background: var(--accent); color: #fff;
+  border-color: #fff; box-shadow: 0 0 0 1px var(--accent);
+}
+.pick button[aria-pressed="true"]::before { content: "✓ "; font-weight: 700; }
 
 /* 事例カード（C15型: 悩み別 × 属性5点） */
 .case { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; background: #fff; }
@@ -333,6 +341,13 @@ footer a { color: var(--fg-note); }
 .face-fixed { display: none; }
 .sticky { display: none; }
 .sticky.on { display: block; }
+/* 選んだ悩みの受け止め。同意リンクと同じ行に置き、バーの高さを増やさない。
+   長い選択肢でも折り返さないよう、末尾を省略する */
+.sticky .picked {
+  display: inline-block; max-width: 62%; vertical-align: bottom;
+  font-weight: 700; color: var(--accent); margin-right: 8px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .sticky .priv { font-size: 11px; margin: 0 0 6px; text-align: center; }
 .sticky .priv a { color: var(--fg-sub); }
 .sticky .cta { padding: 12px 16px; }

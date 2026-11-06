@@ -51,7 +51,9 @@
            73行の本文と同じ強さに揃えた。 -->
       <p class="lead-sub">残っている日数より退職までが短いと、使いきれないまま最終日が来ます。数えるのが先、退職日の相談はそのあと。</p>
       <div class="talk">
-        <div class="bubble">こういう順番の話、ほかにもあります。辞めるかはまだ決めてなくていいので、引っかかってるところだけ教えてください</div>
+        <!-- 2026-11-06: 4行の吹き出しでFVが844pxを超え、最初のCTAがy=895に落ちていた。
+             「まだ決めてなくていい」はリード文と下の注記で2回言っているので削り、2行に縮めた -->
+        <div class="bubble">こういう順番の話、ほかにもあります</div>
         <div class="bubble me">いま いちばん知りたいのは <span class="time" aria-hidden="true">23:08</span></div>
         <div class="pick" role="group" aria-label="いま いちばん知りたいこと">
           <button type="button" aria-pressed="false" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
@@ -62,7 +64,9 @@
         </div>
       </div>
       <p class="pick-sub">どれでもない人も、そのまま聞けます</p>
-      <p class="consent">提携先へのご紹介は、ご同意をいただいてからです。<a href="#privacy">個人情報の取り扱いについて</a></p>
+      <!-- 2026-11-06: FVでは2行に折り返して55pxを占め、CTAを画面外へ押し出していた。
+           1行に収め、詳しい説明はリンク先・最終CTA・追従バーの同意文に残す -->
+      <p class="consent">ご紹介は同意をいただいてから。<a href="#privacy">個人情報の取り扱い</a></p>
     <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
     <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
     </div>
@@ -77,7 +81,7 @@
     <ol class="lost">
       <li><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。順番はこれだけ。</strong></p></li>
       <li><span class="no">02</span><h3>離職票は、自分から言わないと遅れる</h3><p>これはハローワークでの手続きに必要になる書類で、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と一言。それだけで変わります。</p></li>
-      <li><span class="no">03</span><h3>先に辞めると、選べる求人が変わる</h3><p>辞めてからだと、次の給料日までの残り日数が交渉の持ち時間になります。在職中なら「この条件でなければ今の会社にいる」が選べる。<strong>同じ求人でも、どちらの立場で見るかで条件の見え方が変わります。</strong></p></li>
+      <li><span class="no">03</span><h3>先に辞めると、選べる求人が変わる</h3><p>自己都合で辞めた場合、失業手当は申請してすぐには振り込まれません。待期と給付制限の期間があり、その分は自分の蓄えで持たせることになります（期間は退職の理由や回数で変わるので、ハローワークで自分の場合を確認してください）。<strong>在職中なら、条件が合わなければ今の会社に留まる、という選択が残ります。</strong></p></li>
     </ol>
     <p><strong>ここまでは、知っていれば自分でできます。</strong></p>
     <!-- 要確認: 退職・有休・離職票の記述は社会保険労務士または提携先の確認が必要。このセクションにCTAは置かない -->
@@ -118,8 +122,8 @@
          演者による出し分けは行わない（両者とも同じ「求人票を見る」行為のため） -->
     <img class="pic pic-fv" src="img/mina_fv.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
     <ol class="points">
-      <li><h3>「年間休日120日以上」の「以上」を見る</h3><p>「以上」と書いてあるとき、保証されているのは下限の120日だけです。実際は120日ちょうどだと思って見てください。120日はだいたい土日祝が休みの計算で、110日なら月1回は土曜出勤がある計算になります。</p></li>
-      <li><h3>「みなし残業」は、何時間分かを見る</h3><p>固定残業代・みなし残業と書いてある場合、何時間分が含まれているかは本来明示される項目です。そこが長いと、その時間までは働く前提の設計。<strong>書いていない求人票があったら、そこを聞くだけで一段わかります。</strong></p></li>
+      <li><h3>「年間休日120日以上」の「以上」を見る</h3><p>「以上」と書いてあるとき、約束されているのは下限の120日だけです。実際が125日でも120日でも、この書き方は成立します。120日はだいたい土日祝が休みの計算で、110日なら月1回は土曜出勤がある計算になります。</p></li>
+      <li><h3>「みなし残業」は、何時間分かを見る</h3><p>固定残業代・みなし残業と書いてある場合、何時間分が含まれているかは本来明示される項目です。たとえば「固定残業代45時間分を含む」なら、45時間までは働く前提で給与が組まれています。<strong>時間数が書いていない求人票に出会ったら、そこを最初に聞いてください。</strong></p></li>
       <li><h3>「アットホームな職場」は情報ではない</h3><p>書いてあっても減点にはしません。ただ、<strong>給与・休日・残業のどれかが書かれていない求人票ほど、この言葉が入りやすい。</strong>この言葉を見つけたら、代わりに書かれていない欄を探してください。</p></li>
       <li><h3>離職率は、求人票の外で調べられる</h3><p>求人票に載っていなくても、会社の採用ページや口コミで人の入れ替わりの速さは見えてきます。どこを見るか、それさえ覚えておけば自分で確かめられる。</p></li>
     </ol>
@@ -155,7 +159,7 @@
         <!-- 2026-11-06 修正: 離職率はこの表の1スクロール前で「自分で確かめられる」と明言済み。
              ここで△にすると、売るために前言を撤回したように読める。離職率を行から外した -->
         <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書き方で分からない、見落としやすい</span></td><td><span class="o">○</span><span class="sub">書いていない項目を洗い出して、聞く順番を決める</span></td></tr>
-        <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">提携先が書いたものを見て直す</span></td></tr>
+        <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを提携先が見て直す</span></td></tr>
         <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">提携先が代わりに調整する</span></td></tr>
         <tr><th scope="row">辞め方・引き継ぎ</th><td><span class="x">△</span><span class="sub">調べて自分で判断する</span></td><td><span class="o">○</span><span class="sub">順番を一緒に決める</span></td></tr>
         <tr class="last"><th scope="row">求人票に書いていないこと</th><td><span class="x">△</span><span class="sub">入社してから分かる</span></td><td><span class="o">○</span><span class="sub">企業に聞いてみることができる</span></td></tr>
@@ -216,12 +220,12 @@
 <section class="inv" id="rest">
   <div class="wrap">
     <h2>このページに置けるのは、ここまでです</h2>
-    <!-- 2026-11-06: 「辞め方の具体的な順番は書けません」は2節と矛盾していた
-         （2節で有休・離職票・退職の順番を実際に書いている）。
-         書けないのは会社名が入る話だけなので、射程をそこに絞った。 -->
-    <p>会社名が入る話は、ここに書けません。</p>
-    <p>見られる場所を選べないページに書くと、いまの職場の人にも見えてしまうからです。</p>
-    <p>続きはLINEにしか置いていません。</p>
+    <!-- 2026-11-06 再修正: 「会社名が入るから書けない」は、下のLINE限定3項目
+         （言い出す日・在職中の順番・残業の実態）に会社名が入らないため理由が噛み合わず、
+         出し渋りの口実に読めていた。実際の理由（職場の事情ごとに答えが変わる）に差し替えた。 -->
+    <p>ここから先は、ひとつの答えが書けません。</p>
+    <p>いつ言い出すかは、引き継ぎの時期と、上司がどう出るかで変わります。全員に当てはまる順番として書くと、かえって外れる。</p>
+    <p>だから、個別に聞くほうへ置いています。</p>
     <img class="pic" src="img/desk_quiet.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
     <div class="sheet">
       <p class="t">求人票の見方チェックシート（12項目）</p>
@@ -316,7 +320,7 @@
          LINE運営および配信システム(UTAGE)には、やり取りの時点でデータが渡る。
          断定の射程を「下記の提供先」に絞り、システム側の取得を別に明記した。 -->
     <p><strong>LINEに登録しただけでは、下記の提供先へは提供しません。</strong>お仕事のご紹介に進むとき、提供先・提供項目をあらためてお示しし、ご本人の同意をいただいたうえで提供します。ご同意がない場合は、ご相談だけで終えていただいて差し支えありません。</p>
-    <p>これとは別に、LINEでやり取りをする時点で、LINE株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・このページで選んでいただいた項目・流入経路が記録されます。</p>
+    <p>これとは別に、LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・このページで選んでいただいた項目・流入経路が記録されます。</p>
     <!-- 採点8周目#2対応: 個人情報保護法27条の第三者提供は、本人が「どこへ渡るのか」を特定できる必要がある。
          「提携する人材紹介会社」とだけ書くと同意の対象が特定できないため、枠を作った。
          提供項目・提供方法は確定済みなので先に記載。社名と許可番号のみ要確認として残す -->
@@ -335,7 +339,9 @@
 <div class="face-fixed" aria-hidden="true"></div>
 <div class="sticky" id="sticky">
   <div class="wrap">
-    <p class="consent priv"><a href="#privacy">個人情報の取り扱い</a></p>
+    <!-- 2026-11-06: 悩みを選んでも画面に何も反映されず「選ばせる意味がない」状態だった。
+         選んだ内容をここで受け止める。未選択のときは同意リンクだけを出す -->
+    <p class="consent priv"><span class="picked" id="picked" hidden></span><a href="#privacy">個人情報の取り扱い</a></p>
     <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
     <p class="cta-after">読むだけでOK／返信は自由</p>
   </div>
@@ -392,9 +398,21 @@
   // URLに worry があれば復元する（戻る・リロードで選択が消えないように）
   var selected = q.get('worry') || '';
 
+  var pickedEl = document.getElementById('picked');
+
   function apply() {
     form.elements['src'].value = src;
     form.elements['worry'].value = selected;
+    // 選んだ悩みを追従バーで受け止める。textContent で入れるのでHTMLは混ざらない
+    if (pickedEl) {
+      if (selected) {
+        pickedEl.textContent = '✓ ' + selected;
+        pickedEl.hidden = false;
+      } else {
+        pickedEl.textContent = '';
+        pickedEl.hidden = true;
+      }
+    }
     for (var i = 0; i < links.length; i++) {
       var a = links[i];
       if (!a.hasAttribute('data-base')) a.setAttribute('data-base', a.getAttribute('href'));
