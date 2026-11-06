@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>転職の裏技｜辞める前に、応募する前に。LINEで無料相談</title>
-<meta name="description" content="有休の数え方、求人票の見方、辞める順番。LINEで無料で届きます。営業電話なし・応募しなくてOK・やめても罰則なし。">
+<title>転職は辞める“前”が勝負｜キャリアハックのLINE無料相談</title>
+<meta name="description" content="有休の数え方、求人票の見方、辞める順番。LINEで無料で聞けます。営業電話なし・応募しなくてOK・やめても罰則なし。">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="style.css">
 <script src="config.js"></script>
 <script>
-  // 描画前にアカウントを決める（別の演者の顔が一瞬出ないように）
+  // 描画前にアカウントを決める
   (function () {
     var C = window.LP_CONFIG || { accounts: {} };
     var q = new URLSearchParams(location.search);
@@ -21,262 +21,398 @@
 </head>
 <body>
 
-<form id="lp-params" hidden aria-hidden="true"><input type="hidden" name="src" value=""><input type="hidden" name="worry" value=""></form>
-
 <!-- ============ 1 FV ============ -->
-<section class="fv">
-  <div class="hero">
-    <img id="hero" width="1170" height="780" alt="" decoding="async" fetchpriority="high">
-    <script>
-      (function () {
-        var acc = window.LP_CONFIG.accounts[window.LP_ACCOUNT];
-        var img = document.getElementById('hero');
-        img.onerror = function () { img.onerror = null; img.src = acc.face; };
-        img.src = acc.hero;
-        img.alt = acc.name;
-      })();
-    </script>
-    <noscript><img src="img/hero_riko.jpg" width="1170" height="780" alt="りこ"></noscript>
-    <p class="free-badge"><span>相談・利用</span><b>完全無料</b></p>
-    <p class="hero-name"><b data-name>りこ</b>キャリアハック（Instagram）で発信中</p>
+<header class="fv">
+  <p class="logo"><small>転職の裏技を発信中</small>キャリアハック</p>
+  <div class="fv-photo" id="fv-photo">
+    <img class="js-header" alt="" width="900" height="1200" decoding="async" fetchpriority="high">
+    <span class="ph-label">ヘッダー画像<br>差し替え枠<br><small>img/header_woman_1.png</small></span>
   </div>
-  <div class="wrap fv-body">
-    <p class="pill">20代・高卒・未経験でもOK</p>
-    <h1>有休、<br>退職日を決める前に数えて。</h1>
-    <p class="lead-sub">辞める前・応募する前に知っておく順番を、LINEで届けます。<b>営業電話なし・応募しなくてOK。</b></p>
-
-    <ul class="medals" aria-label="数字で見る">
-      <li><span class="m-k">相談料</span><span class="m-v">0<small>円</small></span><span class="m-s">※1</span></li>
-      <li><span class="m-k">高卒の<br>3年以内離職</span><span class="m-v">36.9<small>%</small></span><span class="m-s">※2</span></li>
-      <li><span class="m-k">有休の<br>取得率</span><span class="m-v">66.9<small>%</small></span><span class="m-s">※3</span></li>
-    </ul>
-
-    <a class="cta" href="#" data-cta>LINEで無料で聞いてみる</a>
-    <p class="cta-after">登録するとすぐ、有休の数え方が届きます（<a href="#first">届く文面を先に見る</a>）</p>
-    <p class="consent">求人企業への推薦は、あなたの同意のあと。<a href="#privacy">個人情報の取り扱い</a></p>
-
-    <ol class="sources" id="sources">
-      <li>※1 職業安定法 第32条の3 第2項。人材紹介会社は原則として求職者から手数料を受け取れません。費用は採用した企業が払います。</li>
-      <li>※2 厚生労働省「新規学卒就職者の離職状況（令和5年3月卒業者）」2026年10月23日公表。大学卒は31.2%。</li>
-      <li>※3 厚生労働省「令和7年就労条件総合調査」。2024年の労働者1人平均で、付与18.1日のうち取得12.1日。常用労働者30人以上の民営企業が対象。</li>
-    </ol>
+  <div class="fv-copy">
+    <p class="fv-pre"><span>有休・求人票・辞める順番</span></p>
+    <h1>
+      <span class="band sm">転職は</span><br>
+      <span class="band">辞める<em>“前”</em>が</span><br>
+      <span class="band">勝負。</span>
+    </h1>
+    <p class="fv-sub">損しない順番を、<br><b>LINEで無料で</b>聞ける<br>転職サポート</p>
   </div>
+  <p class="medal"><span>相談料</span><b>0<small>円</small></b><i>※1</i></p>
+</header>
+
+<section class="cta-block first-cta">
+  <p class="micro">＼ 求人票1枚から見てもらえる ／</p>
+  <a class="btn-line" href="#" data-cta><span class="ico">LINE</span>LINEで無料相談する</a>
+  <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
 </section>
 
-<!-- ============ 2 共感 ============ -->
-<section class="soft" id="empathy">
-  <div class="wrap">
-    <h2>ひとつでも、<br>思い当たることはありますか</h2>
-    <ul class="checks">
-      <li>辞めたい気持ちはあるけど、何から始めればいいか分からない</li>
-      <li>有休がどれだけ残っているか、ちゃんと数えたことがない</li>
-      <li>求人票を見ても、良いのか悪いのか判断がつかない</li>
-      <li>高卒・未経験だから、相談するのも気が引ける</li>
-      <li>エージェントに登録したら、電話がたくさん来そうで怖い</li>
-    </ul>
-    <p>高卒で就職した人の36.9%が、3年以内に最初の会社を辞めています（※2）。辞めたいと思うこと自体は、特別なことではありません。</p>
-    <p>困るのは、<strong>順番を知らないまま動くこと</strong>です。有休、書類、お金。どれも、先に知っていれば取りこぼさずに済みます。</p>
-
-    <div class="talk">
-      <div class="bubble">いま、いちばん近いのはどれですか？</div>
-      <div class="pick" role="group" aria-label="いま気になっていること">
-        <button type="button" aria-pressed="false" data-go="leave" data-worry="有休が使いきれるか分からない">有休が使いきれるか分からない</button>
-        <button type="button" aria-pressed="false" data-go="money" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
-        <button type="button" aria-pressed="false" data-go="sheet" data-worry="求人票の見方を覚えたい">求人票の見方を覚えたい</button>
-        <button type="button" aria-pressed="false" data-go="accept" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
-        <button type="button" aria-pressed="false" data-go="first" data-worry="気になる求人がある">気になる求人がある</button>
-      </div>
-      <p class="goto" id="goto" hidden><a href="#" id="goto-a"></a></p>
-    </div>
-    <p class="pick-sub">どれでもない人も、そのまま聞けます。最初の一言は「まだ決めてません」で足ります。</p>
+<!-- ============ 2 3つの安心 ============ -->
+<section class="assure">
+  <div class="assure-main">
+    <p class="ribbon">やり取りはLINEの文字だけ</p>
+    <p class="big">＼ 営業電話 <b>なし</b> ／</p>
+    <p class="dotted">こちらから電話はかけません</p>
   </div>
+  <ul class="assure-sub">
+    <li><span>法律で決まっているから</span><b>相談料<em>0</em>円</b><i>※1</i></li>
+    <li><span>見て終わりでも大丈夫</span><b>応募<em>しなくて</em>OK</b></li>
+  </ul>
 </section>
 
-<!-- ============ 3 なぜエージェント ============ -->
-<section id="why">
-  <div class="wrap">
-    <h2>なぜ、ひとりで調べるより<br>エージェントに聞くのか</h2>
-    <ol class="reasons">
-      <li><b>01　お金がかからない</b>人材紹介会社は、求職者から手数料を受け取れないと法律で決まっています（※1）。費用は、採用が決まったときに企業側が払う仕組みです。</li>
-      <li><b>02　求人票に書いていないことを確かめられる</b>残業の実態、配属先の人数、辞めた人の理由。求人票に載っていないことは、自分では聞きにくいもの。担当者が企業に確認できます。</li>
-      <li><b>03　応募のあとの手間を代わりにやってくれる</b>職務経歴書の添削、面接の日程調整、条件の確認。在職中にひとりでやると時間が足りなくなるところです。</li>
-    </ol>
-
-    <table class="cmp">
-      <thead>
-        <tr><th><span class="vs">比べるところ</span></th><th class="theirs">自分で<br>調べる</th><th class="ours">相談して<br>進める</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">求人を探す速さ</th><td><span class="o">○</span><span class="sub">検索すればその場で出る</span></td><td><span class="x">△</span><span class="sub">やり取りの分だけ時間がかかる</span></td></tr>
-        <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書いていない項目は埋まらない</span></td><td><span class="o">○</span><span class="sub">企業に確認できる項目を仕分ける</span></td></tr>
-        <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを担当者が見て直す</span></td></tr>
-        <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">担当者が代わりに調整する</span></td></tr>
-        <tr class="last"><th scope="row">辞め方・引き継ぎ</th><td><span class="x">△</span><span class="sub">調べて自分で判断する</span></td><td><span class="o">○</span><span class="sub">順番を一緒に決める</span></td></tr>
-      </tbody>
-    </table>
-    <p class="note">探すだけなら自分のほうが速いです。差が出るのは、求人票に書いていない部分と、応募に進んだあとの手続き。</p>
-    <a class="cta" href="#" data-cta>LINEで無料で聞いてみる</a>
-    <p class="cta-after">聞くだけで終わってもOK。催促はしません</p>
+<!-- ============ 3 相談できることマーキー ============ -->
+<div class="marquee" aria-label="相談できること">
+  <div class="mq-track">
+    <span>有休の残り日数</span><span>退職日の決め方</span><span>みなし残業</span><span>年間休日</span><span>賞与の月数</span><span>退職の切り出し</span><span>離職票</span><span>失業手当</span><span>職務経歴書</span><span>面接の日程</span><span>労働条件通知書</span>
+    <span aria-hidden="true">有休の残り日数</span><span aria-hidden="true">退職日の決め方</span><span aria-hidden="true">みなし残業</span><span aria-hidden="true">年間休日</span><span aria-hidden="true">賞与の月数</span><span aria-hidden="true">退職の切り出し</span><span aria-hidden="true">離職票</span><span aria-hidden="true">失業手当</span><span aria-hidden="true">職務経歴書</span><span aria-hidden="true">面接の日程</span><span aria-hidden="true">労働条件通知書</span>
   </div>
-</section>
+</div>
 
-<!-- ============ 4 落とし穴 ============ -->
-<section class="soft" id="loss">
-  <div class="wrap">
-    <h2>辞める前に知らないと損する<br>3つの落とし穴</h2>
-    <ol class="lost">
-      <li id="leave"><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3>
-        <p>有休は出勤日にあてて使うものです。残りの出勤日より有休の残日数が多い時期に退職日を決めると、余った分は使う日がありません。<strong>先に残日数を数える。退職日の相談はそのあと。</strong></p>
-        <figure class="diagram">
-          <figcaption>例：有休が15日残っていて、退職日までの出勤日が10日の場合</figcaption>
-          <div class="bar">
-            <div class="seg used" style="width:66.7%"><span>使える 10日</span></div>
-            <div class="seg lost" style="width:33.3%"><span>5日</span></div>
-          </div>
-          <p class="legend"><span class="key used"></span>消化できる　<span class="key lost"></span>出勤日が足りず使えない</p>
-        </figure>
+<!-- ============ 4 数字の例（カルーセル） ============ -->
+<section class="cases" id="cases">
+  <h2 class="bubble-h">知ってるだけで変わる<br><b>転職の数字！</b></h2>
+  <div class="carousel" data-carousel>
+    <ul class="cs-track">
+      <li class="case">
+        <p class="case-tag">有休の使い方</p>
+        <div class="ba">
+          <div class="b"><span>そのまま辞めると</span><b>10<small>日</small></b></div>
+          <i class="arrow"></i>
+          <div class="a"><span>退職日を後ろにずらすと</span><b>15<small>日</small></b></div>
+        </div>
+        <p class="case-desc">有休が15日・退職日までの出勤日が10日のとき。5日分は使う日がないまま消えます。</p>
       </li>
-      <li id="papers"><span class="no">02</span><h3>辞めたあとの書類は、自分から聞かないと遅れる</h3><p>受け取るのは主に3つ。<strong>離職票</strong>（ハローワークの手続きに使う）、<strong>雇用保険被保険者証</strong>と<strong>源泉徴収票</strong>（次の会社に出す）。郵送で後日届くことが多いので、最後の出勤日に「いつ届きますか」と聞き、送り先の住所も確かめておきます。</p></li>
-      <li id="money"><span class="no">03</span><h3>失業手当は、辞めてすぐには振り込まれない</h3><p>申請しても、まず全員に7日間の待期があります（雇用保険法 第21条）。自己都合で辞めた場合は、そのあとに給付制限の期間も付きます。期間は退職の理由や回数で変わるので、ハローワークで確認してください。<strong>その間の生活費が何か月分あるか、辞める前に数えておきます。</strong></p></li>
-    </ol>
-
-    <h3 class="sub-h" id="sheet">求人票の落とし穴4つ</h3>
-    <ol class="points">
-      <li><h3>「年間休日120日以上」の「以上」</h3><p>約束されているのは下限の120日だけです。</p></li>
-      <li><h3>「みなし残業」は何時間分か</h3><p>「固定残業代45時間分を含む」なら、45時間までは働く前提の給与です。時間数が書いていなければ、最初に聞くところ。</p></li>
-      <li><h3>「アットホームな職場」</h3><p>あとから確かめようがない言葉です。見つけたら、数字が入っていない欄を探してください。</p></li>
-      <li><h3>「賞与あり」</h3><p>月数が書いていなければ、金額は約束されていません。昨年度の実績を見ます。</p></li>
-    </ol>
-
-    <h3 class="sub-h" id="accept">内定から承諾までの落とし穴</h3>
-    <p>承諾の前に見るのは、求人票ではなく<strong>労働条件通知書</strong>です。会社は労働契約を結ぶときに条件を明示する義務があります（労働基準法 第15条）。出ていなければ「先に条件を文書で見たい」と伝えます。</p>
-    <ul class="bullets">
-      <li>求人票と金額が同じか</li>
-      <li>固定残業代の時間数と、超えた分の支払い</li>
-      <li>配属先と仕事内容が、面接の話と合っているか</li>
-      <li>返事の期限（その場で答えなくていい）</li>
+      <li class="case">
+        <p class="case-tag">捨てる有休を金額にすると</p>
+        <div class="ba">
+          <div class="b"><span>使わずに消える有休</span><b>5<small>日</small></b></div>
+          <i class="arrow"></i>
+          <div class="a"><span>給料にすると</span><b>約5.5<small>万円</small></b></div>
+        </div>
+        <p class="case-desc">月給22万円・月20日出勤で計算。1日あたり1.1万円です。</p>
+      </li>
+      <li class="case">
+        <p class="case-tag">年間休日</p>
+        <div class="ba">
+          <div class="b"><span>A社</span><b>105<small>日</small></b></div>
+          <i class="arrow"></i>
+          <div class="a"><span>B社</span><b>125<small>日</small></b></div>
+        </div>
+        <p class="case-desc">差は20日。ひと月の出勤日とほぼ同じです。給料だけ比べると見落とします。</p>
+      </li>
+      <li class="case">
+        <p class="case-tag">「賞与あり」の中身</p>
+        <div class="ba">
+          <div class="b"><span>求人票の表記</span><b class="w">賞与あり</b></div>
+          <i class="arrow"></i>
+          <div class="a"><span>月数の記載なし＝約束は</span><b>0<small>か月</small></b></div>
+        </div>
+        <p class="case-desc">月数が書いていなければ、金額は約束されていません。見るのは昨年度の実績です。</p>
+      </li>
+      <li class="case">
+        <p class="case-tag">失業手当が入る時期</p>
+        <div class="ba">
+          <div class="b"><span>思っていた時期</span><b class="w">辞めてすぐ</b></div>
+          <i class="arrow"></i>
+          <div class="a"><span>実際は全員まず</span><b>7<small>日</small></b></div>
+        </div>
+        <p class="case-desc">申請後に7日間の待期（雇用保険法 第21条）。自己都合ならその後に給付制限も付きます。</p>
+      </li>
     </ul>
-    <p><strong>ここまでは、知っていれば自分でできます。</strong>手が止まるのは、書いていないことを確かめる段階からです。</p>
-    <a class="cta" href="#" data-cta>LINEで無料で聞いてみる</a>
-    <p class="cta-after">求人票のスクショを送ると、見るところを書いて返ってきます</p>
+    <div class="cs-nav"><button type="button" class="prev" aria-label="前へ"></button><span class="dots"></span><button type="button" class="next" aria-label="次へ"></button></div>
+  </div>
+  <p class="note center">※数字は計算の例です。金額や日数は人によって変わります。</p>
+</section>
+
+<!-- ============ 5 5つの理由 ============ -->
+<section class="reasons" id="reasons">
+  <div class="reasons-head">
+    <div class="rh-photo js-photo"><img class="js-header" alt="" width="900" height="1200" loading="lazy"><span class="ph-label">ヘッダー画像</span></div>
+    <h2><span class="rh-s">ひとりで調べるより</span><span class="rh-l"><b>LINEで聞く</b></span><span class="rh-n"><em>5</em>つの理由</span></h2>
+  </div>
+
+  <article class="reason">
+    <p class="rno">REASON<b>01</b></p>
+    <h3><span class="band">相談料は</span><br><span class="band">法律で<em>0円</em>と</span><br><span class="band">決まっている</span></h3>
+    <p>人材紹介会社は、求職者から手数料を受け取れないと法律で決まっています（※1）。費用は、採用が決まったときに企業側が払う仕組みです。</p>
+    <div class="yen-box"><span>あなたの負担</span><b>0<small>円</small></b><span class="yb-s">企業が払う紹介手数料で成り立っています</span></div>
+  </article>
+
+  <article class="reason">
+    <p class="rno">REASON<b>02</b></p>
+    <h3><span class="band">求人票に</span><br><span class="band">書いてないことを</span><br><span class="band">確かめられる</span></h3>
+    <div class="sheet-mock" aria-label="求人票で見るところの例">
+      <p class="sm-h">求人票（例）</p>
+      <dl>
+        <dt>年間休日</dt><dd><mark>120日以上</mark><span class="pin">約束は下限の120日だけ</span></dd>
+        <dt>給与</dt><dd>月給25万円<mark>（固定残業45時間分含む）</mark><span class="pin">45時間までは働く前提</span></dd>
+        <dt>賞与</dt><dd><mark>あり</mark><span class="pin">月数がない</span></dd>
+        <dt>職場</dt><dd><mark>アットホームな職場です</mark><span class="pin">あとから確かめようがない</span></dd>
+      </dl>
+    </div>
+    <p>残業の実態、配属先の人数、辞めた人の理由。自分では聞きにくいことを、担当者が企業に確認できます。</p>
+  </article>
+
+  <article class="reason">
+    <p class="rno">REASON<b>03</b></p>
+    <h3><span class="band">返事を書くのは</span><br><span class="band">国の許可を持つ</span><br><span class="band">プロの担当者</span></h3>
+    <div class="say">
+      <p class="say-who">提携人材紹介会社の担当者</p>
+      <p>送ってもらった求人票は、<b>見るべきところと気になるところ</b>に分けて返します。進める・進めないは、そのあと決めてください。</p>
+    </div>
+    <p>求人を紹介するには国の許可が必要です。だから返事は、許可を持つ提携先の担当者が書きます。<span data-name>りこ</span>はInstagramで発信して、このLINEを案内している人です。</p>
+  </article>
+
+  <article class="reason">
+    <p class="rno">REASON<b>04</b></p>
+    <h3><span class="band">在職中でも回る。</span><br><span class="band">面倒な手続きを</span><br><span class="band">代わりにやる</span></h3>
+    <ul class="ticks">
+      <li>職務経歴書を見て直す</li>
+      <li>面接の日程を代わりに調整</li>
+      <li>給与・休日の条件を確認</li>
+      <li>内定後の返事の期限を相談</li>
+    </ul>
+    <p>働きながらひとりでやると、時間が足りなくなるところです。</p>
+  </article>
+
+  <article class="reason gold">
+    <p class="rno">REASON<b>05</b></p>
+    <div class="gold-frame">
+      <p class="g-s">安心の</p>
+      <p class="g-l">6つの約束</p>
+      <p class="g-r">押したあとに困らないように</p>
+      <ul class="promise">
+        <li><b>営業電話なし</b>LINEの文字だけ</li>
+        <li><b>応募しなくてOK</b>見て終わりでも</li>
+        <li><b>罰則なし</b>違約金もなし</li>
+        <li><b>本名いらない</b>表示名のままで</li>
+        <li><b>会社に連絡しない</b>同意なく連絡しない</li>
+        <li><b>ブロックで終わり</b>以降は何も届かない</li>
+      </ul>
+    </div>
+  </article>
+  <div class="cta-block">
+    <p class="micro">＼ 求人票1枚から見てもらえる ／</p>
+    <a class="btn-line" href="#" data-cta><span class="ico">LINE</span>LINEで無料相談する</a>
+    <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
   </div>
 </section>
 
-<!-- ============ 5 自社 ============ -->
-<section id="ours">
-  <div class="wrap">
-    <h2>キャリアハックのLINEで<br>やること・やらないこと</h2>
-    <ul class="promise">
-      <li><b>営業電話なし</b>やり取りはLINEの文字だけ</li>
-      <li><b>応募しなくてOK</b>見て終わりでも大丈夫</li>
-      <li><b>やめても罰則なし</b>違約金・ペナルティはありません</li>
-      <li><b>本名いらない</b>LINEの表示名のままで</li>
-      <li><b>会社に連絡しない</b>同意なく連絡することはありません</li>
-      <li><b>ブロックで終わり</b>それ以降は何も届きません</li>
-    </ul>
-    <p><strong>返事を書くのは<span data-name>りこ</span>ではなく、提携先の人材紹介会社の担当者です。</strong>求人を紹介するには国の許可が必要なので、そこは許可を持つ提携先が担当します。<span data-name>りこ</span>はInstagramで情報を発信して、このLINEを案内している人です。</p>
-    <ol class="flow-steps">
-      <li><b>届く</b>登録するとすぐ、1通目が自動で届きます。有休の数え方と、求人票チェックシート。読むだけで終わってOK。</li>
-      <li><b>送る</b>気になる求人があれば、スクショ・URL・会社名だけでも。求人がなければ、引っかかっていることをそのまま。</li>
-      <li><b>返ってくる</b>見るべきところと気になるところを書いて、担当者から返します。進める／進めないは、そのあとあなたが決める形です。</li>
-    </ol>
+<!-- ============ 6 7つのテーマ ============ -->
+<section class="themes" id="themes">
+  <h2 class="script-h"><span class="sh-s">LINEで聞ける</span><span class="sh-l"><em>7</em>つのテーマ</span></h2>
+  <ol class="theme-list">
+    <li class="theme" id="leave"><span class="tn">01</span><h3>有休・退職日</h3><p class="t-lead">有休を使いきれる退職日を決める</p><p>有休は出勤日にあてて使うもの。退職日を先に決めると、余った分は使う日がありません。<b>残日数を数えるのが先。</b></p><p class="tags"><span>残日数の数え方</span><span>退職日の相談</span></p></li>
+    <li class="theme"><span class="tn">02</span><h3>退職の切り出し</h3><p class="t-lead">引き止められずに辞めると伝える</p><p>誰に・いつ・どの順番で言うか。言い出す前に決めておくと、話がこじれにくくなります。</p><p class="tags"><span>伝える順番</span><span>引き止めへの返し</span></p></li>
+    <li class="theme"><span class="tn">03</span><h3>辞めたあとの書類</h3><p class="t-lead">受け取りそびれを防ぐ</p><p><b>離職票</b>・<b>雇用保険被保険者証</b>・<b>源泉徴収票</b>。郵送で後日届くことが多いので、最後の出勤日に「いつ届きますか」と聞いておきます。</p><p class="tags"><span>離職票</span><span>源泉徴収票</span></p></li>
+    <li class="theme" id="money"><span class="tn">04</span><h3>辞めたあとのお金</h3><p class="t-lead">失業手当が入るまでを数える</p><p>まず全員に7日間の待期。自己都合なら給付制限も付きます。期間は理由や回数で変わるのでハローワークで確認を。<b>その間の生活費を、辞める前に数えます。</b></p><p class="tags"><span>待期7日</span><span>給付制限</span></p></li>
+    <li class="theme" id="sheet"><span class="tn">05</span><h3>求人票チェック</h3><p class="t-lead">「以上」「含む」「あり」を読み解く</p><p>年間休日の「以上」、みなし残業の時間数、月数のない「賞与あり」。数字が入っていない欄から見ます。</p><p class="tags"><span>スクショでOK</span><span>応募前でOK</span></p></li>
+    <li class="theme"><span class="tn">06</span><h3>職務経歴書・面接</h3><p class="t-lead">高卒・未経験でも書ける形にする</p><p>職務経歴書がまだ無くても、一から作るところから。面接の日程調整も担当者が代わりにやります。</p><p class="tags"><span>添削</span><span>日程調整</span></p></li>
+    <li class="theme" id="accept"><span class="tn">07</span><h3>内定から承諾まで</h3><p class="t-lead">サインの前に条件を文書で見る</p><p>見るのは求人票ではなく<b>労働条件通知書</b>。会社には条件を明示する義務があります（労働基準法 第15条）。返事はその場でしなくて大丈夫です。</p><p class="tags"><span>労働条件通知書</span><span>返事の期限</span></p></li>
+  </ol>
+  <div class="cta-block">
+    <p class="micro">＼ どのテーマからでも聞ける ／</p>
+    <a class="btn-line" href="#" data-cta><span class="ico">LINE</span>LINEで無料相談する</a>
+    <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
   </div>
 </section>
 
-<!-- ============ 6 届く1通目の実物 ============ -->
-<section class="soft" id="first">
-  <div class="wrap">
-    <h2>登録すると、<br>この1通目がすぐ届きます</h2>
-    <p>押す前に、届くものを全部見せます。下は1通目の文面そのままです。</p>
+<!-- ============ 7 特典 ============ -->
+<section class="gifts" id="first">
+  <div class="gift-head">
+    <p class="g-pre">LINE登録で<b>すぐ届く</b></p>
+    <h2><em>3</em>大特典<br><span>プレゼント</span></h2>
+  </div>
+  <ol class="gift-list">
+    <li><span class="medal-s">特典<b>01</b></span><div><small>辞める前に見る</small><b>有休の数え方 3ステップ</b></div></li>
+    <li><span class="medal-s">特典<b>02</b></span><div><small>応募する前に見る</small><b>求人票チェックシート12項目</b></div></li>
+    <li><span class="medal-s">特典<b>03</b></span><div><small>気になる求人があれば</small><b>スクショを送るだけの相談</b></div></li>
+  </ol>
+  <details class="gift-more">
+    <summary>届く文面をそのまま見る</summary>
     <div class="line-mock" role="img" aria-label="LINEで届く1通目のメッセージ">
-      <div class="lm-bar"><span class="lm-back">‹</span><b>キャリアハック｜<span data-name>りこ</span></b></div>
+      <div class="lm-bar"><b>キャリアハック｜<span data-name>りこ</span></b></div>
       <div class="lm-body">
-        <div class="lm-row">
-          <img class="lm-icon" data-face src="img/riko_face.jpg" alt="" width="36" height="36">
-          <div class="lm-msg">登録ありがとうございます！キャリアハックの<span data-name>りこ</span>です。<br><br>はじめに約束を3つだけ。<br>①こちらから電話はしません<br>②応募しなくて大丈夫です<br>③ブロックすれば終わり。罰則もありません</div>
-        </div>
-        <div class="lm-row">
-          <span class="lm-icon-sp"></span>
-          <div class="lm-msg"><b>【有休の数え方】</b><br>1. 給与明細か勤怠システムで「有休の残り日数」を見る<br>2. 辞めたい日までの<b>出勤日</b>を数える（カレンダーの日数ではなく）<br>3. 残り日数のほうが多ければ、退職日を後ろにずらす相談を先にする</div>
-        </div>
-        <div class="lm-row">
-          <span class="lm-icon-sp"></span>
-          <div class="lm-msg"><b>【求人票チェックシート12項目】</b><br>年間休日の実数／休日の内訳／みなし残業の時間数／超えた分の扱い／試用期間の条件／賞与の月数／昇給の仕組み／離職率／採用人数／配属先の人数／未経験の受け入れ実績／書いていない欄</div>
-        </div>
-        <div class="lm-row">
-          <span class="lm-icon-sp"></span>
-          <div class="lm-msg">相談したいときは、気になる求人のスクショかURLをそのまま送ってください。<br><br>返事を書くのは、提携先（国の許可を受けた人材紹介会社）の担当者です。送ってもらった内容はこの担当者が読みます。読まれたくない場合は、何も送らずにこのメッセージを読むだけで終わりにしてください。</div>
-        </div>
+        <div class="lm-msg">登録ありがとうございます！キャリアハックの<span data-name>りこ</span>です。<br><br>はじめに約束を3つだけ。<br>①こちらから電話はしません<br>②応募しなくて大丈夫です<br>③ブロックすれば終わり。罰則もありません</div>
+        <div class="lm-msg"><b>【有休の数え方】</b><br>1. 給与明細か勤怠システムで「有休の残り日数」を見る<br>2. 辞めたい日までの<b>出勤日</b>を数える（カレンダーの日数ではなく）<br>3. 残り日数のほうが多ければ、退職日を後ろにずらす相談を先にする</div>
+        <div class="lm-msg"><b>【求人票チェックシート12項目】</b><br>年間休日の実数／休日の内訳／みなし残業の時間数／超えた分の扱い／試用期間の条件／賞与の月数／昇給の仕組み／離職率／採用人数／配属先の人数／未経験の受け入れ実績／書いていない欄</div>
+        <div class="lm-msg">相談したいときは、気になる求人のスクショかURLをそのまま送ってください。<br><br>返事を書くのは、提携先（国の許可を受けた人材紹介会社）の担当者です。送ってもらった内容はこの担当者が読みます。読まれたくない場合は、何も送らずにこのメッセージを読むだけで終わりにしてください。</div>
       </div>
     </div>
     <p class="note">トーク画面のデザインはイメージです。文面は、登録直後に自動で届くものと同じです。</p>
-    <a class="cta" href="#" data-cta>この1通目を受け取る（無料）</a>
-    <p class="cta-after">返信しなくても、届いたものは読めます</p>
+  </details>
+</section>
+
+<!-- ============ 8 不安 → 大丈夫 ============ -->
+<section class="worry">
+  <div class="worry-card">
+    <p class="w-but">でも</p>
+    <p class="w-text">自分のケースで<br>聞いていいのか<b>不安…</b></p>
+    <div class="w-photo js-photo"><img class="js-header" alt="" width="900" height="1200" loading="lazy"><span class="ph-label">ヘッダー画像</span></div>
+  </div>
+  <div class="ok-card">
+    <p class="ok-big"><b>大丈夫！</b></p>
+    <p>まだ辞めると決めていなくても、<br>高卒・フリーターでも、<br>応募していない求人でも。</p>
+    <p class="ok-lead">最初の一言は<b>「まだ決めてません」</b>で足ります。</p>
   </div>
 </section>
 
-<!-- ============ 7 FAQ ============ -->
-<section id="faq">
-  <div class="wrap faq">
-    <h2>よくある質問</h2>
-    <details open><summary>Q 本当に無料ですか？</summary><div class="a">A 無料です。採用が決まったときに、提携先が求人企業から紹介手数料を受け取る仕組みで、あなたの負担はありません（職業安定法 第32条の3 第2項）。</div></details>
-    <details><summary>Q 今の会社にバレませんか？</summary><div class="a">A あなたの同意なく、今の会社へ連絡することはありません。担当者からの連絡はLINEの中だけです。</div></details>
-    <details><summary>Q 電話がかかってきたりしませんか？</summary><div class="a">A 担当者から電話をかけることはありません。電話で話したい場合だけ、つながりやすい時間帯を送ってください。お知らせを止めたいときは「停止」と送ってください。</div></details>
-    <details><summary>Q 途中でやめたら、違約金や罰則はありますか？</summary><div class="a">A ありません。相談の途中でも、応募や内定のあとに辞退しても、こちらから違約金や罰則を求めることはありません。ブロックしても同じです。</div></details>
-    <details><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 大丈夫です。決まっていない状態で聞きに来ていただくことを想定しています。求人を見ずに終わっても、催促はしません。</div></details>
-    <details><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A むしろ応募前のほうが選び直せます。見たあとで進めないと決めても、それで終わりです。他社エージェント経由の求人でも、見るだけなら支障ありません。</div></details>
-    <details><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A どちらも対象です。職務経歴書がまだ無くても、一から作るところから始められます。</div></details>
-    <details><summary>Q 氏名や連絡先はいりますか？</summary><div class="a">A 相談の段階では不要です。LINEの表示名と、送っていただいた内容は担当者に見えます。氏名と連絡先をうかがうのは、応募に進むと決めたあとからです。</div></details>
-    <details><summary>Q 顔を出して話すことになりますか？</summary><div class="a">A ビデオ通話は希望があればで、必須ではありません。文字のやり取りだけでも進みます。</div></details>
+<!-- ============ 9 相談でやること ============ -->
+<section class="inside">
+  <h2><b>LINE相談</b>では…</h2>
+  <ol class="inside-list">
+    <li><h3><i></i>「今の状況」と<br>「引っかかっていること」を聞く</h3>
+      <div class="ui chat"><p class="me">有休がどれだけ残ってるか分からなくて…</p><p class="you">給与明細の「有休残」の欄を見てみてください。数え方を送ります</p></div></li>
+    <li><h3><i></i>求人票の<br>「書いてない欄」を一緒に見る</h3>
+      <div class="ui list"><p><span>年間休日</span><b>○</b></p><p><span>みなし残業の時間数</span><b class="q">記載なし</b></p><p><span>賞与の月数</span><b class="q">記載なし</b></p><p><span>配属先の人数</span><b class="q">要確認</b></p></div></li>
+    <li><h3><i></i>進める・進めないは<br>あなたが決める</h3>
+      <div class="ui two"><span>話を進める</span><span>今回は見送る</span></div>
+      <p class="ui-cap">見送っても、催促はしません。</p></li>
+  </ol>
+  <div class="cta-block">
+    <p class="micro">＼ まずは今の状況を送るだけ ／</p>
+    <a class="btn-line wide" href="#" data-cta><span class="ico">LINE</span>無料で求人票を見てもらう</a>
+    <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
   </div>
 </section>
 
-<!-- ============ 8 最後のCTA + 出口 ============ -->
-<section class="final" id="last">
-  <div class="wrap">
-    <h2>決めてなくていいので、<br>1通目だけ受け取ってください</h2>
-    <ul class="final-tags"><li>無料</li><li>営業電話なし</li><li>罰則なし</li></ul>
-    <a class="cta" href="#" data-cta>LINEで無料で聞いてみる</a>
-    <p class="cta-after">聞くだけで終わっても、催促はしません</p>
-    <p class="consent">求人企業への推薦は、あなたの同意をいただいてからです。<a href="#privacy">個人情報の取り扱い</a></p>
+<!-- ============ 10 迷っている人へ ============ -->
+<section class="later">
+  <div class="later-head">
+    <p class="lh-q l">まだいいかな？</p><p class="lh-q r">今じゃないかも</p>
+    <h2><span class="band">もう少し考えてから…</span><br><span class="band">そう思ったあなたへ</span></h2>
   </div>
-</section>
-<section class="exit-box">
-  <div class="wrap">
-    <div class="exit">
-      <h3>今日はまだ、という人へ</h3>
-      <ul class="links">
-        <li id="exit-reel">この話をしたリール（Instagram ※リンク準備中）</li>
-        <li id="exit-profile"><span data-name>りこ</span>のプロフィール（Instagram ※リンク準備中）</li>
-      </ul>
-      <p class="note">リールとプロフィールは、LINEに登録しなくても見られます。</p>
-    </div>
+  <p class="later-lead">辞めたあとに気づいても、<br><mark>戻せないこと</mark>があります</p>
+  <ol class="later-list">
+    <li><span class="ln">01</span><h3>有休は、退職日を決めた時点で<b>取りこぼしが決まる</b></h3><p>出勤日が有休の残日数より少なければ、その差は使えません。数えるのは決める前です。</p>
+      <figure class="diagram">
+        <figcaption>例：有休15日・退職日までの出勤日10日</figcaption>
+        <div class="bar"><div class="seg used"><span>使える 10日</span></div><div class="seg lost"><span>5日</span></div></div>
+        <p class="legend"><span class="key used"></span>消化できる　<span class="key lost"></span>出勤日が足りず使えない</p>
+      </figure></li>
+    <li><span class="ln">02</span><h3>「続かなかった」は<b>あなたのせいじゃない</b></h3><p>高卒で就職した人の<b>36.9%</b>が、3年以内に最初の会社を辞めています（※2）。辞めたいと思うこと自体は、特別なことではありません。困るのは、順番を知らないまま動くことです。</p></li>
+    <li><span class="ln">03</span><h3>決めてなくても、<b>ひとりにしない</b></h3><p>聞くだけで終わってもOK。求人を見ずに終わっても、催促はしません。</p></li>
+  </ol>
+  <div class="timing">
+    <div class="tm-photo js-photo"><img class="js-header" alt="" width="900" height="1200" loading="lazy"><span class="ph-label">ヘッダー画像</span></div>
+    <p class="tm-1">辞める準備が整う日は<br><b>たぶん来ません</b></p>
+    <p class="tm-2"><span class="band">でも有休の残りは</span><br><span class="band">今日、数えられます！</span></p>
+  </div>
+  <div class="cta-block">
+    <p class="micro">＼ 決めてなくていい ／</p>
+    <a class="btn-line" href="#" data-cta><span class="ico">LINE</span>LINEで無料相談する</a>
+    <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
   </div>
 </section>
 
-<footer id="privacy">
-  <div class="wrap">
-    <h2 class="privacy-h">個人情報の取り扱いについて</h2>
+<!-- ============ 11 中の人 ============ -->
+<section class="people" id="people">
+  <div class="people-head">
+    <p class="ph-en">Who's inside</p>
+    <h2><small>このLINEの</small>中の人<br>紹介</h2>
+  </div>
+  <p class="people-lead"><span class="band">発信する人と</span><br><span class="band">返事を書く人は</span><br><span class="band">別の人です</span></p>
+  <div class="person">
+    <img class="p-face" data-face src="img/riko_face.jpg" alt="" width="96" height="96" loading="lazy">
+    <h3><span data-name>りこ</span></h3>
+    <p class="p-role">キャリアハック（Instagram）発信者</p>
+    <p>Instagramで転職の裏技を発信して、このLINEを案内しています。<b>求人の紹介はしません。</b></p>
+    <p class="p-links" id="exit-links" hidden></p>
+  </div>
+  <div class="person">
+    <span class="p-icon" aria-hidden="true">担</span>
+    <h3>提携人材紹介会社の担当者</h3>
+    <p class="p-role"><span data-partner>社名 ※確定後に記載</span>／<span data-permit>厚生労働大臣許可 ※確定後に記載</span></p>
+    <p>LINEで届いた相談に返事を書く人です。求人の紹介・書類の添削・日程調整はこの担当者が行います。</p>
+  </div>
+  <div class="person">
+    <span class="p-icon" aria-hidden="true">運</span>
+    <h3>運営会社</h3>
+    <p class="p-role"><span data-operator>社名 ※確定後に記載</span></p>
+    <p>キャリアハックのアカウントとこのページを運営しています。</p>
+  </div>
+</section>
+
+<!-- ============ 12 流れ ============ -->
+<section class="flow" id="flow">
+  <p class="big-en">Flow</p>
+  <h2 class="lined">相談の流れ</h2>
+  <ol class="flow-list">
+    <li><span class="fn">1</span><h3>LINEで友だち追加</h3><p>下のボタンから。相談の段階では本名はいりません。</p></li>
+    <li><span class="fn">2</span><h3>1通目がすぐ届く</h3><p>有休の数え方と求人票チェックシート。<br>読むだけで終わってOK。</p></li>
+    <li><span class="fn">3</span><h3>気になることを送る</h3><p>求人のスクショ・URL・会社名だけでも。<br>求人がなければ、今の状況をそのまま。</p></li>
+    <li><span class="fn">4</span><h3>担当者から返事</h3><p>見るところを書いて返します。<br>進める・進めないは、あなたが決めます。</p></li>
+  </ol>
+</section>
+
+<!-- ============ 13 FAQ ============ -->
+<section class="faq" id="faq">
+  <p class="big-en">FAQ</p>
+  <h2 class="lined">よくある質問</h2>
+  <details><summary>本当に無料ですか？</summary><div class="a">無料です。採用が決まったときに、提携先が求人企業から紹介手数料を受け取る仕組みで、あなたの負担はありません（職業安定法 第32条の3 第2項）。</div></details>
+  <details><summary>今の会社にバレませんか？</summary><div class="a">あなたの同意なく、今の会社へ連絡することはありません。担当者からの連絡はLINEの中だけです。</div></details>
+  <details><summary>電話がかかってきたりしませんか？</summary><div class="a">担当者から電話をかけることはありません。電話で話したい場合だけ、つながりやすい時間帯を送ってください。お知らせを止めたいときは「停止」と送ってください。</div></details>
+  <details><summary>途中でやめたら、違約金や罰則はありますか？</summary><div class="a">ありません。相談の途中でも、応募や内定のあとに辞退しても、こちらから違約金や罰則を求めることはありません。ブロックしても同じです。</div></details>
+  <details><summary>まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">大丈夫です。決まっていない状態で聞きに来ていただくことを想定しています。求人を見ずに終わっても、催促はしません。</div></details>
+  <details><summary>応募していない求人でもいいですか？</summary><div class="a">むしろ応募前のほうが選び直せます。見たあとで進めないと決めても、それで終わりです。他社エージェント経由の求人でも、見るだけなら支障ありません。</div></details>
+  <details><summary>高卒・フリーターでも対象ですか？</summary><div class="a">どちらも対象です。職務経歴書がまだ無くても、一から作るところから始められます。</div></details>
+  <details><summary>氏名や連絡先はいりますか？</summary><div class="a">相談の段階では不要です。LINEの表示名と、送っていただいた内容は担当者に見えます。氏名と連絡先をうかがうのは、応募に進むと決めたあとからです。</div></details>
+  <details><summary>顔を出して話すことになりますか？</summary><div class="a">ビデオ通話は希望があればで、必須ではありません。文字のやり取りだけでも進みます。</div></details>
+</section>
+
+<!-- ============ 14 最後のCTA ============ -->
+<section class="cta-block last" id="last">
+  <p class="micro">＼ 決めてなくていいので、1通目だけ ／</p>
+  <a class="btn-line wide" href="#" data-cta><span class="ico">LINE</span>無料で1通目を受け取る<i class="tri"></i></a>
+  <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
+  <p class="consent">求人企業への推薦は、あなたの同意をいただいてからです。<a href="#privacy">個人情報の取り扱い</a></p>
+</section>
+
+<footer class="foot" id="privacy">
+  <p class="f-h">運営</p>
+  <p class="f-name"><span data-operator>運営会社（社名 ※確定後に記載）</span></p>
+  <p class="f-sub">相談対応：<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span></p>
+
+  <details class="f-priv">
+    <summary>個人情報の取り扱い</summary>
     <p><strong>キャリアハック</strong>は、<span data-operator>当社（運営会社 ※社名は確定後に記載）</span>が運営するInstagramのアカウントです。<strong>りこ・みな</strong>はキャリアハックで発信している人で、LINEを案内しています。実際のご相談に対応するのは、<strong>①提携人材紹介会社の担当者</strong>です。</p>
     <p><strong>①の担当者が読むことへの同意は、LINEの1通目でお示しし、そこで確認します。</strong>送っていただいた求人票・ご相談内容・在職状況は、この担当者が読みます。登録しただけの段階では、担当者に送られるものはありません。</p>
     <p><strong>②求人企業へのご推薦に進むときは、提供先・提供項目をあらためてお示しし、ご本人の同意をいただいてから提供します。</strong>同意がなければ、ご相談だけで終わりです。</p>
-    <p>これとは別に、LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・このページで選んだ項目・流入経路が記録されます。</p>
+    <p>これとは別に、LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・流入経路が記録されます。</p>
     <dl class="partner">
       <dt>提供先</dt><dd>①<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span>＝ご相談の対応<br>②①を通じてご推薦する求人企業＝同意のあと</dd>
       <dt>許可番号</dt><dd data-permit>（厚生労働大臣許可 ※確定後に記載）</dd>
-      <dt>①へ渡るもの<br>（相談の段階）</dt><dd>LINEの表示名／ご相談内容／送っていただいた求人票／在職状況／このページで選んだ項目</dd>
-      <dt>②へ渡るもの<br>（推薦のとき・同意のあと）</dt><dd>氏名／連絡先／希望条件／職務経歴</dd>
+      <dt>①へ渡るもの（相談の段階）</dt><dd>LINEの表示名／ご相談内容／送っていただいた求人票／在職状況</dd>
+      <dt>②へ渡るもの（推薦のとき・同意のあと）</dt><dd>氏名／連絡先／希望条件／職務経歴</dd>
       <dt>提供の方法</dt><dd>電磁的記録の送信</dd>
     </dl>
     <p>許可番号は、厚生労働省「人材サービス総合サイト」の事業所検索で確認できます。</p>
-  </div>
+  </details>
+
+  <ol class="sources" id="sources">
+    <li>※1 職業安定法 第32条の3 第2項。人材紹介会社は原則として求職者から手数料を受け取れません。費用は採用した企業が払います。</li>
+    <li>※2 厚生労働省「新規学卒就職者の離職状況（令和5年3月卒業者）」2026年10月23日公表。大学卒は31.2%。</li>
+  </ol>
+  <p class="copy">© キャリアハック</p>
 </footer>
 
+<!-- 追従CTA -->
 <div class="sticky" id="sticky">
-  <div class="wrap">
-    <p class="consent priv"><span class="picked" id="picked" hidden></span><a href="#privacy">個人情報の取り扱い</a></p>
-    <a class="cta" href="#" data-cta>LINEで無料で聞いてみる</a>
-    <p class="cta-after">無料・営業電話なし・罰則なし</p>
+  <p class="micro">＼ 求人票1枚から見てもらえる ／</p>
+  <a class="btn-line" href="#" data-cta><span class="ico">LINE</span>LINEで無料相談する</a>
+</div>
+
+<!-- 離脱前のポップアップ（ページの後半で上に戻ったとき、1回だけ） -->
+<div class="pop" id="pop" hidden>
+  <div class="pop-card" role="dialog" aria-modal="true" aria-labelledby="pop-h">
+    <button type="button" class="pop-x" data-close aria-label="閉じる">×</button>
+    <div class="pop-photo js-photo"><img class="js-header" alt="" width="900" height="1200" loading="lazy"><span class="ph-label">ヘッダー画像</span></div>
+    <p class="pop-ribbon">LINE登録で受け取れます</p>
+    <p class="pop-h" id="pop-h"><small>応募する前に見る</small><b>求人票チェック</b><span>シート12項目</span></p>
+    <p class="pop-s">登録してすぐ届きます。<b>読むだけで終わってOK。</b></p>
+    <div class="pop-btns">
+      <a class="pb-go" href="#" data-cta>無料で<br>受け取る</a>
+      <button type="button" class="pb-later" data-close>あとで<small>このまま閉じる</small></button>
+    </div>
   </div>
 </div>
 
@@ -288,16 +424,27 @@
   var q = new URLSearchParams(location.search);
 
   // ---- 演者名・顔 ----
-  var names = document.querySelectorAll('[data-name]');
-  for (var n = 0; n < names.length; n++) names[n].textContent = acc.name;
-  var faces = document.querySelectorAll('img[data-face]');
-  for (var f = 0; f < faces.length; f++) faces[f].src = acc.face;
+  var i, els;
+  els = document.querySelectorAll('[data-name]');
+  for (i = 0; i < els.length; i++) els[i].textContent = acc.name;
+  els = document.querySelectorAll('img[data-face]');
+  for (i = 0; i < els.length; i++) els[i].src = acc.face;
+
+  // ---- 女性ヘッダー（全アカウント共通の1枚）。読めなければ差し替え枠のまま ----
+  els = document.querySelectorAll('img.js-header');
+  for (i = 0; i < els.length; i++) {
+    (function (img) {
+      img.onload = function () { img.parentNode.classList.add('has-img'); };
+      img.onerror = function () { img.parentNode.classList.remove('has-img'); };
+      img.src = C.header;
+    })(els[i]);
+  }
 
   // ---- 確定後に入る社名・許可番号 ----
   function fill(sel, val) {
     if (!val) return;
-    var els = document.querySelectorAll(sel);
-    for (var i = 0; i < els.length; i++) els[i].textContent = val;
+    var e = document.querySelectorAll(sel);
+    for (var k = 0; k < e.length; k++) e[k].textContent = val;
   }
   fill('[data-operator]', C.operator);
   fill('[data-partner]', C.partner);
@@ -308,103 +455,100 @@
     try {
       var x = new URL(u);
       if (x.protocol !== 'https:') return false;
-      for (var i = 0; i < C.lineHosts.length; i++) {
-        var h = C.lineHosts[i];
+      for (var k = 0; k < C.lineHosts.length; k++) {
+        var h = C.lineHosts[k];
         if (x.hostname === h || x.hostname.slice(-(h.length + 1)) === '.' + h) return true;
       }
     } catch (e) {}
     return false;
   }
-  var lineUrl = acc.line;
+  var href = acc.line;
   var override = q.get('line');
-  if (override && okLine(override)) lineUrl = override;
-
-  // ---- 悩みの選択（5択に実在する値だけ通す） ----
-  var buttons = document.querySelectorAll('.pick button');
-  var selected = q.get('worry') || '';
-  var goTo = '';
-  for (var b = 0; b < buttons.length; b++) {
-    if (buttons[b].getAttribute('data-worry') === selected) {
-      goTo = buttons[b].getAttribute('data-go');
-      buttons[b].setAttribute('aria-pressed', 'true');
-    }
+  if (override && okLine(override)) href = override;
+  if (C.appendParams) {
+    var h = href.indexOf('#');
+    var hash = h > -1 ? href.slice(h) : '';
+    var base = h > -1 ? href.slice(0, h) : href;
+    href = base + (base.indexOf('?') > -1 ? '&' : '?') + 'src=' + encodeURIComponent(key) + hash;
   }
-  if (!goTo) selected = '';
+  els = document.querySelectorAll('a[data-cta]');
+  for (i = 0; i < els.length; i++) els[i].setAttribute('href', href);
 
-  var GO_LABEL = {
-    leave:  '→ その話はここ（有休と退職日の順番）',
-    money:  '→ その話はここ（失業手当が振り込まれる時期）',
-    sheet:  '→ その話はここ（求人票の落とし穴4つ）',
-    accept: '→ その話はここ（内定から承諾まで）',
-    first:  '→ 求人を送るとどうなるか（届く1通目）'
-  };
-
-  var form = document.getElementById('lp-params');
-  var links = document.querySelectorAll('a[data-cta]');
-  var pickedEl = document.getElementById('picked');
-  var gotoEl = document.getElementById('goto');
-  var gotoA = document.getElementById('goto-a');
-
-  function apply() {
-    form.elements['src'].value = key;
-    form.elements['worry'].value = selected;
-    pickedEl.textContent = selected ? '✓ ' + selected : '';
-    pickedEl.hidden = !selected;
-    if (goTo && GO_LABEL[goTo]) {
-      gotoA.textContent = GO_LABEL[goTo];
-      gotoA.setAttribute('href', '#' + goTo);
-      gotoEl.hidden = false;
-    } else {
-      gotoEl.hidden = true;
-    }
-    var href = lineUrl;
-    if (C.appendParams) {
-      var add = 'src=' + encodeURIComponent(key);
-      if (selected) add += '&worry=' + encodeURIComponent(selected);
-      var h = href.indexOf('#');
-      var hash = h > -1 ? href.slice(h) : '';
-      var base = h > -1 ? href.slice(0, h) : href;
-      href = base + (base.indexOf('?') > -1 ? '&' : '?') + add + hash;
-    }
-    for (var i = 0; i < links.length; i++) links[i].setAttribute('href', href);
-  }
-
-  // ---- 追従バー: FVを過ぎたら出す ----
-  var sticky = document.getElementById('sticky');
-  var fvCta = document.querySelector('.fv .cta');
-  function onScroll() {
-    var past = fvCta.getBoundingClientRect().bottom < 0;
-    sticky.className = past ? 'sticky on' : 'sticky';
-  }
-
-  for (var j = 0; j < buttons.length; j++) {
-    buttons[j].addEventListener('click', function () {
-      for (var k = 0; k < buttons.length; k++) buttons[k].setAttribute('aria-pressed', 'false');
-      this.setAttribute('aria-pressed', 'true');
-      selected = this.getAttribute('data-worry');
-      goTo = this.getAttribute('data-go');
-      apply();
-      // 出てきたリンクが追従バーの裏に入らないように
-      var r = document.querySelector('.talk').getBoundingClientRect();
-      var top = sticky.classList.contains('on') ? sticky.getBoundingClientRect().top : window.innerHeight;
-      if (r.bottom > top) window.scrollBy({ top: r.bottom - top + 12, behavior: 'smooth' });
-    });
-  }
-
-  // ---- 出口のリンク（Instagram） ----
-  function exitLink(id, url, label) {
+  // ---- Instagram（未設定なら出さない） ----
+  var ex = document.getElementById('exit-links');
+  function addLink(url, label) {
     if (!url) return;
-    var li = document.getElementById(id);
     var a = document.createElement('a');
-    a.href = url; a.target = '_blank'; a.rel = 'noopener';
-    a.textContent = label;
-    li.textContent = '';
-    li.appendChild(a);
+    a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = label;
+    ex.appendChild(a); ex.hidden = false;
   }
-  exitLink('exit-reel', acc.reel, 'この話をしたリール（Instagram）');
-  exitLink('exit-profile', acc.profile, acc.name + 'のプロフィール（Instagram）');
+  addLink(acc.reel, 'この話をしたリール');
+  addLink(acc.profile, acc.name + 'のプロフィール');
 
-  apply();
+  // ---- カルーセル ----
+  var cars = document.querySelectorAll('[data-carousel]');
+  for (i = 0; i < cars.length; i++) {
+    (function (car) {
+      var track = car.querySelector('.cs-track');
+      var items = track.children;
+      var dots = car.querySelector('.dots');
+      for (var k = 0; k < items.length; k++) dots.appendChild(document.createElement('i'));
+      function idx() {
+        var w = items[0].getBoundingClientRect().width + 12;
+        return Math.max(0, Math.min(items.length - 1, Math.round(track.scrollLeft / w)));
+      }
+      function mark() {
+        var n = idx();
+        for (var k = 0; k < dots.children.length; k++) dots.children[k].className = k === n ? 'on' : '';
+      }
+      function go(d) {
+        var n = (idx() + d + items.length) % items.length;
+        track.scrollTo({ left: items[n].offsetLeft - items[0].offsetLeft, behavior: 'smooth' });
+      }
+      car.querySelector('.prev').addEventListener('click', function () { go(-1); });
+      car.querySelector('.next').addEventListener('click', function () { go(1); });
+      track.addEventListener('scroll', mark, { passive: true });
+      mark();
+    })(cars[i]);
+  }
+
+  // ---- 追従CTA: 最初のCTAを過ぎたら出す。最後のCTAが見えている間は隠す ----
+  var sticky = document.getElementById('sticky');
+  var firstCta = document.querySelector('.first-cta .btn-line');
+  var lastCta = document.getElementById('last');
+
+  // ---- 離脱前ポップアップ: ページの半分より下まで読んだあと、大きく上へ戻したら1回だけ ----
+  var pop = document.getElementById('pop');
+  var seen = false;
+  try { seen = sessionStorage.getItem('lp_pop') === '1'; } catch (e) {}
+  var deepest = 0, lastY = window.scrollY;
+  function openPop() {
+    seen = true;
+    try { sessionStorage.setItem('lp_pop', '1'); } catch (e) {}
+    pop.hidden = false;
+    document.body.classList.add('pop-open');
+  }
+  function closePop() {
+    pop.hidden = true;
+    document.body.classList.remove('pop-open');
+  }
+  els = pop.querySelectorAll('[data-close]');
+  for (i = 0; i < els.length; i++) els[i].addEventListener('click', closePop);
+  pop.addEventListener('click', function (e) { if (e.target === pop) closePop(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) closePop(); });
+
+  function onScroll() {
+    var y = window.scrollY;
+    var past = firstCta.getBoundingClientRect().bottom < 0;
+    var lr = lastCta.getBoundingClientRect();
+    var atLast = lr.top < window.innerHeight && lr.bottom > 0;
+    sticky.className = past && !atLast ? 'sticky on' : 'sticky';
+
+    var half = (document.documentElement.scrollHeight - window.innerHeight) * 0.5;
+    if (y > deepest) deepest = y;
+    if (!seen && deepest > half && lastY - y > 0 && deepest - y > window.innerHeight * 1.5) openPop();
+    lastY = y;
+  }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
