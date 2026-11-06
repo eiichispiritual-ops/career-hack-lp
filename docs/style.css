@@ -225,7 +225,8 @@ p { margin: 0 0 14px; }
    →顔を横に置く。高さを使わずに顔が出る。 */
 .fv-img { display: none; }
 .fv-head { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; }
-.fv-head img {
+/* noscript内のimgも同じ見た目にする（JS無効時はこちらだけが描画される） */
+.fv-head img, .fv-head noscript img {
   width: 84px; height: 84px; flex: 0 0 84px;
   border-radius: 50%; object-fit: cover; object-position: center 30%;
   background: var(--bg-soft);
