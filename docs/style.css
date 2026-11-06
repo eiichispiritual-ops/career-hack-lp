@@ -23,9 +23,11 @@
   --radius-pill: 999px;
   --gutter: 16px;           /* 全23社が左右16px前後 */
   --maxw: 420px;
-  --sticky-h: 72px;         /* 追従バーの高さ。本文末尾の余白に使う */
+  /* 2026-11-06 修正(深刻度2): 宣言72pxに対し実測138px。差の50pxでfooter最終行
+     （許可番号の確認先＝法務上もっとも隠してはいけない行）が追従バーに隠れていた */
+  --sticky-h: 138px;
 
-  --fs-fv: 28px;
+  --fs-fv: 25px;
   --fs-h2: 22px;
   --fs-body: 15px;
   --fs-note: 11px;
@@ -47,7 +49,7 @@ body {
   font-size: var(--fs-body);
   line-height: 1.75;        /* 日本語は1.7以上でないと詰まって見える */
   -webkit-text-size-adjust: 100%;
-  padding-bottom: calc(var(--sticky-h) + 16px); /* 追従バーに隠れない */
+  padding-bottom: calc(var(--sticky-h) + 16px + env(safe-area-inset-bottom)); /* 追従バー+iOSのホームバー分 */
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -157,7 +159,7 @@ p { margin: 0 0 14px; }
 
 /* LINE風チャット（C12 FV型 + C9の登録後プレビュー型） */
 /* 採点#5対応: 水色#7a9fc4は紺・生成りの2色設計から浮くため、アクセントの明度違いに寄せた */
-.talk { background: #3d5173; border-radius: var(--radius); padding: 14px 12px; }
+.talk { background: #3d5173; border-radius: var(--radius); padding: 11px 10px; }
 .talk .bubble {
   background: #fff; border-radius: 14px; padding: 10px 13px;
   font-size: 14px; line-height: 1.6; display: inline-block;
@@ -167,7 +169,7 @@ p { margin: 0 0 14px; }
 .talk .time { font-size: 10px; color: rgba(255,255,255,.85); }
 
 /* 悩みタップ（FVの入口。「相談」は決断、「選択」は決断でない） */
-.pick { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.pick { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
 .pick button {
   width: 100%; text-align: left; padding: 13px 14px;
   border: 2px solid #fff; border-radius: var(--radius-pill);
@@ -216,9 +218,10 @@ p { margin: 0 0 14px; }
 /* 採点5周目#2対応: 3/4(520px)だと5択が1つも初見に入らず「入口が見えないFV」になっていた。
    1/1(390px)に縮めて、見出し→吹き出し→ボタン上部までを844px内に収める */
 /* 採点8周目#3対応: 顔写真を主役から降ろし、会話を主役にする */
-.fv-img { width: 100%; aspect-ratio: 16 / 10; background: var(--bg-soft); overflow: hidden; }
-.fv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
-.fv-card { background: #fff; border-radius: var(--radius); margin-top: -28px; position: relative; padding: 18px 14px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+/* ブラインド採点対応: CTAが初見(844px)に入らなかったため16/7まで圧縮 */
+.fv-img { width: 100%; aspect-ratio: 16 / 7; background: var(--bg-soft); overflow: hidden; }
+.fv-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
+.fv-card { background: #fff; border-radius: var(--radius); margin-top: -28px; position: relative; padding: 14px 14px 14px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
 .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 12px; border: 1px solid var(--accent); border-radius: var(--radius-pill); color: var(--accent); margin: 0 0 10px; }
 .fv h1 { font-size: var(--fs-fv); line-height: 1.4; margin: 0 0 8px; font-weight: 800; }
 .fv .lead-sub { font-size: 14px; color: var(--fg-sub); margin: 0 0 10px; }

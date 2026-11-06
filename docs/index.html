@@ -16,7 +16,7 @@
 <section class="fv">
   <!-- 画像: AI生成の顔出し写真(2026-11-06 ユーザー判断)。?src=mina のとき mina_face.png に差し替え、無ければ riko_face.png -->
   <div class="fv-img">
-    <img id="face" src="img/riko_face.jpg" width="900" height="1200" alt="" loading="eager" decoding="async">
+    <img id="face" src="img/riko_face.jpg" width="840" height="1120" alt="" loading="eager" decoding="async">
   </div>
   <div class="wrap">
     <div class="fv-card">
@@ -117,7 +117,9 @@
       </thead>
       <tbody>
         <tr><th scope="row">求人の探し方</th><td><span class="x">△</span><span class="sub">条件で絞って自分で選ぶ</span></td><td><span class="o">○</span><span class="sub">条件の裏側（休日の数え方・残業の実態）から一緒に絞る</span></td></tr>
-        <tr><th scope="row">休日・残業・離職率</th><td><span class="x">△</span><span class="sub">書き方で分からない、見落としやすい、求人票には載っていない</span></td><td><span class="o">○</span><span class="sub">書き方から読み分けて、必ず確認する。調べ方を使って確かめる</span></td></tr>
+        <!-- 2026-11-06 修正: 離職率はこの表の1スクロール前で「自分で確かめられる」と明言済み。
+             ここで△にすると、売るために前言を撤回したように読める。離職率を行から外した -->
+        <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書き方で分からない、見落としやすい</span></td><td><span class="o">○</span><span class="sub">書き方から読み分けて、必ず確認する。調べ方を使って確かめる</span></td></tr>
         <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを見て直す</span></td></tr>
         <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">代わりに調整する</span></td></tr>
         <tr><th scope="row">辞め方・引き継ぎ</th><td><span class="x">△</span><span class="sub">調べて自分で判断する</span></td><td><span class="o">○</span><span class="sub">順番を一緒に決める</span></td></tr>
@@ -134,13 +136,20 @@
 <!-- ============ 5 登録後に届くもの ============ -->
 <section id="inbox">
   <div class="wrap">
-    <h2>登録したら、これが届きます</h2>
-    <p>押したあとに何が起きるか、先に全部見せます。</p>
+    <!-- 2026-11-06 修正: 「これ」を指す実機スクショが未撮影のため、見出しも実態に合わせた。
+         撮影後に「登録したら、これが届きます」へ戻すこと -->
+    <h2>登録したあとに起きること</h2>
+    <!-- 2026-11-06 修正: 実機スクショ3枚が未撮影の状態で「全部見せます」と書くと、
+         本文がこのページで唯一の嘘になる。スクショが入るまでは実態に合わせた文言にする。
+         撮影後に「押したあとに何が起きるか、先に全部見せます。」へ戻すこと -->
+    <p>押したあとに何が起きるかを、順番に書いておきます。</p>
     <p class="flow"><span>①届く</span><span>②送る・書く</span><span>③返ってくる</span></p>
     <!-- IMG(実機スクショ): 1通目トーク画面 / 求人票を送っている画面 / 返ってきた画面。実機LINEで撮影、AI生成・合成は禁止。img/line_1.png line_2.png line_3.png -->
     <ul class="checks">
       <li>トークの内容は、他の人には見えません</li>
-      <li>名前はLINEの表示名のままでOK。本名を入れる場所はありません</li>
+      <!-- 2026-11-06 修正: フッターの提供項目に「氏名」があるため、無条件の断定は矛盾する。
+           相談の段階に限定して射程を狭めた -->
+      <li>名前はLINEの表示名のままでOK。相談の段階で本名を入れる場所はありません</li>
       <li>返信しなくても、届いたものは読めます</li>
       <li>見てもらったあと、応募しなくていいです</li>
     </ul>
@@ -195,22 +204,22 @@
 <section id="faq">
   <div class="wrap faq">
     <h2>よくある質問</h2>
-    <details open><summary>Q 今の会社にバレませんか？</summary><div class="a">A こちらから今の会社へ連絡することはありません。連絡はLINEのみです。</div></details>
-    <details open><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 決まっていない人のほうが多いです。聞くだけで終わってかまいません。</div></details>
-    <details open><summary>Q 相談だけでもいいですか？</summary><div class="a">A はい。求人を見ずに終わっても問題ありません。</div></details>
-    <details open><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A その方が多いです。応募前のほうが選び直せます。</div></details>
-    <details open><summary>Q 他社のエージェント経由の求人でもいいですか？</summary><div class="a">A 見るだけなら問題ありません。応募の進め方は、そのエージェントの流れを優先してください。</div></details>
-    <details open><summary>Q 見てもらったら、応募しなきゃダメですか？</summary><div class="a">A 不要です。見た結果、やめた人もいます。</div></details>
-    <details open><summary>Q スクショでもいいですか？</summary><div class="a">A スクショでもURLでも、会社名だけでも見られます。</div></details>
-    <details open><summary>Q 何件まで見てもらえますか？</summary><div class="a">A 件数の上限は決めていません。1件でも、3件並べてでも大丈夫です。</div></details>
-    <details open><summary>Q しつこく連絡が来ませんか？</summary><div class="a">A 返信がなければ追いかけません。配信を止めたいときは「停止」と送ってください。</div></details>
-    <details open><summary>Q 本当に無料ですか？</summary><div class="a">A 無料です。採用が決まったときに、企業側から紹介手数料をいただく仕組みです。</div></details>
-    <details open><summary>Q 電話がかかってきますか？</summary><div class="a">A まずLINEのテキストです。電話で話したい方は、つながりやすい時間帯を教えてください。</div></details>
-    <details open><summary>Q 何を準備すればいいですか？</summary><div class="a">A 何もいりません。職務経歴書は、なければ一緒に作ります。</div></details>
-    <details open><summary>Q オンラインで話すとき、どんな格好ですか？</summary><div class="a">A 部屋着でもスッピンでも平気です。カメラを切ったままでもできます。</div></details>
-    <details open><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A 対象です。経歴を先に整えてから来る必要はありません。</div></details>
-    <details open><summary>Q 送るときに個人情報はいりますか？</summary><div class="a">A 求人票を見るだけなら不要です。お仕事のご紹介に進みたいときに、送り先をうかがいます。</div></details>
-    <details open><summary>Q 入力した情報はどこへ行きますか？</summary><div class="a">A お仕事のご紹介のため、提携する人材紹介会社へ提供します。提供をご希望されない場合はLINEでお知らせください。その場合もご相談のみ承ります。</div></details>
+    <details open><summary>Q 今の会社にバレませんか？</summary><div class="a">A 当社および提携先から、今の会社へ連絡することはありません。連絡はLINEのみです。</div></details>
+    <details><summary>Q まだ辞めると決めていなくても大丈夫ですか？</summary><div class="a">A 決まっていない人のほうが多いです。聞くだけで終わってかまいません。</div></details>
+    <details><summary>Q 相談だけでもいいですか？</summary><div class="a">A はい。求人を見ずに終わっても問題ありません。</div></details>
+    <details><summary>Q 応募していない求人でもいいですか？</summary><div class="a">A その方が多いです。応募前のほうが選び直せます。</div></details>
+    <details><summary>Q 他社のエージェント経由の求人でもいいですか？</summary><div class="a">A 見るだけなら問題ありません。応募の進め方は、そのエージェントの流れを優先してください。</div></details>
+    <details><summary>Q 見てもらったら、応募しなきゃダメですか？</summary><div class="a">A 不要です。見た結果、やめた人もいます。</div></details>
+    <details><summary>Q スクショでもいいですか？</summary><div class="a">A スクショでもURLでも、会社名だけでも見られます。</div></details>
+    <details><summary>Q 何件まで見てもらえますか？</summary><div class="a">A いまのところ上限は設けていません。1件でも、3件並べてでも大丈夫です。</div></details>
+    <details><summary>Q しつこく連絡が来ませんか？</summary><div class="a">A 個別の電話や催促はしません。お知らせの配信は自動で届きます。止めたいときは「停止」と送ってください。</div></details>
+    <details><summary>Q 本当に無料ですか？</summary><div class="a">A 無料です。採用が決まったときに、企業側から紹介手数料をいただく仕組みです。</div></details>
+    <details><summary>Q 電話がかかってきますか？</summary><div class="a">A まずLINEのテキストです。電話で話したい方は、つながりやすい時間帯を教えてください。</div></details>
+    <details><summary>Q 何を準備すればいいですか？</summary><div class="a">A 何もいりません。職務経歴書は、なければ一緒に作ります。</div></details>
+    <details><summary>Q オンラインで話すとき、どんな格好ですか？</summary><div class="a">A 部屋着でもスッピンでも平気です。カメラを切ったままでもできます。</div></details>
+    <details><summary>Q 高卒・フリーターでも対象ですか？</summary><div class="a">A 対象です。経歴を先に整えてから来る必要はありません。</div></details>
+    <details><summary>Q 送るときに個人情報はいりますか？</summary><div class="a">A 求人票を見るだけなら不要です。お仕事のご紹介に進みたいときに、送り先をうかがいます。</div></details>
+    <details><summary>Q 入力した情報はどこへ行きますか？</summary><div class="a">A お仕事のご紹介のため、提携する人材紹介会社へ提供します。提供をご希望されない場合はLINEでお知らせください。その場合もご相談のみ承ります。</div></details>
   </div>
 </section>
 
@@ -229,9 +238,13 @@
       <h3>今日はまだ、という人へ</h3>
       <p>いま決めなくていいです。</p>
       <ul class="links">
-        <!-- リンク先URLは未確定(要確認) -->
-        <li><a href="#">この話をしたリールを見る</a></li>
-        <li><a href="#"><span data-name>りこ</span>のプロフィールを見る</a></li>
+        <!-- 要確認: リールURL・プロフィールURLが確定するまでリンク化しない。
+             href="#" のままにすると、押しても何も起きない行き止まりになり、
+             「今日は登録しない人の出口」として機能しないため。
+             URL確定後は <a href="https://www.instagram.com/..."> に差し替える。
+             出口リンクには data-cta を付けないこと（?src=&worry= がInstagram側で無意味なクエリになる） -->
+        <li>この話をしたリール（Instagram ※リンク準備中）</li>
+        <li><span data-name>りこ</span>のプロフィール（Instagram ※リンク準備中）</li>
       </ul>
       <a class="cta-sub" href="#" data-cta>チェックシートだけ受け取る</a>
       <p class="note">辞める前にやること／求人票の見方チェックシート（読むだけ・返信なしでOK）</p>
@@ -286,7 +299,15 @@
   function swap(id, file, fallback) {
     var img = document.getElementById(id);
     if (!img || who === 'riko') return;
-    img.onerror = function () { img.onerror = null; img.src = fallback; };
+    // 2026-11-06 修正(深刻度1): 画像だけ差し戻すと「みな」と名乗りながら「りこ」の顔が出る。
+    // 担当者の顔と名前が食い違うのは信頼の根幹が崩れるので、顔が戻るなら名前も戻す。
+    img.onerror = function () {
+      img.onerror = null;
+      img.src = fallback;
+      var ns = document.querySelectorAll('[data-name]');
+      for (var m = 0; m < ns.length; m++) ns[m].textContent = 'りこ';
+      img.setAttribute('alt', 'りこ');
+    };
     img.src = file;
   }
   swap('face', 'img/mina_face.jpg', 'img/riko_face.jpg');
@@ -297,7 +318,8 @@
   // ---- hidden input と CTA href への引き継ぎ ----
   var form = document.getElementById('lp-params');
   var links = document.querySelectorAll('a[data-cta]');
-  var selected = '';
+  // URLに worry があれば復元する（戻る・リロードで選択が消えないように）
+  var selected = q.get('worry') || '';
 
   function apply() {
     form.elements['src'].value = src;
@@ -323,6 +345,17 @@
       selected = this.getAttribute('data-worry');
       apply();
     });
+  }
+  // 2026-11-06 修正(深刻度1): CTAを押す→戻る/リロードで、選んだ悩みが消えていた。
+  // JSは起動時に ?src= しか読まず ?worry= を読み戻さないため、選択が初期化されていた。
+  // FVの「選ばせて心理的ハードルを下げる」設計が、押した瞬間に無に帰す状態だった。
+  if (selected) {
+    for (var k = 0; k < buttons.length; k++) {
+      if (buttons[k].getAttribute('data-worry') === selected) {
+        buttons[k].setAttribute('aria-pressed', 'true');
+        break;
+      }
+    }
   }
   apply();
 
