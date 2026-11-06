@@ -34,7 +34,7 @@
         </script>
         <noscript><img src="img/riko_face.jpg" width="840" height="1120" alt="りこ"></noscript>
         
-        <p class="who"><b><span data-name>りこ</span></b>キャリアハック（Instagram）</p>
+        <p class="who"><b><span data-name>りこ</span>（キャリアハック）</b>このリールを出しています</p>
       </div>
       <p class="pill">20代・高卒・未経験でもOK</p>
       
@@ -47,15 +47,18 @@
         
         <div class="bubble me">いちばん近いのはこれです</div>
         <div class="pick" role="group" aria-label="いま気になっていること">
-          <button type="button" aria-pressed="false" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
-          <button type="button" aria-pressed="false" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
-          <button type="button" aria-pressed="false" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
-          <button type="button" aria-pressed="false" data-worry="気になる求人がある">気になる求人がある</button>
-          <button type="button" aria-pressed="false" data-worry="求人票の見方を覚えたい">求人票の見方を覚えたい</button>
+          <!-- data-go: 選んだ悩みに答えている節へ送る。選ばせるだけで何も起きないと飾りになる -->
+          <button type="button" aria-pressed="false" data-go="loss" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
+          <button type="button" aria-pressed="false" data-go="loss" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
+          <button type="button" aria-pressed="false" data-go="accept" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
+          <button type="button" aria-pressed="false" data-go="inbox" data-worry="気になる求人がある">気になる求人がある</button>
+          <button type="button" aria-pressed="false" data-go="sheet" data-worry="求人票の見方を覚えたい">求人票の見方を覚えたい</button>
         </div>
+        <!-- 選んだ悩みに答えている節へのリンク。勝手にスクロールすると5択を選び直せなく
+             なるのでリンクにする。追従バーの裏に隠れないよう5択の直後に置く -->
+        <p class="goto" id="goto" hidden><a href="#" id="goto-a"></a></p>
       </div>
       <p class="pick-sub">どれでもない人も、そのまま聞けます</p>
-      
       <p class="consent">求人企業への推薦は同意のあと。<a href="#privacy">個人情報の取り扱い</a></p>
     <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
     <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
@@ -70,7 +73,7 @@
     <p>さっきの有休もこれです。順番と時期を知らないまま進めると、あとで取り返せません。残り2つも先に置いておきます。</p>
     <ol class="lost">
       <li><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。順番はこれだけ。</strong></p></li>
-      <li><span class="no">02</span><h3>離職票は、自分から言わないと遅れる</h3><p>これはハローワークでの手続きに必要になる書類で、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と一言。それだけで変わります。</p></li>
+      <li><span class="no">02</span><h3>辞めたあと届く書類は、自分から言わないと遅れる</h3><p>受け取るのは主に3つ。<strong>離職票</strong>（ハローワークの手続きに使う）、<strong>雇用保険被保険者証</strong>と<strong>源泉徴収票</strong>（次の会社に出す）です。どれも郵送で後日になることが多く、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と一言。それだけで変わります。</p></li>
       <li><span class="no">03</span><h3>失業手当は、辞めてすぐには振り込まれない</h3><p>自己都合で辞めた場合、失業手当は申請してすぐには振り込まれません。待期と給付制限の期間があり、その分は自分の蓄えで持たせることになります（期間は退職の理由や回数で変わるので、ハローワークで自分の場合を確認してください）。<strong>在職中なら、条件が合わなければ今の会社に留まる、という選択が残ります。</strong></p></li>
     </ol>
     <p><strong>ここまでは、知っていれば自分でできます。</strong></p>
@@ -108,11 +111,11 @@
       <li><h3>「年間休日120日以上」の「以上」を見る</h3><p>「以上」と書いてあるとき、約束されているのは下限の120日だけです。実際が125日でも120日でも、この書き方は成立します。120日はだいたい土日祝が休みの計算で、110日なら月1回は土曜出勤がある計算になります。</p></li>
       <li><h3>「みなし残業」は、何時間分かを見る</h3><p>固定残業代・みなし残業と書いてある場合、何時間分が含まれているかは本来明示される項目です。たとえば「固定残業代45時間分を含む」なら、45時間までは働く前提で給与が組まれています。<strong>時間数が書いていない求人票に出会ったら、そこを最初に聞いてください。</strong></p></li>
       <li><h3>「アットホームな職場」は情報ではない</h3><p>書いてあること自体は問題ではありません。ただ、この言葉は、給与や休日や残業の数字とちがって、あとから確かめようがありません。<strong>見つけたら、その求人票で数字が入っていない欄を探してください。</strong></p></li>
-      <li><h3>離職率は、求人票の外で調べられる</h3><p>求人票に載っていなくても、会社の採用ページや口コミで人の入れ替わりの速さは見えてきます。どこを見るか、それさえ覚えておけば自分で確かめられる。</p></li>
+      <li><h3>「賞与あり」は、月数が書いてあるかを見る</h3><p>「賞与あり」だけでは、支給されたのが0.5か月分でも嘘になりません。<strong>昨年度の実績が月数で書いてあるか</strong>を見てください。書いていない場合、金額は約束されていないと考えておくほうが安全です。</p></li>
     </ol>
     <p class="closing">この4つは、求人票を見れば自分で確かめられます。確かめようがないのは、そこに書いていないほうです。</p>
     
-    <h3 class="sub-h">内定をもらってから、承諾するまでに</h3>
+    <h3 class="sub-h" id="accept">内定をもらってから、承諾するまでに</h3>
     <p>ここで確かめるのは、求人票ではなく<strong>労働条件通知書</strong>です。会社は、働きはじめる前に労働条件を明示することになっています（書面のほか、希望すればメール等でも受け取れます）。</p>
     <ul class="bullets">
       <li>求人票と金額が同じか（求人票は募集のための案内で、契約の中身は通知書のほうです）</li>
@@ -147,11 +150,11 @@
       <tbody>
         <tr><th scope="row">求人の探し方</th><td><span class="x">△</span><span class="sub">条件で絞って自分で選ぶ</span></td><td><span class="o">○</span><span class="sub">「以上」の下限とみなし残業の時間数で絞る</span></td></tr>
         
-        <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書き方で分からない、見落としやすい</span></td><td><span class="o">○</span><span class="sub">書いていない項目を洗い出して、聞く順番を決める</span></td></tr>
+        <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書いてある分は読める。書いていない項目は自分では埋まらない</span></td><td><span class="o">○</span><span class="sub">埋まらない項目を洗い出して、聞く順番を決める</span></td></tr>
         <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを提携先が見て直す</span></td></tr>
         <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">提携先が代わりに調整する</span></td></tr>
         <tr><th scope="row">辞め方・引き継ぎ</th><td><span class="x">△</span><span class="sub">調べて自分で判断する</span></td><td><span class="o">○</span><span class="sub">順番を一緒に決める</span></td></tr>
-        <tr class="last"><th scope="row">求人票に書いていないこと</th><td><span class="x">△</span><span class="sub">入社してから分かる</span></td><td><span class="o">○</span><span class="sub">企業に聞いてみることができる</span></td></tr>
+        <tr class="last"><th scope="row">求人票に書いていないこと</th><td><span class="x">△</span><span class="sub">入社してから分かる</span></td><td><span class="o">○</span><span class="sub">応募前に、確認できる項目かどうかを仕分ける</span></td></tr>
       </tbody>
     </table>
     <p style="margin-top:14px;">年間休日の日数のように、書いてあることは自分で分かるもの。右の列に挙げたのは「自分だとしんどいところ」だけ。</p>
@@ -175,7 +178,7 @@
     <!-- IMG: line_1.png line_2.png line_3.png -->
     <ul class="checks">
       
-      <li>トークを読むのは、ご相談を受ける提携先の担当者だけです。今の職場や知り合いには伝わりません</li>
+      <li>トークを読んで返事をするのは、ご相談を受ける提携先の担当者です。やり取りの記録はLINEと配信システムにも残ります。今の職場や知り合いには伝わりません</li>
       
       <li>名前はLINEの表示名のままでOK。相談の段階で本名を入れる場所はありません</li>
       <li>返信しなくても、届いたものは読めます</li>
@@ -219,7 +222,7 @@
         <li><b>賞与</b>「あり」だけでなく、昨年の支給月数が書いてあるか</li>
         <li><b>昇給の仕組み</b>年1回などの頻度と、何で決まるか</li>
         <li><b>離職率</b>求人票になければ、採用ページや口コミで見る</li>
-        <li><b>採用人数</b>多すぎる募集は、辞める人も多い可能性がある</li>
+        <li><b>採用人数</b>何人採るのか。配属先の人数と見くらべる</li>
         <li><b>配属先と人数</b>どの部署に、何人の中に入るのか</li>
         <li><b>未経験の受け入れ</b>「未経験歓迎」の実績が書いてあるか</li>
         <li><b>書いていない欄</b>上の11個のうち、空いているのはどれか</li>
@@ -233,7 +236,7 @@
       
       <li>送った求人票について、企業に確認してもらえること／もらえないこと</li>
     </ul>
-    <p>送る求人がなくても、チェックシートだけ受け取れます。</p>
+    <p>送る求人がなくても、上の12項目に辞める前にやることを足したものを、LINEに残る形で受け取れます。</p>
     <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
     <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
   </div>
@@ -283,7 +286,7 @@
         <li><span data-name>りこ</span>のプロフィール（Instagram ※リンク準備中）</li>
       </ul>
       <a class="cta-sub" href="#" data-cta>チェックシートだけ受け取る</a>
-      <p class="note">辞める前にやること／求人票の見方チェックシート（読むだけ・返信なしでOK）</p>
+      <p class="note">上の12項目に、辞める前にやることを足したもの。求人票を開きながら見返せるよう、LINEに残る形で届きます。</p>
       <p class="note">リールとプロフィールは、登録しないで見られます。</p>
     </div>
   </div>
@@ -380,7 +383,27 @@
   var selected = q.get('worry') || '';
   if (selected && allowed.indexOf(selected) === -1) selected = '';
 
+  // ?worry= 付きで来た場合も、対応する節へのリンクを出せるようにする
+  var goTo = '';
+  if (selected) {
+    for (var g = 0; g < pickBtns.length; g++) {
+      if (pickBtns[g].getAttribute('data-worry') === selected) {
+        goTo = pickBtns[g].getAttribute('data-go') || '';
+        break;
+      }
+    }
+  }
+
   var pickedEl = document.getElementById('picked');
+  var gotoEl = document.getElementById('goto');
+  var gotoA = document.getElementById('goto-a');
+  // 行き先の節ごとの見出し。data-go の値と対応させる
+  var GO_LABEL = {
+    loss:   'その話はここに書いています（辞める前に知らないと損する3選）',
+    accept: 'その話はここに書いています（内定をもらってから、承諾するまでに）',
+    inbox:  'その話はここに書いています（登録したあとに起きること）',
+    sheet:  'その話はここに書いています（求人票で最初に見るところ4選）'
+  };
 
   function apply() {
     form.elements['src'].value = src;
@@ -393,6 +416,16 @@
       } else {
         pickedEl.textContent = '';
         pickedEl.hidden = true;
+      }
+    }
+    // 選んだ悩みに答えている節へのリンク。GO_LABEL に無い値は出さない
+    if (gotoEl && gotoA) {
+      if (goTo && GO_LABEL[goTo]) {
+        gotoA.textContent = GO_LABEL[goTo];
+        gotoA.setAttribute('href', '#' + goTo);
+        gotoEl.hidden = false;
+      } else {
+        gotoEl.hidden = true;
       }
     }
     for (var i = 0; i < links.length; i++) {
@@ -423,17 +456,18 @@
       for (var j = 0; j < buttons.length; j++) buttons[j].setAttribute('aria-pressed', 'false');
       this.setAttribute('aria-pressed', 'true');
       selected = this.getAttribute('data-worry');
+      goTo = this.getAttribute('data-go') || '';
       apply();
-      // 2026-11-06 修正: 選んだ直後に追従バーを出す。
+      // 選んだ直後に追従バーを出す。
       // 「選ばせて心理的ハードルを下げる」設計なのに、押しても画面上にボタンが
       // 1つも現れず、同意文(61px)を越えてスクロールするまで入口が存在しなかった。
       pinSticky = true;
       onScroll();
-      // 2026-11-06: 出てきた追従バーが4・5番目の選択肢を覆い、選び直せなくなる。
-      // 隠れた場合だけ、その分スクロールして選択肢を見える位置に戻す。
-      // 押したボタンではなく5択の枠全体を基準にする。1つ目を押したときも
-      // 4・5番目が隠れたままでは選び直せないため。
-      var r = document.querySelector('.pick').getBoundingClientRect();
+      // 出てきた追従バーが、選択肢や「その話はここに書いています」のリンクを覆う。
+      // 隠れた分だけスクロールして見える位置に戻す。基準は 5択＋リンクを含む .talk 全体。
+      // 5択だけを基準にすると、その下に出るリンクがバーの裏に残る。
+      var talk = document.querySelector('.talk');
+      var r = talk.getBoundingClientRect();
       var top = sticky.getBoundingClientRect().top;
       if (r.bottom > top) {
         window.scrollBy({ top: r.bottom - top + 12, behavior: 'smooth' });

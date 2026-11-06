@@ -259,6 +259,10 @@ p { margin: 0 0 14px; }
 /* 旧FV（顔を上に積む構造）の .who 単独定義は削除。
    現在 .who は .fv-head 内の1箇所のみで、上の .fv-head .who が全て上書きしていた */
 .pick-sub { font-size: 12px; color: var(--fg-note); margin: 8px 0 14px; }
+/* 選んだ悩みに答えている節へのリンク。選択が画面に反映されないと5択が飾りになる。
+   .talk（紺背景）の中に置くので、白文字で下線を引く */
+.goto { margin: 10px 2px 0; font-size: 13px; line-height: 1.7; }
+.goto a { color: #fff; font-weight: 700; text-decoration: underline; }
 /* 2026-11-06: 時刻はLINEらしさの装飾で、読ませる情報ではない。
    コントラストが本文基準に届かないため、読み上げからは外し、視認性だけ上げる */
 .talk .bubble.me .time { display: block; text-align: right; color: rgba(255,255,255,.85); }
