@@ -80,6 +80,14 @@ em { font-style: normal; }
 .medals span { position: relative; font-size: 11px; font-weight: 700; line-height: 1.3; }
 .medals b { position: relative; font-size: 40px; line-height: 1.05; font-weight: 900; color: var(--navy); font-style: italic; font-family: Georgia, 'Noto Sans JP', serif; }
 .medals b small { font-size: 15px; font-style: normal; margin-left: 1px; }
+.medals li:first-child b { font-size: 36px; }
+.medals li:first-child b small { font-size: 13px; }
+.medals .up { font-size: 15px; font-weight: 900; color: var(--hot); line-height: 1; font-family: Georgia, 'Noto Sans JP', serif; font-style: italic; }
+/* 中盤の実績帯（FVメダルと同じ3つ） */
+.stats { margin: 26px -16px 0; padding: 22px 0 26px; background: linear-gradient(180deg, #fff8e4, #fff); }
+.stats-h { text-align: center; font-weight: 900; font-size: 18px; color: var(--navy-d); margin-bottom: 18px; }
+.stats-h b { color: var(--blue); background: linear-gradient(transparent 62%, var(--yellow) 62%); }
+.medals.in { margin-top: 0; }
 
 /* ---------- CTA（A1: 転職まで完全無料＋¥0バッジ付き緑ボタン） ---------- */
 .cta-block { background: #f1f3f6; padding: 20px 16px 18px; text-align: center; }
@@ -118,14 +126,22 @@ em { font-style: normal; }
 .case { background: #fff; margin-top: 20px; padding: 0 0 16px; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(31,111,224,.12); }
 .case-h { background: linear-gradient(90deg, var(--navy), var(--blue)); color: #fff; font-weight: 700; text-align: center; padding: 10px; font-size: 14px; line-height: 1.45; }
 .case-h b { font-size: 20px; color: var(--yellow); }
-.case-in { display: flex; align-items: center; gap: 12px; padding: 14px 14px 0; }
-.case-in .av { flex: none; width: 76px; height: 76px; }
-.case-in > div { flex: 1; min-width: 0; }
-.who { font-size: 12.5px; font-weight: 700; color: var(--navy-d); }
-.ba { margin-top: 6px; display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 13px; font-weight: 700; }
-.ba span { background: #eef0f3; color: var(--mute); padding: 3px 8px; width: 100%; border-radius: 4px; }
-.ba i { width: 0; height: 0; border: 8px solid transparent; border-top-color: var(--sky); border-bottom: 0; margin: 4px 0; }
-.ba b { background: linear-gradient(90deg, var(--blue), var(--sky)); color: #fff; padding: 5px 8px; width: 100%; font-size: 14px; border-radius: 4px; }
+.case-in { position: relative; display: flex; align-items: center; gap: 12px; padding: 14px 14px 0 14px; }
+.case-in .av { flex: none; width: 64px; height: 64px; }
+.who { flex: 1; font-size: 14px; font-weight: 700; color: var(--navy-d); }
+/* ハックツ型: 黄色い丸で「◯万円UP」 */
+.up-dot { order: 3; flex: none; width: 88px; height: 88px; border-radius: 50%; background: var(--yellow); color: var(--hot); display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 20px; line-height: 1; font-style: italic; box-shadow: 0 3px 0 #e8c400; transform: rotate(-6deg); }
+.up-dot b { font-size: 32px; letter-spacing: -.02em; font-family: Georgia, 'Noto Sans JP', serif; }
+.up-dot b small { font-size: 12px; font-style: normal; margin-left: 1px; }
+.ba { display: flex; align-items: center; gap: 6px; margin: 12px 14px 0; text-align: center; font-size: 12px; font-weight: 700; line-height: 1.4; }
+.ba span, .ba b { flex: 1; padding: 6px 4px; border-radius: 6px; }
+.ba small { display: block; font-size: 11px; }
+.ba em { font-size: 15px; font-weight: 900; }
+.ba span { background: #eef0f3; color: var(--mute); }
+.ba i { flex: none; width: 0; height: 0; border: 8px solid transparent; border-left-color: var(--hot); border-right: 0; }
+.ba b { background: #fff6c8; color: var(--navy-d); }
+.ba b em { color: var(--hot); font-size: 17px; }
 .case-t { margin: 12px 14px 0; padding: 10px 12px; font-size: 14px; background: #f7f9fc; border-radius: 8px; position: relative; }
 .case-t::before { content: '“'; position: absolute; left: 6px; top: -14px; font: 700 32px/1 Georgia, serif; color: var(--sky); }
 .cases > .fine { text-align: center; }
