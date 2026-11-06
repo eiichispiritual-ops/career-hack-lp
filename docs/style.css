@@ -146,6 +146,9 @@ p { margin: 0 0 14px; }
 .cmp thead th.ours { background: var(--accent); color: #fff; font-weight: 800; }
 .cmp thead th.theirs { background: #9a9a9a; color: #fff; font-weight: 700; }
 .cmp tbody th { background: var(--accent); color: #fff; font-size: 12px; width: 26%; }
+/* 2026-11-06: 左上のセルが空で、何を比べた表か分からなかった */
+.cmp thead th:first-child { background: transparent; }
+.cmp .vs { font-size: 11px; color: var(--fg-note); font-weight: 700; }
 .cmp .o { color: var(--accent); font-size: 22px; font-weight: 800; line-height: 1.2; }
 .cmp .x { color: #8a8a8a; font-size: 20px; font-weight: 700; line-height: 1.2; }
 .cmp .sub { display: block; font-size: 11px; color: var(--fg-sub); margin-top: 2px; }
