@@ -25,8 +25,15 @@
         <img id="face" width="840" height="1120" alt="" decoding="async">
         <script>
           (function () {
-            var m = /[?&]src=([^&]*)/.exec(location.search);
-            var w = m ? decodeURIComponent(m[1]) : '';
+            // 壊れたパーセント記号（?src=%E0%A4%A など）で decodeURIComponent が
+            // 例外を投げ、顔画像が読み込まれないまま止まっていた。失敗したら riko に倒す。
+            var w = '';
+            try {
+              var m = /[?&]src=([^&]*)/.exec(location.search);
+              if (m) w = decodeURIComponent(m[1]);
+            } catch (e) {
+              w = '';
+            }
             document.getElementById('face').src =
               (w === 'mina') ? 'img/mina_face.jpg' : 'img/riko_face.jpg';
           })();
@@ -50,7 +57,7 @@
           <button type="button" aria-pressed="false" data-go="leave" data-worry="有休が使いきれるか分からない">有休が使いきれるか分からない</button>
           <button type="button" aria-pressed="false" data-go="money" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
           <button type="button" aria-pressed="false" data-go="accept" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
-          <button type="button" aria-pressed="false" data-go="compare" data-worry="気になる求人がある">気になる求人がある</button>
+          <button type="button" aria-pressed="false" data-go="inbox" data-worry="気になる求人がある">気になる求人がある</button>
           <button type="button" aria-pressed="false" data-go="sheet" data-worry="求人票の見方を覚えたい">求人票の見方を覚えたい</button>
         </div>
         <!-- 選んだ悩みに答えている節へのリンク。勝手にスクロールすると5択を選び直せなく
@@ -72,8 +79,8 @@
     <p>さっきの有休もこれです。知っていれば使いきれたもの、早く受け取れたものが、順番と時期を外すと手元に来ません。残り2つも先に置いておきます。</p>
     <ol class="lost">
       <li id="leave"><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。有休についてはこの順番です。</strong></p></li>
-      <li id="papers"><span class="no">02</span><h3>辞めたあと届く書類は、自分から言わないと遅れる</h3><p>受け取るのは主に3つ。<strong>離職票</strong>（ハローワークの手続きに使う）、<strong>雇用保険被保険者証</strong>と<strong>源泉徴収票</strong>（次の会社に出す）です。どれも郵送で後日になることが多く、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と一言。それだけで変わります。</p></li>
-      <li id="money"><span class="no">03</span><h3>失業手当は、辞めてすぐには振り込まれない</h3><p>自己都合で辞めた場合、失業手当は申請してすぐには振り込まれません。待期と給付制限の期間があり、その分は自分の蓄えで持たせることになります（期間は退職の理由や回数で変わるので、ハローワークで自分の場合を確認してください）。<strong>在職中なら、条件が合わなければ今の会社に留まる、という選択が残ります。</strong></p></li>
+      <li id="papers"><span class="no">02</span><h3>辞めたあと届く書類は、自分から言わないと遅れる</h3><p>受け取るのは主に3つ。<strong>離職票</strong>（ハローワークの手続きに使う）、<strong>雇用保険被保険者証</strong>と<strong>源泉徴収票</strong>（次の会社に出す）です。どれも郵送で後日になることが多く、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と聞いて、送り先の住所が合っているかも確かめておいてください。</p></li>
+      <li id="money"><span class="no">03</span><h3>失業手当は、辞めてすぐには振り込まれない</h3><p>自己都合で辞めた場合、申請してすぐには振り込まれません。まず全員に7日間の待期があり、自己都合だとそのあとにもう一段、給付制限という待つ期間が付きます。期間は退職の理由や回数で変わるので、ハローワークで自分の場合を確認してください。<strong>その間の生活費は自分の蓄えから出ることになるので、辞める前に何か月分あるかを数えておいてください。</strong></p></li>
     </ol>
     <p><strong>ここまでは、知っていれば自分でできます。</strong></p>
     
@@ -135,7 +142,7 @@
       <p>書いてあることを読むだけなら、ここまでで足ります。</p>
       <p>時間がかかるのは、書いていないことを確かめるほうです。</p>
       
-      <p>そこだけ、送ってもらえれば提携先の担当者が見ます。</p>
+      <p>そこだけ、送ってもらえれば提携先（国の許可を受けた人材紹介会社）の担当者が見ます。</p>
     </div>
     <p style="margin-top:16px">「こんな求人を見てもらうほどじゃないかな」と思っても、1件でいいので送ってください。</p>
       
@@ -158,6 +165,9 @@
      本文の4選が「自分で確かめられる」と教えた内容そのものだった（前言の撤回）。
      「提携先が扱う求人も見られる」に替える案は、非公開求人の有無が未確認のため採らない -->
         
+        <!-- 全行が「△○」だと、都合のいい行だけ並べた表に見える。
+             実際に自分でやるほうが速い行を先頭に置く -->
+        <tr><th scope="row">求人を探す速さ</th><td><span class="o">○</span><span class="sub">検索すればその場で出る</span></td><td><span class="x">△</span><span class="sub">やり取りの分だけ時間がかかる</span></td></tr>
         <tr><th scope="row">休日・残業の実態</th><td><span class="x">△</span><span class="sub">書いてある分は読める。書いていない項目は自分では埋まらない</span></td><td><span class="o">○</span><span class="sub">埋まらない項目を洗い出して、聞く順番を決める</span></td></tr>
         <tr><th scope="row">職務経歴書</th><td><span class="x">△</span><span class="sub">テンプレを探して自分で書く</span></td><td><span class="o">○</span><span class="sub">書いたものを提携先が見て直す</span></td></tr>
         <tr><th scope="row">面接の日程調整</th><td><span class="x">△</span><span class="sub">自分で会社に連絡する</span></td><td><span class="o">○</span><span class="sub">提携先が代わりに調整する</span></td></tr>
@@ -165,7 +175,7 @@
         <tr class="last"><th scope="row">求人票に書いていないこと</th><td><span class="x">△</span><span class="sub">入社してから分かる</span></td><td><span class="o">○</span><span class="sub">応募前に、確認できる項目かどうかを仕分ける</span></td></tr>
       </tbody>
     </table>
-    <p style="margin-top:14px;">年間休日の日数のように、書いてあることは自分で分かるもの。右の列に挙げたのは「自分だとしんどいところ」だけ。</p>
+    <p style="margin-top:14px;">探すだけなら自分のほうが速いです。差が出るのは、求人票に書いていない部分と、応募に進んだあとの手続き。</p>
     <!-- 職務経歴書の添削と日程調整には氏名・連絡先が要る。
          「相談の段階では本名不要」と食い違うため、どの段階の話かを明示する -->
     <p class="note" style="margin-top:8px;">職務経歴書と日程調整は、応募に進むと決めたあとの話です。そこで初めて氏名と連絡先をうかがいます。辞め方・引き継ぎの相談だけなら、応募しなくてもかまいません。</p>
@@ -431,8 +441,7 @@
     money:  'その話はここに書いています（失業手当が振り込まれる時期）',
     accept: 'その話はここに書いています（内定をもらってから、承諾するまでに）',
     inbox:  'その話はここに書いています（登録したあとに起きること）',
-    sheet:  'その話はここに書いています（求人票で最初に見るところ4選）',
-    compare: 'その話はここに書いています（自分で調べるのと、どう違う？）'
+    sheet:  'その話はここに書いています（求人票で最初に見るところ4選）'
   };
 
   function apply() {
