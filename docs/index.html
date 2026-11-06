@@ -91,7 +91,9 @@
     <p class="tags">#今の会社に言わなくていい　#応募しなくていい　#経歴に自信なくてOK</p>
     <img class="pic" src="img/hand_note.jpg" width="1200" height="675" alt="" loading="lazy" decoding="async">
     <div class="frame">
-      <p>「こんなこと聞いていいのかな」で止まったまま、という人はめずらしくありません。</p>
+      <!-- 2026-11-06: 「めずらしくありません」は頻度の主張で裏付けが無い。
+           読者本人への呼びかけに変え、こちら側の受け入れ方針として書く -->
+      <p>「こんなこと聞いていいのかな」で止まったままでも、そのまま聞きに来てください。</p>
       <!-- 採点3周目#2対応: 主張ではなく従属節で前提化する。読者は主節だけを審査するので、従属節は無審査で通る -->
       <p>決まってない状態で聞きに来てもらってかまわないので、最初の一言は「まだ決めてません」で足ります。</p>
       <p>資格を取ってから、職歴をきれいにしてから、じゃなくていい。今のままで聞けます。</p>
@@ -124,7 +126,8 @@
     <p class="closing">この4つを自分で確かめると、残るのは求人票に書いていないほうだけになります。</p>
     <div class="mute-bubble">
       <!-- 採点4周目#5対応: br が390pxの自然折り返しと干渉して不自然な位置で割れていたため、段落に分けた -->
-      <p>書いてあることを読むだけなら、10分で終わります。</p>
+      <!-- 2026-11-06: 「10分」は計測していない数字。対比の役目は時間を断定しなくても作れる -->
+      <p>書いてあることを読むだけなら、ここまでで足ります。</p>
       <p>時間がかかるのは、書いていないことを確かめるほうです。</p>
       <!-- 2026-11-06: 「見ます」の主語が演者個人に読めていた。実際に求人票を見るのは
            提携先の人材紹介会社なので、主体を明示する。演者が一人称で約束すると、
@@ -451,6 +454,34 @@
   // ?worry= 付きで戻ってきた場合も、選択済みとして追従バーを出す
   if (selected) pinSticky = true;
   apply();
+
+  // ---- 先方から届いたURLの差し込み（LINK が空なら何もしない）----
+  // LINE: 全CTAの href を置き換える。data-base も更新しないと apply() が
+  //       古い "#" を使い続けるため、両方を書き換えてから apply() を呼ぶ。
+  if (LINK.line) {
+    for (var c = 0; c < links.length; c++) {
+      links[c].setAttribute('data-base', LINK.line);
+      links[c].setAttribute('href', LINK.line);
+    }
+    apply();
+  }
+  // リール・プロフィール: テキストのままの行をリンクにする。
+  // Instagram側では ?src=/?worry= が無意味なので data-cta は付けない。
+  function exitLink(sel, url) {
+    if (!url) return;
+    var li = document.querySelector(sel);
+    if (!li) return;
+    var label = li.textContent.replace(/（Instagram ※リンク準備中）/, '').trim();
+    var a = document.createElement('a');
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = label + '（Instagram）';
+    li.textContent = '';
+    li.appendChild(a);
+  }
+  exitLink('.links li:nth-child(1)', LINK.reel);
+  exitLink('.links li:nth-child(2)', LINK.profile);
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
