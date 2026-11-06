@@ -183,7 +183,7 @@ p, li, h1, h2, h3, dd, summary, figcaption { word-break: auto-phrase; line-break
 .worry { background: var(--sand); padding: 0 0 0; }
 /* 悩み帯の頭: 日曜の夜のロック画面（顔写真は使わない） */
 .sunday { position: relative; margin: 0; padding: 30px 20px 50px; background: var(--navy-d); color: #fff; text-align: center; overflow: hidden; }
-.sunday::before { content: ''; position: absolute; inset: 0 0 52% 0; background-image: radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1.4px), radial-gradient(circle, rgba(255,255,255,.28) 1px, transparent 1.4px); background-size: 97px 61px, 53px 89px; background-position: 11px 7px, 31px 23px; pointer-events: none; }
+.sunday::before { content: ''; position: absolute; inset: 0 0 64% 0; background-image: radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1.4px), radial-gradient(circle, rgba(255,255,255,.28) 1px, transparent 1.4px); background-size: 97px 61px, 53px 89px; background-position: 11px 7px, 31px 23px; pointer-events: none; }
 .sun-time { position: relative; font-family: var(--num); font-size: 66px; font-weight: 500; line-height: 1; letter-spacing: .02em; }
 .sun-time small { display: block; font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #c9cdea; margin-bottom: 8px; }
 .notif { position: relative; margin-top: 20px; display: grid; gap: 8px; text-align: left; }
