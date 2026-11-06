@@ -128,9 +128,14 @@
 
 <!-- ============ 3 悩み → このまま我慢しても（N1ごとの一言＋人物写真＋暗転） ============ -->
 <section class="worry">
-  <figure class="worry-photo">
-    <img src="img/worry_face.jpg" alt="窓ぎわで考えごとをする20代の女性" width="840" height="630" loading="lazy">
-    <figcaption><span>このままで、</span><span>いいのかな…</span></figcaption>
+  <figure class="sunday" aria-label="日曜の夜、スマホに届いた通知のイメージ">
+    <p class="sun-time"><small>日曜日</small>22:47</p>
+    <ul class="notif">
+      <li><i class="ap cal" aria-hidden="true"></i><b>カレンダー<small>いま</small></b>明日 9:00〜22:00 シフト（5連勤の1日目）</li>
+      <li><i class="ap pay" aria-hidden="true"></i><b>給与明細<small>2時間前</small></b>今月の振込額：171,240円</li>
+      <li><i class="ap msg" aria-hidden="true"></i><b>職場のグループ<small>3時間前</small></b>明日、朝イチで少し話せる？</li>
+    </ul>
+    <figcaption>このままで、いいのかな…</figcaption>
   </figure>
   <div class="worry-in">
     <p class="worry-cap">ひとつでも当てはまったら</p>
@@ -203,7 +208,14 @@
   </ol>
   <div class="stats">
     <p class="stats-h"><small>だから</small>年収も、<b>入社後の満足度</b>も高い</p>
-    <div class="stats-fig"><img src="img/il_stats.svg" alt="" width="390" height="260"><span style="--x:21.8%;--y:77%">CASE02<b>+60<small>万円</small></b></span><span style="--x:50%;--y:64%">CASE03<b>+80<small>万円</small></b></span><span class="dk" style="--x:78.2%;--y:51%">CASE01<b>+100<small>万円</small></b></span></div>
+    <div class="gain">
+      <p class="gain-cap">掲載例の3人の、年収UP額</p>
+      <ol class="gain-bars">
+        <li style="--k:.6"><img src="img/il_case2.svg" alt="" width="200" height="200"><i class="bar"><b>+60<small>万円</small></b></i><span>Mさん・25歳<br>販売→事務</span></li>
+        <li style="--k:.8"><img src="img/il_case3.svg" alt="" width="200" height="200"><i class="bar"><b>+80<small>万円</small></b></i><span>Tさん・23歳<br>第二新卒→営業</span></li>
+        <li style="--k:1"><img src="img/il_case1.svg" alt="" width="200" height="200"><i class="bar"><b>+100<small>万円</small></b></i><span>Kさん・24歳<br>バイト→IT</span></li>
+      </ol>
+    </div>
     <ul class="medals in">
       <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>平均年収<sup>※2</sup></span><b>93<small>万円</small></b><span class="up">UP</span></li>
       <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>入社満足度<sup>※3</sup></span><b>98<small>%</small></b><span>&nbsp;</span></li>
@@ -255,9 +267,9 @@
   <p class="gift-cap">LINEで友だち追加した人だけ</p>
   <h2 class="sec-h">いま登録すると届く<br><em class="num">3</em>つの無料特典</h2>
   <ol class="gift-list">
-    <li><div class="g-doc"><i>CHECK</i><b>向いてる仕事<br>チェック</b><u></u><u></u><u></u></div><div class="g-tx"><span class="g-no">特典<b>1</b></span><h3>10問でわかる<br>「向いてる仕事」チェック</h3><p>「やりたいことが分からない」人へ。答えるだけで、向いている職種の候補が分かります。</p></div></li>
-    <li><div class="g-doc c"><i>SAMPLE</i><b>職歴なしの<br>書き方例文</b><u></u><u></u><u></u></div><div class="g-tx"><span class="g-no">特典<b>2</b></span><h3>バイト・販売経験の<br>書き方 例文集</h3><p>「職歴なし」でも埋まる、履歴書・職務経歴書の例文。言い回しをそのまま使えます。</p></div></li>
-    <li><div class="g-doc n"><i>Q&amp;A</i><b>面接の質問<br>30と答え方</b><u></u><u></u><u></u></div><div class="g-tx"><span class="g-no">特典<b>3</b></span><h3>面接で聞かれる質問30と<br>答え方の型</h3><p>「なぜ1年で辞めた？」「なぜ正社員に？」など、答えにくい質問ほど先に準備できます。</p></div></li>
+    <li><div class="g-doc"><i>CHECK</i><b>向いてる仕事<br>チェック</b><span class="gd-ck"><u class="on"></u><u class="on"></u><u></u></span></div><div class="g-tx"><span class="g-no">特典<b>1</b></span><h3>10問でわかる<br>「向いてる仕事」チェック</h3><p>「やりたいことが分からない」人へ。答えるだけで、向いている職種の候補が分かります。</p></div></li>
+    <li><div class="g-doc c"><i>SAMPLE</i><b>職歴なしの<br>書き方例文</b><span class="gd-tx"><u></u><u class="mk"></u><u></u><u class="s"></u></span></div><div class="g-tx"><span class="g-no">特典<b>2</b></span><h3>バイト・販売経験の<br>書き方 例文集</h3><p>「職歴なし」でも埋まる、履歴書・職務経歴書の例文。言い回しをそのまま使えます。</p></div></li>
+    <li><div class="g-doc n"><i>Q&amp;A</i><b>面接の質問<br>30と答え方</b><span class="gd-qa"><u data-q="Q"></u><u data-q="A"></u><u data-q="Q"></u></span></div><div class="g-tx"><span class="g-no">特典<b>3</b></span><h3>面接で聞かれる質問30と<br>答え方の型</h3><p>「なぜ1年で辞めた？」「なぜ正社員に？」など、答えにくい質問ほど先に準備できます。</p></div></li>
   </ol>
   <p class="fine">※特典の内容は変更になる場合があります。</p>
 </section>
