@@ -240,14 +240,16 @@ p { margin: 0 0 14px; }
   object-position: center 42%;
   background: var(--bg-soft);
 }
-.fv-head .who { margin: 0; font-size: 13px; color: var(--fg-note); line-height: 1.6; }
+/* 名札は2行で約48px。画像が84pxあるので行間1.7でも円からあふれない（実測で確認済み） */
+.fv-head .who { margin: 0; font-size: 13px; color: var(--fg-note); line-height: 1.7; }
 .fv-head .who b { display: block; font-size: 15px; color: var(--fg); font-weight: 700; }
 .fv-card { background: #fff; border-radius: var(--radius); margin-top: 0; position: relative; padding: 16px 14px 14px; }
 .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 12px; border: 1px solid var(--accent); border-radius: var(--radius-pill); color: var(--accent); margin: 0 0 10px; }
 .fv h1 { font-size: var(--fs-fv); line-height: 1.4; margin: 0 0 8px; font-weight: 800; }
 .fv .lead-sub { font-size: 14px; color: var(--fg-sub); margin: 0 0 10px; }
 .tags { font-size: 12px; color: var(--fg-sub); margin: 0 0 14px; }
-.who { font-size: 12px; color: var(--fg-note); margin: 0 0 8px; }
+/* 旧FV（顔を上に積む構造）の .who 単独定義は削除。
+   現在 .who は .fv-head 内の1箇所のみで、上の .fv-head .who が全て上書きしていた */
 .pick-sub { font-size: 12px; color: var(--fg-note); margin: 8px 0 14px; }
 /* 2026-11-06: 時刻はLINEらしさの装飾で、読ませる情報ではない。
    コントラストが本文基準に届かないため、読み上げからは外し、視認性だけ上げる */
