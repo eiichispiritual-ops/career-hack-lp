@@ -228,7 +228,13 @@ p { margin: 0 0 14px; }
 /* noscript内のimgも同じ見た目にする（JS無効時はこちらだけが描画される） */
 .fv-head img, .fv-head noscript img {
   width: 84px; height: 84px; flex: 0 0 84px;
-  border-radius: 50%; object-fit: cover; object-position: center 30%;
+  /* 2026-11-06: 丸抜きの位置は2枚で別。肌の最上端がりこ=y0%・みな=y16%で、
+     同じ値だと片方の顔が丸の下に沈む。実測して個別に指定する */
+  border-radius: 50%; object-fit: cover; object-position: center 36%;
+}
+/* みなは肌の最上端がy16%（りこは0%）なので、同じ値だと顔が下に寄る */
+.fv-head img[src*="mina"] {
+  object-position: center 42%;
   background: var(--bg-soft);
 }
 .fv-head .who { margin: 0; font-size: 13px; color: var(--fg-note); line-height: 1.6; }
