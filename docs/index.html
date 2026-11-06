@@ -282,11 +282,11 @@
       <h3>今日はまだ、という人へ</h3>
       <p>いま決めなくていいです。</p>
       <ul class="links">
-        <!-- 要確認: リールURL・プロフィールURLが確定するまでリンク化しない。
-             href="#" のままにすると、押しても何も起きない行き止まりになり、
+        <!-- URLはスクリプト先頭の LINK.reel / LINK.profile に入れる。入れれば自動でリンク化され、
+             ここのHTMLは触らなくてよい（手で <a> を書くと二重管理になる）。
+             空のままなら「※リンク準備中」のテキストを維持する。href="#" の行き止まりを作ると
              「今日は登録しない人の出口」として機能しないため。
-             URL確定後は <a href="https://www.instagram.com/..."> に差し替える。
-             出口リンクには data-cta を付けないこと（?src=&worry= がInstagram側で無意味なクエリになる） -->
+             出口リンクに data-cta は付けない（?src=&worry= がInstagram側で無意味なクエリになる） -->
         <li>この話をしたリール（Instagram ※リンク準備中）</li>
         <li><span data-name>りこ</span>のプロフィール（Instagram ※リンク準備中）</li>
       </ul>
