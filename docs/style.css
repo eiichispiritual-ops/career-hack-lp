@@ -278,6 +278,22 @@ p { margin: 0 0 14px; }
 .flow { display: flex; flex-wrap: wrap; gap: 6px; font-size: 12px; font-weight: 700; color: var(--accent); margin: 0 0 14px; }
 .flow span::after { content: "→"; margin-left: 6px; color: var(--fg-note); }
 .flow span:last-child::after { content: ""; }
+/* 2026-11-06: ①②③のラベルだけで中身が無かったため、説明つきの手順に変更 */
+.flow-steps { list-style: none; counter-reset: st; margin: 0 0 16px; padding: 0; }
+.flow-steps li {
+  counter-increment: st; position: relative;
+  padding: 0 0 12px 2.2em; margin: 0 0 12px;
+  border-bottom: 1px solid var(--line); line-height: 1.75;
+}
+.flow-steps li:last-child { border-bottom: 0; margin-bottom: 0; }
+.flow-steps li::before {
+  content: counter(st); position: absolute; left: 0; top: 1px;
+  width: 1.6em; height: 1.6em; line-height: 1.6em; text-align: center;
+  background: var(--accent); color: #fff; border-radius: 50%;
+  font-size: 12px; font-weight: 700;
+}
+.flow-steps b { display: block; color: var(--accent); font-size: 15px; }
+
 .checks { list-style: none; margin: 14px 0; padding: 0; }
 .checks li { padding-left: 1.6em; position: relative; margin-bottom: 8px; }
 .checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
