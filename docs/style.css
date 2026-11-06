@@ -274,6 +274,20 @@ p { margin: 0 0 14px; }
    object-position は16:9を16:9に入れる限り無意味なので削除 */
 .pic-fv { aspect-ratio: 16 / 9; }
 
+/* 本文の内容を図にしたもの。雰囲気写真の代わりに置く。
+   AI生成画像は文字が破綻するので、図はHTML/CSSで作る */
+.diagram { margin: 0 0 16px; padding: 14px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.diagram figcaption { font-size: 13px; font-weight: 700; margin: 0 0 10px; }
+.diagram .bar { display: flex; height: 44px; border-radius: 6px; overflow: hidden; }
+.diagram .seg { display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+.diagram .seg.used { background: var(--accent); color: #fff; }
+.diagram .seg.lost { background: #d8d2c6; color: #5a5349; }
+.diagram .legend { font-size: 11px; color: var(--fg-note); margin: 8px 0 10px; line-height: 1.7; }
+.diagram .key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+.diagram .key.used { background: var(--accent); }
+.diagram .key.lost { background: #d8d2c6; }
+.diagram .note { margin: 0; }
+
 .lost { list-style: none; margin: 0; padding: 0; }
 .lost li { border-top: 1px solid var(--accent); padding: 16px 0; }
 .lost .no { font-size: 12px; color: var(--fg-note); letter-spacing: .08em; }
