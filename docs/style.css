@@ -600,3 +600,111 @@ body.pop-open { overflow: hidden; }
 .pb-go { background: linear-gradient(180deg, #ff9a2e, #f05a14); color: #fff; box-shadow: 0 4px 0 #b9420c; }
 .pb-later { background: linear-gradient(180deg, #bbb, #8d8d8d); color: #fff; box-shadow: 0 4px 0 #666; }
 .pb-later small { display: block; font-size: 10px; font-weight: 700; }
+
+/* ================================================================
+   参考LP（ai-plus meta01）に動きと書体を合わせる
+   ================================================================ */
+body { font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; }
+.ba b, .medal b, .gift-head em, .side-gift-h em { font-family: "Inter", "Noto Sans JP", sans-serif; }
+
+/* CTA: 本体は2秒で1.06倍、上の「＼…／」も同じ周期で脈打つ。光が横切る */
+.btn-line { overflow: hidden; animation: cta-head-pulse 2s ease-in-out infinite; transform-origin: center bottom; }
+.btn-line::before {
+  content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.55) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg); pointer-events: none;
+  animation: shine-sweep 2.8s ease-in-out infinite;
+}
+.micro { display: inline-block; animation: cta-top-pulse 2s ease-in-out infinite; transform-origin: center bottom; }
+.sticky .btn-line { animation: moderate-pulse 3s ease-in-out infinite; }
+.sticky .micro { animation: none; }
+@keyframes cta-head-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes cta-top-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes moderate-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.03); } }
+@keyframes shine-sweep { 0% { left: -75%; } 60% { left: 125%; } 100% { left: 125%; } }
+
+/* スクロールで出す */
+.fade-up { opacity: 0; transform: translateY(24px); transition: transform .8s ease, opacity .8s ease; }
+.fade-up.active { opacity: 1; transform: none; }
+.zoom-in { opacity: 0; transform: scale(.8); transition: opacity 1s ease-out, transform 1s ease-out; }
+.zoom-in.active { opacity: 1; transform: scale(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-line, .btn-line::before, .micro { animation: none !important; }
+  .fade-up, .zoom-in { opacity: 1; transform: none; transition: none; }
+}
+
+/* カルーセル: 左右に次のカードを覗かせる */
+.cs-track { padding-left: 10%; padding-right: 10%; scroll-padding: 0 10%; }
+.case { flex-basis: 80%; }
+
+/* 特典のサムネ（紙1枚の見た目） */
+.g-thumb {
+  flex: none; position: relative; width: 58px; height: 74px; border-radius: 6px;
+  background: #fff; border: 1px solid #cfe5e4; box-shadow: 0 3px 8px rgba(21,110,112,.15);
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  padding-bottom: 8px; font-size: 9px; font-weight: 800; color: var(--teal-d); line-height: 1.2; overflow: hidden;
+}
+.g-thumb::before {
+  content: ""; position: absolute; left: 8px; right: 8px; top: 9px; height: 26px;
+  background: repeating-linear-gradient(#d9ecec 0 3px, transparent 3px 7px);
+}
+.g-thumb b { font-size: 15px; color: #fff; background: var(--teal); padding: 1px 5px; border-radius: 4px; margin-bottom: 3px; position: relative; }
+.g-thumb.t2 b { background: var(--orange); }
+.g-thumb.t3 b { font-size: 11px; background: var(--line); }
+.gift-list li .g-thumb { width: 48px; height: 62px; }
+
+/* ---- PC: 中央に狭いカラム、左に特典バナー、右にCTAを固定 ---- */
+.side { display: none; }
+@media (min-width: 1024px) {
+  html { background: linear-gradient(to bottom, #fff 0%, #EBF6F8 5%, #EBF6F8 86%, #fff 100%) fixed; }
+  body { background: transparent; }
+  body::before {
+    content: ""; position: fixed; top: 0; bottom: 0; left: 50%; width: 430px; transform: translateX(-50%);
+    background: var(--bg); box-shadow: 0 0 40px rgba(39, 64, 69, .10); z-index: -1;
+  }
+  body > header, body > section, body > footer, body > .marquee { max-width: 430px; }
+  .sticky { left: calc(50% - 215px); right: calc(50% - 215px); }
+  .pop-card { max-width: 400px; }
+
+  .side {
+    display: flex; position: fixed; top: 0; height: 100vh; width: calc(50vw - 215px);
+    max-width: none; margin: 0; align-items: center; justify-content: center; z-index: 10;
+  }
+  .side-l { left: 0; }
+  .side-r { right: 0; }
+
+  .side-gift {
+    width: min(78%, 320px); background: #fff; border-radius: 20px; padding: 22px 20px;
+    box-shadow: 0 6px 24px rgba(21, 110, 112, .14); text-align: center;
+    border: 3px solid var(--teal-l);
+  }
+  .side-gift .g-pre { font-size: 14px; font-weight: 800; }
+  .side-gift .g-pre b { color: var(--orange); }
+  .side-gift-h { font-size: 30px; font-weight: 900; color: var(--teal-d); line-height: 1.2; margin: 2px 0 14px; }
+  .side-gift-h em { font-style: italic; font-size: 54px; color: var(--orange); margin-right: 2px; }
+  .side-gift ol { display: grid; gap: 10px; text-align: left; }
+  .side-gift li { display: flex; gap: 12px; align-items: center; background: var(--bg2); border-radius: 12px; padding: 10px; font-size: 14px; font-weight: 800; line-height: 1.4; }
+  .side-gift li small { display: block; font-size: 10px; color: #d4430c; }
+
+  .side-box { width: min(80%, 340px); text-align: center; }
+  .side-box .logo { margin-bottom: 18px; }
+  .side-box .cta-note { margin-bottom: 22px; }
+  .side-menu { background: #fff; border-radius: 8px; padding: 22px 24px 14px; box-shadow: 0 4px 20px rgba(39, 64, 69, .08); text-align: left; }
+  .side-menu-t { display: flex; align-items: center; gap: 12px; font-family: "Inter", sans-serif; font-size: 20px; font-weight: 800; letter-spacing: .08em; color: var(--teal); margin-bottom: 12px; }
+  .side-menu-t::before { content: ""; width: 28px; height: 2px; background: var(--teal); }
+  .side-menu ul { border-top: 1px solid #D4DBDC; }
+  .side-menu li { border-bottom: 1px solid #D4DBDC; }
+  .side-menu a {
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+    padding: 12px 0; font-size: 14px; font-weight: 500; color: #274045; text-decoration: none;
+  }
+  .side-menu a::after {
+    content: ""; flex: none; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 7l5 5-5 5' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  }
+  .side-menu a:hover { color: var(--teal); }
+}
+@media (min-width: 1024px) {
+  .side-box .logo { position: static; transform: none; text-align: center; font-size: 26px; }
+}
