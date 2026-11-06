@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>キャリアハック｜完全無料の転職相談（LINE）</title>
-<meta name="description" content="第二新卒・未経験・フリーターOK。転職のプロが自己分析・履歴書・面接練習まで内定までの“全て”をサポート。LINEで無料相談。">
+<title>未経験からの転職をLINEで完全無料相談｜キャリアハック</title>
+<meta name="description" content="接客・販売・第二新卒・未経験OK。20代・30代女性の転職を、LINEで完全無料相談。営業電話なし・ブロックで終了。">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Yomogi&family=Zen+Old+Mincho:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kurenaido&display=swap">
 <link rel="stylesheet" href="style.css">
 <script src="config.js"></script>
 <script>
-  // 描画前にアカウントを決める（変わるのはLINEのURLだけ）
+  // 描画前にアカウントを決める（LINEのURLだけに使う）
   (function () {
     var C = window.LP_CONFIG || { accounts: {} };
     var q = new URLSearchParams(location.search);
@@ -23,246 +23,225 @@
 </script>
 </head>
 <body>
+<main class="page">
 
-<!-- 構成の正本: キャリカミ mt/c001（~/lp_research/data/notes_A1.md）。セクション順・配色・CTAの数と文言をそのまま踏襲 -->
-
-<!-- 0. ヘッダー白帯 + FV -->
-<div class="topbar">
-  <p class="logo"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</p>
-  <p class="laurel"><span>LINEで<mark>かんたん</mark>転職相談！</span></p>
-</div>
-
-<header class="fv">
-  <p class="fv-band"><b>未経験</b>から<b>土日休みの仕事</b>へ転職？！</p>
-  <p class="fv-ok">＼ 第二新卒・未経験・フリーターOK ／</p>
-  <h1 class="fv-h">完全無料の転職相談</h1>
-  <div class="fv-body">
-    <div class="fv-copy">
-      <p class="fv-label">転職のプロが</p>
-      <p class="fv-blue">内定までの</p>
-      <p class="fv-blue">“<em>全て</em>”をサポート</p>
-      <ul class="fv-tags">
-        <li>#自己分析</li>
-        <li>#履歴書</li>
-        <li>#面接練習</li>
-      </ul>
-    </div>
-    <div class="fv-photo"><img src="img/riko_pose_desk.jpg" alt="ノートPCの前で相談する女性" width="800" height="1200"></div>
-  </div>
-  <ul class="medals">
-    <li class="medal"><small>相談料</small><b>0<span>円</span></b><small>※1</small></li>
-    <li class="medal"><small>やりとりは</small><b class="sm">LINE<span>で完結</span></b></li>
-    <li class="medal"><small>未経験・</small><b class="sm">学歴<span>不問</span></b><small>OK</small></li>
-  </ul>
+<!-- ============ 0 ヘッダー（A1: ロゴ＋月桂樹の一行） ============ -->
+<header class="top">
+  <p class="logo"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリア<br>ハック</p>
+  <p class="laurel"><span>20代・30代女性の<br><b>キャリアチェンジ</b>を応援!</span></p>
 </header>
 
-<section class="cta-block" id="cta1">
-  <p class="cta-lead">転職まで <em>完全無料</em></p>
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="ico">LINE</span><span class="t"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span></a>
+<!-- ============ 1 FV（骨格A1／帯色B2オレンジ／背景B1パステル／人物はオフィスカジュアル女性） ============ -->
+<section class="fv">
+  <p class="fv-band"><span>“経験ないし…”で、<b>損してない</b>?!</span></p>
+  <p class="fv-target">＼ 接客・販売・第二新卒・未経験OK ／</p>
+  <h1 class="fv-h"><span class="s">完全無料の</span>LINE転職相談</h1>
+  <div class="fv-body">
+    <div class="fv-photo"><img src="img/office_fv.jpg" alt="オフィスでノートPCに向かう女性" width="800" height="1200" fetchpriority="high"></div>
+    <div class="fv-left">
+      <p class="lbl">女性の転職のプロが</p>
+      <p class="bar">応募から内定まで</p>
+      <p class="bar"><em>“まるごと”</em>伴走</p>
+      <ul class="hash">
+        <li>#自己分析</li><li>#履歴書</li><li>#面接対策</li>
+      </ul>
+    </div>
+  </div>
+  <!-- メダル: 出典の要らない事実だけを置く。実績数字を入れるときは出典を注記すること（要出典） -->
+  <ul class="medals">
+    <li><span>相談料</span><b>0<small>円</small></b><span>ずっと無料</span></li>
+    <li><span>登録は</span><b>1<small>分</small></b><span>LINEだけ</span></li>
+    <li><span>営業電話</span><b class="t">なし</b><span>ブロックで終了</span></li>
+  </ul>
 </section>
 
-<!-- 1. 相談例（A1: 事例カード3枚） -->
+<div class="cta-block">
+  <p class="cta-head">転職まで <b>完全無料</b></p>
+  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span><i class="b-arr"></i></a>
+  <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
+</div>
+
+<!-- ============ 2 目指せる転職の例（A1: 事例を2画面目／見出しピルはB2） ============ -->
 <section class="cases">
-  <h2 class="cases-h">あなたと同じ<mark>転職に悩む</mark>方々が</h2>
-  <ul class="cases-boxes"><li>土日祝<br>休み</li><li>残業<br>少なめ</li><li>未経験<br>OK</li></ul>
-  <p class="cases-sub">の「<em>働きやすい職場</em>」を目指して相談中！</p>
-
+  <p class="pill-h">未経験から、どんな転職ができるの？</p>
+  <p class="sec-lead">あなたと同じように<em class="mk">悩んでいた方</em>が<br>目指している働き方の一例です</p>
+  <ul class="case-tags"><li>土日祝休み</li><li>残業少なめ</li><li>未経験歓迎</li></ul>
+  <!-- 仮置き: 掲載許可を得た実際の事例に差し替える。年収など数字は入れるなら出典・注記つきで -->
   <article class="case">
-    <h3><mark>販売職</mark>から<mark>土日休みの事務職</mark>へ</h3>
-    <figure><img src="img/hand_note.jpg" alt="" width="1200" height="675" loading="lazy"><figcaption>23歳 女性 アパレル販売</figcaption></figure>
-    <p class="case-arrow">＼ シフト制から<em>土日祝休み</em>へ ／</p>
-    <dl class="case-ba"><dt>相談前</dt><dd>休みは平日だけ。友達と予定が合わない</dd><dt class="after">目指す形</dt><dd>土日祝休みの一般事務・営業事務</dd></dl>
-    <p class="case-t">「事務はPCスキルがないと無理」と思い込んでいました。<em>未経験OKの求人の探し方</em>から、履歴書で販売経験をどう書くかまで一緒に考えてもらえました。</p>
+    <p class="case-h">販売スタッフから<br><b>土日休みの一般事務</b>へ</p>
+    <div class="case-in">
+      <img src="img/office_talk.jpg" alt="担当者の話を聞く女性" width="800" height="1200" loading="lazy">
+      <div><p class="who">20代 女性<br>（販売職）</p><p class="ba"><span>シフト制・土日出勤</span><i></i><b>土日祝休み・定時退社</b></p></div>
+    </div>
+    <p class="case-t">「事務は経験がないと無理」と思っていたけど、接客で身についたことを書類でどう伝えるかから一緒に考えてもらえました。</p>
+    <p class="fine">※掲載例（仮置き）。実際の事例に差し替え予定です。</p>
   </article>
-
   <article class="case">
-    <h3><mark>前職3ヶ月</mark>で退職、<mark>第二新卒</mark>で再スタート</h3>
-    <figure><img src="img/riko_pose_listen.jpg" alt="" width="800" height="1200" loading="lazy" class="pos-top"><figcaption>22歳 女性 第二新卒</figcaption></figure>
-    <p class="case-arrow">＼ 短期離職でも<em>次は長く働ける会社</em>へ ／</p>
-    <dl class="case-ba"><dt>相談前</dt><dd>辞めた理由をどう話せばいいかわからない</dd><dt class="after">目指す形</dt><dd>研修のある会社で、腰を据えて働く</dd></dl>
-    <p class="case-t">面接で必ず聞かれる「なぜ3ヶ月で？」の答え方を<em>一緒に練習</em>。責められると思っていたのに、最初から最後まで否定されませんでした。</p>
+    <p class="case-h">第二新卒で<br><b>未経験のIT事務</b>へ</p>
+    <div class="case-in">
+      <img src="img/office_line.jpg" alt="スマホでLINE相談をする女性" width="800" height="1200" loading="lazy">
+      <div><p class="who">20代 女性<br>（新卒1年目で退職）</p><p class="ba"><span>早期退職が不安</span><i></i><b>研修ありの正社員</b></p></div>
+    </div>
+    <p class="case-t">1年で辞めたことをどう話せばいいか分からなくて。面接で聞かれやすいことを、LINEで先に練習できたのが心強かったです。</p>
+    <p class="fine">※掲載例（仮置き）。実際の事例に差し替え予定です。</p>
   </article>
-
-  <article class="case">
-    <h3><mark>フリーター</mark>から<mark>初めての正社員</mark>へ</h3>
-    <figure><img src="img/desk_quiet.jpg" alt="" width="1200" height="675" loading="lazy"><figcaption>25歳 女性 飲食アルバイト</figcaption></figure>
-    <p class="case-arrow">＼ 何がしたいかわからない、から<em>応募できる</em>まで ／</p>
-    <dl class="case-ba"><dt>相談前</dt><dd>やりたい仕事がない。職歴に書けることがない</dd><dt class="after">目指す形</dt><dd>接客経験を活かせるカスタマーサポート</dd></dl>
-    <p class="case-t">自己分析のシートを一緒に埋めたら、<em>アルバイトの経験がそのまま強み</em>になると気づけました。</p>
-  </article>
-  <p class="note">※よく届く相談をもとにした例です。個人の結果を保証するものではありません。</p>
 </section>
 
-<!-- 2. 悩み → 暗転 → どうすれば -->
+<!-- ============ 3 悩み → このまま我慢しても（A1: 吹き出し4つ＋暗転。女性N1向けに1画面へ圧縮） ============ -->
 <section class="worry">
-  <p class="worry-bubble"><small>仕事でお困りのあなたへ</small>こんな<span class="hand">お悩み</span>ありませんか？</p>
-  <ul class="clouds">
-    <li><em>職場の人間関係</em>がストレス</li>
-    <li><em>プライベートの時間</em>がもっと欲しい</li>
-    <li>今の仕事が<em>辛い</em><br>やりがいがない</li>
-    <li><em>給料</em>が少ない</li>
+  <p class="worry-cap">今の仕事でモヤモヤしているあなたへ</p>
+  <h2 class="worry-h">こんな<em class="hand">お悩み</em>、ありませんか？</h2>
+  <ul class="bubbles">
+    <li>立ち仕事・シフトが<br>体力的にキツい</li>
+    <li>土日に友だちと<br>予定が合わない</li>
+    <li>このまま続けても<br>お給料が上がらない</li>
+    <li>何が向いているのか<br>わからない</li>
   </ul>
+  <div class="dark">
+    <p class="d1">しかも、このまま<br>なんとなく続けていると…</p>
+    <p class="d2">未経験歓迎の求人は<br><b>年齢とともに減っていきがち</b></p>
+    <p class="d3">「動ける時期」を逃すのが、<br>いちばんもったいない。</p>
+  </div>
 </section>
 
-<section class="dark">
-  <p class="dark-lead">しかも、このまま<br><b>我慢して働き続けても、、、</b></p>
-  <div class="dark-band"><small>20代後半に入ると</small>「未経験OK」の求人は<br><mark>少しずつ狭まっていきます</mark></div>
-  <ul class="dark-list">
-    <li><b>給料はずっと低いまま</b>昇給の見込みがないまま数年が過ぎる</li>
-    <li><b>休みも時間も増えない</b>シフト・残業で予定が立てられない</li>
-  </ul>
-  <p class="dark-end">なんてことに、、！</p>
-</section>
-
+<!-- ============ 4 でもどうすれば → プロに相談 → ただし → そこで（A1の流れ） ============ -->
 <section class="how">
-  <p class="how-h"><small>＼でも／</small><b>どうすれば…</b></p>
+  <p class="how-h">＼ でも ／<br>どうすればいいの…？</p>
   <ul class="checks">
-    <li>学歴なしでもいい会社に入れる？</li>
-    <li>未経験・スキルなしでも転職できるの？</li>
-    <li>自分に合った仕事がわからない</li>
-    <li>書類選考が全然通らない…</li>
-    <li>何から始めればいいの…</li>
+    <li>未経験でも正社員の事務に応募できる？</li>
+    <li>販売・接客の経験って評価される？</li>
+    <li>書類で何を書けばいいかわからない</li>
+    <li>辞める順番・伝え方がわからない</li>
+    <li>そもそも何から始めればいいの…</li>
   </ul>
-</section>
-
-<!-- 3. エージェントを使え → ただし → そこで自社 -->
-<section class="agent">
-  <p class="hand-s">そんな方は</p>
-  <h2 class="agent-h"><em>転職エージェント</em>を<br>活用しましょう！</h2>
-  <div class="agent-pro">
-    <p class="pro-bubble">転職に詳しいプロが</p>
-    <p class="pro-main"><mark>あなたのキャリアを<br>サポートしてくれます</mark></p>
-  </div>
+  <p class="hand-lead">そんな方は</p>
+  <p class="how-ans"><b>転職のプロ</b>に<br>相談するのが近道！</p>
   <div class="caution">
-    <p class="caution-h">⚠ ただし、注意点が一つ！</p>
-    <p>転職エージェントは<b>“自分に合った”相談相手</b>を選べないと、<em>転職成功から遠ざかってしまいます</em></p>
+    <p class="c-h">ただし、ひとつだけ注意！</p>
+    <p>求人を大量に送ってくるだけのサービスだと、<b>「自分に合うか」を考える前に応募させられてしまう</b>ことも。</p>
   </div>
-  <p class="soko">そこで</p>
+  <p class="sokode">そこで</p>
   <p class="osusume">おすすめなのが</p>
-  <p class="brand"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</p>
+  <p class="logo big"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</p>
 </section>
 
-<!-- 4. とは -->
+<!-- ============ 5 キャリアハックとは（A1: サポート内容） ============ -->
 <section class="about">
-  <p class="about-h">キャリアハックとは</p>
-  <p class="about-pre">LINEで相談 → あなたに合った担当者が</p>
-  <p class="about-big">0から内定まで<br>“すべて”を<br>サポートします！</p>
-  <div class="about-box">
-    <p><em>あなたの理想のキャリア</em>を第一に考え、希望に合う求人だけを紹介</p>
-    <img src="img/hand_note.jpg" alt="" width="1200" height="675" loading="lazy">
-  </div>
-  <div class="about-box rev">
-    <p><em>自己分析から内定まで</em>の“すべて”に寄り添う担当者がつきます</p>
-    <img src="img/riko_pose_listen.jpg" alt="" width="800" height="1200" loading="lazy" class="pos-top">
-  </div>
-  <p class="support-h">＼ <mark>具体的なサポート内容</mark> ／</p>
+  <h2 class="sec-h"><span class="brand">キャリアハック</span>とは</h2>
+  <p class="about-lead">20代・30代女性の<br><em>未経験からのキャリアチェンジ</em>を<br>LINEで無料サポートする相談窓口です</p>
+  <figure class="about-photo"><img src="img/office_desk.jpg" alt="ノートPCとマグカップが置かれたデスク" width="1200" height="675" loading="lazy"></figure>
+  <h3 class="sub-h">具体的なサポート内容</h3>
   <ul class="support">
-    <li>自己分析</li>
-    <li>履歴書・職務経歴書の作成</li>
-    <li>オンライン面接対策</li>
-    <li>未経験OK求人の紹介</li>
-    <li>退職・入社時期の相談</li>
+    <li><span>01</span>やりたいこと・向いていることの整理</li>
+    <li><span>02</span>履歴書・職務経歴書づくり</li>
+    <li><span>03</span>面接で聞かれやすいことの練習</li>
+    <li><span>04</span>未経験歓迎の求人のご紹介</li>
+    <li><span>05</span>退職の伝え方・スケジュール相談</li>
   </ul>
 </section>
 
-<!-- 5. 理由 01〜04 -->
+<!-- ============ 6 選ばれる理由（A1: 番号カード4つ／カード見た目はB1パステル） ============ -->
 <section class="reasons">
-  <h2 class="reasons-h">キャリアハックで<br>理想の会社に出会える理由</h2>
+  <p class="script">Reason</p>
+  <h2 class="sec-h"><span class="brand">キャリアハック</span>が<br>選ばれる<em class="num">4</em>つの理由</h2>
   <ol class="reason-list">
-    <li><span class="num">01</span><h3><em>LINEで完結</em>するから<br>電話も来店もいらない</h3><img src="img/desk_quiet.jpg" alt="" width="1200" height="675" loading="lazy"></li>
-    <li><span class="num">02</span><h3><em>あなた専用の担当者</em>が<br>内定まで“すべて”サポート</h3><img src="img/riko_pose_desk.jpg" alt="" width="800" height="1200" loading="lazy" class="pos-hands"></li>
-    <li><span class="num">03</span><h3><em>応募しなくてもOK</em><br>相談だけで終わっても大丈夫</h3><img src="img/hand_note.jpg" alt="" width="1200" height="675" loading="lazy"></li>
-    <li><span class="num">04</span><h3>費用は採用した企業が払うから<br><em>相談料は0円</em>※1</h3><p class="zero" aria-hidden="true"><span>相談料</span>¥0</p></li>
+    <li><span class="rn">01</span><h3>「まだ決めてない」から相談OK</h3><p>転職するかどうか迷っている段階から。求人を見ずに終わっても、催促はしません。</p></li>
+    <li><span class="rn">02</span><h3>未経験OKの職種に強い</h3><p>一般事務・営業事務・受付・IT事務など、販売・接客からの転職先を中心にご案内します。</p></li>
+    <li><span class="rn">03</span><h3>書類・面接まで伴走</h3><p>接客の経験を、事務の書類でどう伝えるか。面接前の練習もLINEでできます。</p></li>
+    <li><span class="rn">04</span><h3>LINEだけで完結</h3><p>電話・来社はいりません。仕事終わりのすき間時間に、自分のペースで進められます。</p></li>
   </ol>
-  <p class="dakara">だから</p>
-  <p class="red-band">初めての転職でも<br><b>安心して相談できます</b></p>
 </section>
 
-<section class="cta-block">
-  <p class="cta-lead">転職まで <em>完全無料</em></p>
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="ico">LINE</span><span class="t"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span></a>
-</section>
+<div class="cta-block alt">
+  <p class="cta-head">転職まで <b>完全無料</b></p>
+  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span><i class="b-arr"></i></a>
+  <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
+</div>
 
-<!-- 6. 職種（A1: 非公開求人カード） -->
+<!-- ============ 7 求人例（並びはA1／帯グラデはB8／タグはB1） ============ -->
 <section class="jobs">
-  <h2 class="jobs-h">相談の多い職種</h2>
+  <div class="jobs-band">
+    <p class="bubble-h">たとえば</p>
+    <h2>相談できる求人の例</h2>
+    <p>販売・接客から目指しやすい仕事</p>
+  </div>
+  <!-- 仮置き: 実際に紹介できる求人が決まったら条件を差し替える -->
   <ul class="job-list">
-    <li><h3>一般事務・営業事務</h3><ul><li>土日祝休みの求人が多い</li><li>PC入力から始められる</li><li>未経験可の求人あり</li></ul></li>
-    <li><h3>カスタマーサポート</h3><ul><li>接客・販売の経験が活きる</li><li>研修制度のある会社が多い</li><li>未経験可の求人あり</li></ul></li>
-    <li><h3>IT・Webのアシスタント</h3><ul><li>リモート可の求人もある</li><li>入社後に覚える前提の求人あり</li><li>未経験可の求人あり</li></ul></li>
+    <li><h3>一般事務</h3><ul class="tg"><li>完全週休2日</li><li>土日祝休み</li><li>未経験可</li></ul><p>データ入力・電話対応・書類作成など。PCは基本操作からでOKの求人も。</p></li>
+    <li><h3>営業事務</h3><ul class="tg"><li>残業少なめ</li><li>研修あり</li><li>未経験可</li></ul><p>見積・受発注のサポート。接客で身についた気配りが活きやすい仕事です。</p></li>
+    <li><h3>IT事務・カスタマーサポート</h3><ul class="tg"><li>在宅あり</li><li>研修あり</li><li>未経験可</li></ul><p>問い合わせ対応やアカウント管理など。リモート勤務がある求人も。</p></li>
   </ul>
-  <p class="note">※求人の有無・条件は時期と地域によって変わります。</p>
+  <p class="fine">※掲載は職種の一例です（仮置き）。紹介できる求人は時期・地域・ご希望により異なります。</p>
 </section>
 
-<!-- 7. こんな自分でも？ → お任せください -->
-<section class="doubt">
-  <p class="doubt-h"><small>でも、こんな自分でも</small><mark>本当に転職できますか？</mark></p>
+<!-- ============ 8 こんな自分でも？ → お任せください（A1のチャット吹き出し） ============ -->
+<section class="self">
+  <h2 class="self-h">でも、こんな私でも<br>本当に大丈夫…？</h2>
   <ul class="chat">
-    <li><i aria-hidden="true"></i>前職を3ヶ月で辞めてしまったから厳しいかも</li>
-    <li class="r"><i aria-hidden="true"></i>経歴ナシ・学歴ナシの私でも大丈夫？</li>
-    <li><i aria-hidden="true"></i>自分に合った仕事がわからない…</li>
+    <li>販売しかやったことがないけど、事務にいける？</li>
+    <li>前の会社を1年で辞めてしまった…</li>
+    <li>やりたいことがまだ決まっていない</li>
   </ul>
-  <p class="makase">お任せください！</p>
-  <p class="makase-t">高卒で就職した人の<em>3年以内の離職率は36.9%</em>※2。迷っているのはあなただけではありません。担当者が<em>0から内定まで</em>一緒に進めるので、経歴に自信がなくても大丈夫です。</p>
-  <div class="tape">
-    <p class="tape-h">⚠ ただ1点だけお願いが…</p>
-    <p>相談日の変更・キャンセルは、<b>前日までにLINEで一言</b>ください。それだけで大丈夫です（罰則などはありません）。</p>
+  <p class="okay">大丈夫です！</p>
+  <p class="okay-t">同じ不安から相談を始める方がほとんど。<br>まとまっていない気持ちのままで、<br>LINEを送ってください。</p>
+</section>
+
+<!-- ============ 9 ご利用の流れ（A1: STEP3つ） ============ -->
+<section class="flow" id="flow">
+  <h2 class="sec-h"><span class="brand">キャリアハック</span><br>無料サポートの<em>流れ</em></h2>
+  <ol class="flow-list">
+    <li><span class="step">STEP<b>1</b></span><div><h3>ページ内のLINEボタンを押す</h3><p>友だち追加するだけ。相談の段階では本名はいりません。</p></div></li>
+    <li><span class="step">STEP<b>2</b></span><div><h3>かんたんな質問に答える</h3><p>今のお仕事・希望の働き方などを、LINEのトーク画面で選ぶだけ。</p></div></li>
+    <li><span class="step">STEP<b>3</b></span><div><h3>担当者とLINEで相談</h3><p>進めると決めたら、求人紹介から応募・面接までサポートします。</p></div></li>
+  </ol>
+  <div class="cta-block in">
+    <p class="cta-head">転職まで <b>完全無料</b></p>
+    <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span><i class="b-arr"></i></a>
+    <p class="cta-note">※登録無料・営業電話なし・ブロックで終了</p>
   </div>
 </section>
 
-<!-- 8. 流れ -->
-<section class="flow">
-  <h2 class="flow-h"><small>キャリアハック</small>無料サポートの流れ</h2>
-  <ol class="steps">
-    <li><span class="step">STEP1</span><div class="mini-btn"><span class="ico">LINE</span>今すぐ無料で相談する</div><p>ページ内の<em>LINE登録ボタン</em>を押す</p></li>
-    <li><span class="step">STEP2</span><div class="phone"><b>【公式】キャリアハック</b><small>「追加」ボタンをタップして登録！</small><span class="add">追加</span></div><p>公式LINEを<em>友だち追加</em></p></li>
-    <li><span class="step">STEP3</span><div class="phone talk"><span class="msg">ご希望の働き方を教えてください（1分）</span></div><p>トーク画面で<em>かんたんアンケート</em>に回答</p></li>
-    <li><span class="step">STEP4</span><p>担当者と<em>無料相談</em>スタート<br><small>LINEのまま／オンライン面談も選べます</small></p></li>
-  </ol>
-</section>
-
-<section class="cta-block" id="last">
-  <p class="cta-lead">転職まで <em>完全無料</em></p>
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="ico">LINE</span><span class="t"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span></a>
-</section>
-
-<!-- 9. FAQ -->
-<section class="faq">
-  <h2 class="faq-h">よくある質問</h2>
-  <dl>
-    <dt>まだ転職するか決めていませんが、相談だけでも可能ですか？</dt>
-    <dd>もちろん可能です。少しでも不安なことがあれば、お気軽にLINEからメッセージをお送りください。</dd>
-    <dt>未経験・資格なしでも大丈夫ですか？</dt>
-    <dd>大丈夫です。未経験OKの求人を中心にご紹介します。</dd>
-    <dt>本当に無料ですか？</dt>
-    <dd>はい。相談から内定まで費用はかかりません。人材紹介の費用は採用した企業が払う仕組みです※1。</dd>
-    <dt>地方に住んでいるのですが、サポートは受けられますか？</dt>
-    <dd>はい、LINEとオンラインで対応しています。</dd>
-    <dt>営業の電話がかかってきませんか？</dt>
-    <dd>やりとりはLINEが基本です。電話はご希望の場合だけです。</dd>
-  </dl>
+<!-- ============ 10 FAQ（A1の4問＋B2「なぜ無料？」／アコーディオンはB1） ============ -->
+<section class="faq" id="faq">
+  <h2 class="sec-h">よくある質問</h2>
+  <details open><summary>まだ転職するか決めていませんが、相談だけでもいいですか？</summary><div class="a">もちろん大丈夫です。迷っている段階で相談していただくことを想定しています。求人を見ずに終わっても、催促はしません。</div></details>
+  <details><summary>未経験・資格なしでも大丈夫ですか？</summary><div class="a">大丈夫です。未経験歓迎の求人を中心にご案内します。職務経歴書がまだ無くても、一から作るところから始められます。</div></details>
+  <details><summary>なぜ無料なのですか？</summary><div class="a">採用が決まったときに、提携先が求人企業から紹介手数料を受け取る仕組みのためです。あなたに費用がかかることはありません※1。</div></details>
+  <details><summary>電話がかかってきたりしませんか？</summary><div class="a">担当者から電話をかけることはありません。電話で話したい場合だけ、つながりやすい時間帯を送ってください。</div></details>
+  <details><summary>地方に住んでいても相談できますか？</summary><div class="a">できます。やりとりはLINEで完結します。紹介できる求人は地域によって異なります。</div></details>
+  <details><summary>途中でやめても大丈夫ですか？</summary><div class="a">大丈夫です。相談の途中でも、応募や内定のあとに辞退しても、違約金や罰則はありません。ブロックしても同じです。</div></details>
 </section>
 
 <footer class="foot" id="privacy">
   <p class="f-name"><span data-operator>運営会社（社名 ※確定後に記載）</span></p>
-  <p class="f-sub">相談対応：<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span>／<span data-permit>厚生労働大臣許可 ※確定後に記載</span></p>
+  <p class="f-sub">相談対応：<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span><br><span data-permit>厚生労働大臣許可 ※確定後に記載</span></p>
+
   <details class="f-priv">
     <summary>個人情報の取り扱い</summary>
-    <p><strong>キャリアハック</strong>は、<span data-operator>当社（運営会社 ※社名は確定後に記載）</span>が運営するInstagramのアカウントです。実際のご相談に対応するのは、<strong>提携人材紹介会社の担当者</strong>です。</p>
-    <p>LINEで送っていただいたご相談内容・在職状況は、この担当者が読みます。担当者が読むことへの同意は、LINEの1通目で確認します。</p>
-    <p><strong>求人企業へのご推薦に進むときは、提供先・提供項目をあらためてお示しし、ご本人の同意をいただいてから提供します。</strong></p>
-    <p>LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・流入経路が記録されます。</p>
+    <p><strong>キャリアハック</strong>は、<span data-operator>当社（運営会社 ※社名は確定後に記載）</span>が運営するInstagramのアカウントです。実際のご相談に対応するのは、<strong>①提携人材紹介会社の担当者</strong>です。</p>
+    <p><strong>①の担当者が読むことへの同意は、LINEの1通目でお示しし、そこで確認します。</strong>送っていただいた求人票・ご相談内容・在職状況は、この担当者が読みます。登録しただけの段階では、担当者に送られるものはありません。</p>
+    <p><strong>②求人企業へのご推薦に進むときは、提供先・提供項目をあらためてお示しし、ご本人の同意をいただいてから提供します。</strong>同意がなければ、ご相談だけで終わりです。</p>
+    <p>これとは別に、LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・流入経路が記録されます。</p>
+    <dl class="partner">
+      <dt>提供先</dt><dd>①<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span>＝ご相談の対応<br>②①を通じてご推薦する求人企業＝同意のあと</dd>
+      <dt>許可番号</dt><dd data-permit>（厚生労働大臣許可 ※確定後に記載）</dd>
+      <dt>①へ渡るもの（相談の段階）</dt><dd>LINEの表示名／ご相談内容／送っていただいた求人票／在職状況</dd>
+      <dt>②へ渡るもの（推薦のとき・同意のあと）</dt><dd>氏名／連絡先／希望条件／職務経歴</dd>
+      <dt>提供の方法</dt><dd>電磁的記録の送信</dd>
+    </dl>
+    <p>許可番号は、厚生労働省「人材サービス総合サイト」の事業所検索で確認できます。</p>
   </details>
+
   <ol class="sources">
     <li>※1 職業安定法 第32条の3 第2項。人材紹介会社は原則として求職者から手数料を受け取れません。費用は採用した企業が払います。</li>
-    <li>※2 厚生労働省「新規学卒就職者の離職状況（令和5年3月卒業者）」2026年10月23日公表。大学卒は31.2%。</li>
   </ol>
   <p class="copy">© キャリアハック</p>
 </footer>
+</main>
 
-<!-- 追従CTA（A1と同じく最上部から最下部まで常時表示） -->
+<!-- 追従CTA（A1: 常時） -->
 <div class="sticky">
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="ico">LINE</span><span class="t"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span></a>
+  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>＼簡単<b>1分</b>で登録／</small>今すぐ<b>無料</b>で相談する</span><i class="b-arr"></i></a>
 </div>
 
 <script>
@@ -306,24 +285,6 @@
   }
   els = document.querySelectorAll('a[data-cta]');
   for (i = 0; i < els.length; i++) els[i].setAttribute('href', href);
-
-  // ---- スクロールでふわっと出す ----
-  var fades = [];
-  els = document.querySelectorAll('body > section > *, .medal, .reason-list > li, .case, .steps > li');
-  for (i = 0; i < els.length; i++) {
-    if (els[i].matches('.btn-line, .cta-block > *') || els[i].parentNode.closest('.fade-up')) continue;
-    els[i].classList.add('fade-up');
-    fades.push(els[i]);
-  }
-  function fadeOnScroll() {
-    var vh = window.innerHeight;
-    for (var k = 0; k < fades.length; k++) {
-      if (!fades[k].classList.contains('active') && fades[k].getBoundingClientRect().top < vh * 0.9) fades[k].classList.add('active');
-    }
-  }
-  window.addEventListener('scroll', fadeOnScroll, { passive: true });
-  window.addEventListener('resize', fadeOnScroll);
-  fadeOnScroll();
 })();
 </script>
 </body>
