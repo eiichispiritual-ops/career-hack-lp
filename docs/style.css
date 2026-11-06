@@ -58,7 +58,8 @@ em { font-style: normal; }
 .fv-h::after { content: ''; position: absolute; left: 6%; right: 6%; bottom: 0; height: 7px;
   background: radial-gradient(circle at 5px -1px, transparent 4px, var(--blue) 4px 5.5px, transparent 5.5px) 0 0 / 10px 7px repeat-x; }
 .fv-body { position: relative; height: 300px; margin-top: 8px; }
-.fv-photo { position: absolute; right: -6px; top: -4px; width: 62%; height: 330px; z-index: 0; }
+.fv-photo { position: absolute; right: -6px; top: 104px; width: 62%; height: 330px; z-index: 0; }
+.fv-photo:has(img) .ph { display: none; }
 .fv-photo .ph, .fv-photo img { position: absolute; inset: 0; width: 100%; height: 100% !important; object-fit: contain; object-position: 50% 100%; }
 .fv-photo img { z-index: 1; }
 .ph-note { position: absolute; left: 56%; top: 66%; transform: translateX(-50%); white-space: nowrap; font-size: 10px; font-weight: 700; color: var(--navy); background: rgba(255,255,255,.85); padding: 1px 8px; border-radius: 99px; }
