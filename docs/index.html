@@ -9,7 +9,10 @@
 </head>
 <body>
 
-<!-- 流入経路の受け口。?src= を読んで JS が値を入れる(画面には出さない)。UTAGE側フォームで受け取る前提 -->
+<!-- 流入経路の値の置き場。?src= と ?worry= を JS が入れる（画面には出さない）。
+     注意: このフォームは送信していない。LINEの友だち追加URLはクエリを引き継がないため、
+     値をLINE側へ届けるには別の手段が要る。手段が決まるまで計測は成立しない。
+     詳細は spec/index_html_notes.md -->
 <form id="lp-params" hidden aria-hidden="true"><input type="hidden" name="src" value="direct"><input type="hidden" name="worry" value=""></form>
 
 <!-- ============ 1 FV ============ -->
@@ -363,7 +366,15 @@
   var form = document.getElementById('lp-params');
   var links = document.querySelectorAll('a[data-cta]');
   // URLに worry があれば復元する（戻る・リロードで選択が消えないように）
+  // ?worry= は画面に出すので、5択に実在する値だけを通す。
+  // 任意の文字列を通すと、細工したURLを配るだけでこのページに好きな文言を出せてしまう。
+  var allowed = [];
+  var pickBtns = document.querySelectorAll('.pick button');
+  for (var w = 0; w < pickBtns.length; w++) {
+    allowed.push(pickBtns[w].getAttribute('data-worry'));
+  }
   var selected = q.get('worry') || '';
+  if (selected && allowed.indexOf(selected) === -1) selected = '';
 
   var pickedEl = document.getElementById('picked');
 
