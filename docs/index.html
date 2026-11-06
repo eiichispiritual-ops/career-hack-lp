@@ -11,8 +11,7 @@
 
 <!-- 流入経路の値の置き場。?src= と ?worry= を JS が入れる（画面には出さない）。
      注意: このフォームは送信していない。LINEの友だち追加URLはクエリを引き継がないため、
-     値をLINE側へ届けるには別の手段が要る。手段が決まるまで計測は成立しない。
-     詳細は spec/index_html_notes.md -->
+     値をLINE側へ届けるには別の手段が要る。手段が決まるまで計測は成立しない。 -->
 <form id="lp-params" hidden aria-hidden="true"><input type="hidden" name="src" value="direct"><input type="hidden" name="worry" value=""></form>
 
 <!-- ============ 1 FV ============ -->
@@ -40,7 +39,7 @@
       
       <h1>有休、<br>退職日を決める前に数えて。</h1>
       
-      <p class="lead-sub">有休が15日残っているのに、退職日まで10日しかない。そうなると5日ぶんは使いきれません。数えるのが先、退職日の相談はそのあと。</p>
+      <p class="lead-sub">有休が15日残っているのに、退職日までの出勤日が10日しかない。そうなると5日ぶんは使いきれません。数えるのが先、退職日の相談はそのあと。</p>
       <div class="talk">
         
         <div class="bubble">有休みたいに、順番で損する話はほかにもあります</div>
@@ -48,10 +47,10 @@
         <div class="bubble me">いちばん近いのはこれです</div>
         <div class="pick" role="group" aria-label="いま気になっていること">
           <!-- data-go: 選んだ悩みに答えている節へ送る。選ばせるだけで何も起きないと飾りになる -->
-          <button type="button" aria-pressed="false" data-go="papers" data-worry="退職のときに何をもらうのか知らない">退職のときに何をもらうのか知らない</button>
+          <button type="button" aria-pressed="false" data-go="leave" data-worry="有休が使いきれるか分からない">有休が使いきれるか分からない</button>
           <button type="button" aria-pressed="false" data-go="money" data-worry="辞めたあとのお金が不安">辞めたあとのお金が不安</button>
           <button type="button" aria-pressed="false" data-go="accept" data-worry="承諾する前に確認することが分からない">承諾する前に確認することが分からない</button>
-          <button type="button" aria-pressed="false" data-go="inbox" data-worry="気になる求人がある">気になる求人がある</button>
+          <button type="button" aria-pressed="false" data-go="compare" data-worry="気になる求人がある">気になる求人がある</button>
           <button type="button" aria-pressed="false" data-go="sheet" data-worry="求人票の見方を覚えたい">求人票の見方を覚えたい</button>
         </div>
         <!-- 選んだ悩みに答えている節へのリンク。勝手にスクロールすると5択を選び直せなく
@@ -60,8 +59,8 @@
       </div>
       <p class="pick-sub">どれでもない人も、そのまま聞けます</p>
       <p class="consent">求人企業への推薦は同意のあと。<a href="#privacy">個人情報の取り扱い</a></p>
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
-    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
+    <p class="cta-after">登録すると、有休の数え方がすぐ届きます</p>
     </div>
   </div>
 </section>
@@ -70,9 +69,9 @@
 <section id="loss">
   <div class="wrap">
     <h2>辞める前に知らないと損する3選</h2>
-    <p>さっきの有休もこれです。順番と時期を知らないまま進めると、あとで取り返せません。残り2つも先に置いておきます。</p>
+    <p>さっきの有休もこれです。知っていれば使いきれたもの、早く受け取れたものが、順番と時期を外すと手元に来ません。残り2つも先に置いておきます。</p>
     <ol class="lost">
-      <li><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。有休についてはこの順番です。</strong></p></li>
+      <li id="leave"><span class="no">01</span><h3>有休は、退職日の決め方しだいで使いきれなくなる</h3><p>退職日を先に決めてしまうと、残っている有休を使いきれない形で話が進むことがあります。<strong>先に残日数の確認、それから退職日の相談。有休についてはこの順番です。</strong></p></li>
       <li id="papers"><span class="no">02</span><h3>辞めたあと届く書類は、自分から言わないと遅れる</h3><p>受け取るのは主に3つ。<strong>離職票</strong>（ハローワークの手続きに使う）、<strong>雇用保険被保険者証</strong>と<strong>源泉徴収票</strong>（次の会社に出す）です。どれも郵送で後日になることが多く、届くのが遅れるとその分だけ手続きも後ろにずれます。最後の出勤日に「いつ届きますか」と一言。それだけで変わります。</p></li>
       <li id="money"><span class="no">03</span><h3>失業手当は、辞めてすぐには振り込まれない</h3><p>自己都合で辞めた場合、失業手当は申請してすぐには振り込まれません。待期と給付制限の期間があり、その分は自分の蓄えで持たせることになります（期間は退職の理由や回数で変わるので、ハローワークで自分の場合を確認してください）。<strong>在職中なら、条件が合わなければ今の会社に留まる、という選択が残ります。</strong></p></li>
     </ol>
@@ -89,13 +88,13 @@
      すぐ下の本文とFAQで言い直しており、同じ許可を3回重ねていた -->
     <!-- 本文が説明している数え方を図にしたもの。図はHTML/CSSで組む（画像にすると文字が崩れる） -->
     <figure class="diagram">
-      <figcaption>有休が15日残っている場合</figcaption>
+      <figcaption>有休が15日残っていて、退職日までの出勤日が10日の場合</figcaption>
       <div class="bar">
-        <div class="seg used" style="width:66.7%"><span>使える 10日</span></div>
+        <div class="seg used" style="width:66.7%"><span>消化できる 10日</span></div>
         <div class="seg lost" style="width:33.3%"><span>5日</span></div>
       </div>
-      <p class="legend"><span class="key used"></span>退職日までに消化できる　<span class="key lost"></span>使いきれない</p>
-      <p class="note">退職日を10日後に決めてしまうと、残り5日は消化する日がありません。先に残日数を数えてから退職日を相談すると、この5日が残りません。</p>
+      <p class="legend"><span class="key used"></span>消化できる　<span class="key lost"></span>出勤日が足りず使えない</p>
+      <p class="note">残りの出勤日が10日しかない時期に退職日を決めると、5日ぶんは消化する日がありません。有休は出勤日で数えるので、カレンダーの日数ではなく出勤日で見てください。</p>
     </figure>
     <div class="frame">
       
@@ -123,14 +122,14 @@
     <p class="closing">この4つは、求人票を見れば自分で確かめられます。手が止まるのは、そこに書いていない項目に移ったときです。</p>
     
     <h3 class="sub-h" id="accept">内定をもらってから、承諾するまでに</h3>
-    <p>ここで確かめるのは、求人票ではなく<strong>労働条件通知書</strong>です。会社は、働きはじめる前に労働条件を明示することになっています（書面のほか、希望すればメール等でも受け取れます）。</p>
+    <p>ここで確かめるのは、求人票ではなく<strong>労働条件通知書</strong>です。会社は、労働契約を結ぶときに労働条件を明示することになっています（書面のほか、希望すればメール等でも受け取れます）。承諾の前に出ないこともあるので、出ていなければ「先に条件を文書で見たい」と伝えてください。</p>
     <ul class="bullets">
       <li>求人票と金額が同じか（求人票は募集のための案内で、契約の中身は通知書のほうです）</li>
       <li>固定残業代が何時間分で、超えた分が別で払われると書いてあるか</li>
       <li>配属先と仕事の内容が、面接で聞いた話と合っているか</li>
       <li>返事の期限はいつか（その場で答えなくてかまいません）</li>
     </ul>
-    <p>通知書をもらう前に承諾を求められたら、そこはいったん止めてください。</p>
+    <p>口頭の説明だけで承諾を求められたときも、同じです。文書を見てから返事をして構いません。</p>
     <div class="mute-bubble">
 
       <p>書いてあることを読むだけなら、ここまでで足ります。</p>
@@ -140,8 +139,8 @@
     </div>
     <p style="margin-top:16px">「こんな求人を見てもらうほどじゃないかな」と思っても、1件でいいので送ってください。</p>
       
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
-    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
+    <p class="cta-after">送った求人票に、見るところを書いて返ってきます</p>
   </div>
 </section>
 
@@ -183,7 +182,7 @@
     <!-- 2026-11-06: 顔と名前だけが貼られ、LINEで返すのが誰なのか読者に分からなかった。
          演者が返す設計に見えると、許可事業の業務を個人が請けているように読める。
          ここで役割を分けておく。演者の体験談は、実在の人物かが未確定なので書かない -->
-    <p>押したあとに何が起きるかを、順番に書いておきます。<strong>返事を書くのは<span data-name>りこ</span>ではなく、提携先の人材紹介会社の担当者です。</strong>求人の紹介には国の許可が必要なので、そこは資格を持っている人にお願いしています。</p>
+    <p>押したあとに何が起きるかを、順番に書いておきます。<strong>返事を書くのは<span data-name>りこ</span>ではなく、提携先の人材紹介会社の担当者です。</strong>求人を紹介するには国の許可を受けた会社である必要があるので、そこは許可を持つ提携先に任せています。</p>
     
     <ol class="flow-steps">
       <li><b>届く</b>登録するとすぐ、最初のメッセージが自動で届く。有休の残り日数の数え方と、退職日を決める前に確認すること。それと、このページの12項目を求人票を開きながら1つずつ確認できる形にしたもの。読むだけで終わってかまいません。</li>
@@ -202,8 +201,8 @@
     </ul>
     <p>見た結果を返したあと、お仕事のご紹介に進みたい方だけ、送り先をうかがいます。</p>
     
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
-    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
+    <p class="cta-after">相談せず、届いたものを読むだけでも</p>
   </div>
 </section>
 
@@ -245,7 +244,7 @@
       </ol>
     </div>
 
-    <p class="t2">ここに書けなかった話</p>
+    <p class="t2">ここでは答えが1つに決まらないもの</p>
     <ul>
       <li>あなたの引き継ぎの時期から逆算した、言い出す日</li>
       <li>在職したまま進めるときの、連絡の受け方</li>
@@ -255,8 +254,8 @@
     <!-- 「12項目をLINEでも配る」は、ページに全文を載せた以上、登録の理由にならない。
          LINEでしか得られないのは上の3項目（個別の事情で変わるもの）なので、そちらに寄せた -->
     <p>送る求人がなくても、この3つだけ聞いて終わりにしてもかまいません。</p>
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
-    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
+    <p class="cta-after">この3つだけ聞いて終わりにしても</p>
   </div>
 </section>
 
@@ -268,7 +267,7 @@
     
     <!-- 「〜してもかまいません」が全体で30回を超えていたため、FAQの答えを
          許可の言い回しから事実の説明へ変えた。読者が知りたいのは可否より何が起きるか -->
-    <details><summary>Q まだ辞めると決めていなくても、相談だけでも大丈夫ですか？</summary><div class="a">A 決めている人向けの窓口ではありません。求人を見ずに終わっても、担当者から催促はしません。</div></details>
+    <details><summary>Q まだ辞めると決めていなくても、相談だけでも大丈夫ですか？</summary><div class="a">A できます。決まっていない状態で聞きに来ていただくことを想定しています。求人を見ずに終わっても、担当者から催促はしません。</div></details>
     <details><summary>Q 応募していない求人でもいいですか。見たら応募しなきゃダメですか？</summary><div class="a">A むしろ応募前のほうが選び直せます。見たあとで進めないと決めても、それで終わります。</div></details>
     <details><summary>Q 他社のエージェント経由の求人でもいいですか？</summary><div class="a">A 見るだけなら支障ありません。応募の進め方は、そのエージェントの流れを優先してください。</div></details>
     <details><summary>Q スクショでもいいですか？</summary><div class="a">A スクショでもURLでも、会社名だけでも見られます。</div></details>
@@ -289,8 +288,8 @@
   <div class="wrap">
     <h2>決めてなくていいので、聞くだけどうぞ</h2>
     <p class="consent">求人企業へのご推薦は、ご同意をいただいてからです。<a href="#privacy">個人情報の取り扱いについて</a></p>
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
-    <p class="cta-after">LINEで届く → 読むだけでOK → 返信は自由</p>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
+    <p class="cta-after">聞くだけで終わっても、催促はしません</p>
   </div>
 </section>
 <section class="exit-box">
@@ -303,11 +302,11 @@
         <li>この話をしたリール（Instagram ※リンク準備中）</li>
         <li><span data-name>りこ</span>のプロフィール（Instagram ※リンク準備中）</li>
       </ul>
-      <!-- 「チェックシートだけ受け取る」は、12項目をページに全文載せた時点で
-           登録の理由にならなくなった。相談せず読むだけ、という出口に言い換えた -->
-      <a class="cta-sub" href="#" data-cta>読むだけで終わりにする</a>
-      <p class="note">最初のメッセージが届いたあと、何も送らなければそのままです。催促はしません。</p>
-      <p class="note">リールとプロフィールは、登録しないで見られます。</p>
+      <!-- このボタンはLINE登録に遷移する。「読むだけで終わりにする」だと
+           登録しない出口に見えて、押した先の行為と食い違っていた -->
+      <a class="cta-sub" href="#" data-cta>LINEで受け取っておく</a>
+      <p class="note">登録すると最初のメッセージが届きます。そのあと何も送らなければ、そのままです。催促はしません。</p>
+      <p class="note">上のリールとプロフィールは、登録しないで見られます。</p>
     </div>
   </div>
 </section>
@@ -347,7 +346,7 @@
   <div class="wrap">
     
     <p class="consent priv"><span class="picked" id="picked" hidden></span><a href="#privacy">個人情報の取り扱い</a></p>
-    <a class="cta" href="#" data-cta>とりあえず聞いてみる</a>
+    <a class="cta" href="#" data-cta>LINEで聞いてみる</a>
     <p class="cta-after">読むだけでOK／返信は自由</p>
   </div>
 </div>
@@ -427,11 +426,13 @@
   var gotoA = document.getElementById('goto-a');
   // 行き先の節ごとの見出し。data-go の値と対応させる
   var GO_LABEL = {
+    leave:  'その話はここに書いています（有休と退職日の順番）',
     papers: 'その話はここに書いています（辞めたあと届く書類）',
     money:  'その話はここに書いています（失業手当が振り込まれる時期）',
     accept: 'その話はここに書いています（内定をもらってから、承諾するまでに）',
     inbox:  'その話はここに書いています（登録したあとに起きること）',
-    sheet:  'その話はここに書いています（求人票で最初に見るところ4選）'
+    sheet:  'その話はここに書いています（求人票で最初に見るところ4選）',
+    compare: 'その話はここに書いています（自分で調べるのと、どう違う？）'
   };
 
   function apply() {

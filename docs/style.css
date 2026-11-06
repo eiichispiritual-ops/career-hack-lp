@@ -23,7 +23,7 @@
   --radius-pill: 999px;
   --gutter: 16px;           /* 全23社が左右16px前後 */
   --maxw: 420px;
-  /* 2026-11-06 修正(深刻度2): 宣言72pxに対し実測138px。差の50pxでfooter最終行
+  /* 宣言72pxに対し実測138px。差の50pxでfooter最終行
      （許可番号の確認先＝法務上もっとも隠してはいけない行）が追従バーに隠れていた */
   --sticky-h: 138px;
 
@@ -162,7 +162,7 @@ p { margin: 0 0 14px; }
 .bar.us { background: var(--accent); }
 
 /* LINE風チャット（C12 FV型 + C9の登録後プレビュー型） */
-/* 採点#5対応: 水色#7a9fc4は紺・生成りの2色設計から浮くため、アクセントの明度違いに寄せた */
+/* 水色#7a9fc4は紺・生成りの2色設計から浮くため、アクセントの明度違いに寄せた */
 .talk { background: #3d5173; border-radius: var(--radius); padding: 11px 10px; }
 .talk .bubble {
   background: #fff; border-radius: 14px; padding: 10px 13px;
@@ -226,8 +226,8 @@ p { margin: 0 0 14px; }
 :root { --accent: #2b3a55; --accent-dark: #1d2a40; --bg-soft: #f4f1ea; }
 
 .fv { padding-top: 0; }
-/* 採点#4対応: 4/3 だと頭頂と顎下が切れるため 3/4 に。人物が収まる */
-/* 採点5周目#2対応: 3/4(520px)だと5択が1つも初見に入らず「入口が見えないFV」になっていた。
+/* 4/3 だと頭頂と顎下が切れるため 3/4 に。人物が収まる */
+/* 3/4(520px)だと5択が1つも初見に入らず「入口が見えないFV」になっていた。
    1/1(390px)に縮めて、見出し→吹き出し→ボタン上部までを844px内に収める */
 /* 2026-11-06 全面見直し:
    4/3→3/4→1/1→16/7 と比率だけを往復させた結果、16/7では顔が completely 切れ、
@@ -269,13 +269,13 @@ p { margin: 0 0 14px; }
 .lead { color: var(--fg-sub); }
 
 .pic { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); margin: 0 0 14px; background: var(--bg-soft); }
-/* 採点3周目#1対応: 画像を1200x675(16:9)で作り直したので枠も16/9に。
+/* 画像を1200x675(16:9)で作り直したので枠も16/9に。
    4/3のままだと横25%が切れ、ペン先・マグ・眼鏡のテンプルが画面外に出ていた。
    object-position は16:9を16:9に入れる限り無意味なので削除 */
 .pic-fv { aspect-ratio: 16 / 9; }
 
 /* 本文の内容を図にしたもの。雰囲気写真の代わりに置く。
-   AI生成画像は文字が破綻するので、図はHTML/CSSで作る */
+   画像にすると文字が崩れるため、図はHTML/CSSで組む */
 .diagram { margin: 0 0 16px; padding: 14px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
 .diagram figcaption { font-size: 13px; font-weight: 700; margin: 0 0 10px; }
 .diagram .bar { display: flex; height: 44px; border-radius: 6px; overflow: hidden; }
@@ -345,7 +345,7 @@ p { margin: 0 0 14px; }
 .inv .consent a, .final .consent a { color: #fff; }
 .sheet { background: #fff; color: var(--fg); border-radius: var(--radius); padding: 14px; margin: 0 0 16px; }
 .sheet .t { font-size: 15px; font-weight: 800; margin: 0 0 8px; }
-/* 採点2周目#6対応: 2つのリストの境目を作る見出し */
+/* 2つのリストの境目を作る見出し */
 #rest .t2 { font-size: 15px; font-weight: 800; margin: 24px 0 8px; }
 /* 2026-11-06: 項目名だけだったリストに「どう見るか」を足した。
    実際に読んで使うものになったので12px→13px、行間も1.75へ */
@@ -380,10 +380,10 @@ footer a { color: var(--fg-note); }
 .sticky .cta { padding: 12px 16px; }
 .sticky .cta-after { margin-top: 4px; }
 
-/* 採点5周目#5対応: 同意リンクの遷移先の見出し */
+/* 同意リンクの遷移先の見出し */
 .privacy-h { font-size: 14px; color: var(--fg-note); margin: 0 0 8px; font-weight: 700; }
 
-/* 採点8周目#2対応: 第三者提供の提供先を特定できる形で明示する枠 */
+/* 第三者提供の提供先を特定できる形で明示する枠 */
 .partner { display: grid; grid-template-columns: 7em 1fr; gap: 4px 10px; margin: 10px 0; font-size: 12px; }
 .partner dt { color: var(--fg-note); }
 .partner dd { margin: 0; }
