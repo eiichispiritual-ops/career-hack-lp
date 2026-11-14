@@ -1,9 +1,16 @@
 # DONE — career-hack-lp「これAIなん？」仕上げ
-最終スコア: **30/30 PASS**（score_round3.md）。経過: Round1 29/30 → Round2 29/30 → Round3 30/30（Round1・2 の FAIL は G2 の final 未作成のみ）。
+最終スコア: **30/30 PASS**（score_round4.md）。経過: Round1 29/30 → Round2 29/30 → Round3 30/30 → PMレビューで6点を FAIL 扱い（実質24/30）→ Round4 30/30。
+
+## Round4（PMレビュー反映）
+- FVのLINEボタン: 明るい上下グラデ（#25D870→#06C755→#00B900）＋下影＋太い右矢印、高さ62・18px/900・「無料」だけ黄。
+- FVメダル: 自作SVGの装飾枠（波形ロゼット＋ゴールドベージュの二重リング＋星＋コーラルのリボン）。
+- FV写真: 人物を右下に大きく配置し、グラデマスクと乗算で淡ピンク地に溶かした。左に「専任の担当者が／求人さがしから／面接まで伴走」の帯と #タグ。1画面（ボタン下端 y=702）に収まる。
+- ヘッダー右に小さいLINEボタン。CTAの合計を5に保つため、理由セクション後の中間CTAは削除（中盤は追従CTAがカバー）。
+- 生成写真（FV・STEP4担当者）に「※写真はイメージです」を添えた。
 
 ## 主な変更
 - **方向性**: 20代女性向けに統一（riko/mina の集客先、調査 BRIEF の前提）。骨格は事務ナビ・ゆるキャリ、ボタンはキャリカミ・キャリアスイッチ寄せ。
-- **ボタン**: 高さ60・#06C755・角丸10・下影 0 4px 0。「¥0」丸＋LINE吹き出し＋「›」、上にタブ吹き出し「＼ 登録1分・完全無料 ／」、下にグレー注記。CTAは本文4＋追従1。追従は FV 通過後に出て、最終CTA表示中は引っ込む。
+- **ボタン**（Round4で更新）: 高さ62・緑の上下グラデ・角丸10・下影 0 4px 0。「¥0」丸＋LINE吹き出し＋「›」、上にタブ吹き出し「＼ 登録1分・完全無料 ／」、下にグレー注記。CTAはヘッダー・FV・流れ後・最終＋追従の計5。追従は FV 通過後に出て、最終CTA表示中は引っ込む。
 - **書体・色**: 本文 Noto Sans JP 400（15px / lh1.75）、見出し Zen Maru Gothic 900。Oswald は廃止。色はローズ #9A4460・コーラル #E98F85・薄ピンク #FDF3F6・ベージュ #F8F1EC・マーカー黄。いずれも競合実測値。
 - **ロゴ**: 吹き出し＋上り階段の独自マークに、Zen Maru Gothic の字形をパス化した文字を組み合わせた。docs/img/logo.svg / logo-white.svg / logo-mark.svg（favicon）。旧ロゴの棒グラフ型はキャリカミに似ていたため廃止。
 - **電話表現**: 「電話なし」「電話は0回」「電話・来社なし」を全削除。「ご希望の日時に、担当者から相談のお電話をします」「話を聞くだけでも大丈夫」「無理に応募をすすめることはありません」に統一。流れの STEP3〜4 と FAQ で、電話で相談することを明記。
@@ -21,8 +28,8 @@
 7. X 広告ライブラリは EU 配信分しか見られず、日本の広告は確認できない。x_ads_research.md は検索で見つけた SNS 広告型 LP 6件の実測。
 
 ## 比較画像
-- 最終: compare/final_fv.png, final_button.png, final_mid.png, final_flow_gift.png, final_faq_footer.png, final_sticky.png, final_logo_header.png
-- 経過: compare/round1_*.png, round2_*.png, logo_header_round1.png, logo_header_round2.png
+- 最終（Round4撮影）: compare/final_fv.png, final_button.png, final_mid.png, final_flow_gift.png, final_faq_footer.png, final_sticky.png, final_logo_header.png
+- 経過: compare/round1_*.png, round2_*.png, round4_*.png, logo_header_round1/2/4.png
 - 最終スクショ: final/riko_390_full.png, mina_390_full.png, riko_1280_full.png, mina_1280_full.png（＋各 _fv, _390_sticky）
 
 ## 調査資料

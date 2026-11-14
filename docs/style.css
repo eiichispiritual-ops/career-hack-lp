@@ -41,7 +41,11 @@ h1, h2, h3, .cta-tab, .btn-tx, .medals, .bubbles, .solve, .rn, .step, .g-no, sum
 .top { height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px 0 16px;
   border-bottom: 1px solid var(--rule); background: #fff; }
 .logo img { width: 142px; height: auto; }
-.top-copy { font-size: 10.5px; line-height: 1.45; color: var(--rose); font-weight: 700; text-align: right; letter-spacing: .02em; }
+/* 事務ナビ型の小さいLINEボタン（実測 215x40 r14 → 自社は幅を詰めて 34px） */
+.top-btn { display: inline-flex; align-items: center; gap: 5px; height: 34px; padding: 0 12px 0 7px; border-radius: 17px;
+  background: linear-gradient(#22d36c, #06c755 60%, #03b94c); box-shadow: 0 2px 0 #029a3c; color: #fff; text-decoration: none;
+  font-size: 12.5px; font-weight: 700; letter-spacing: .02em; }
+.top-btn i { font: 900 7.5px/18px Arial, sans-serif; font-style: normal; color: var(--line); background: #fff; border-radius: 9px; width: 28px; text-align: center; }
 
 /* ---------- 見出し共通 ---------- */
 section { padding: 48px 20px; }
@@ -60,19 +64,30 @@ section { padding: 48px 20px; }
   border: 1px solid #efc9cf; border-radius: 99px; padding: 2px 16px; letter-spacing: .06em; }
 .fv-h { font-family: var(--maru); font-weight: 900; font-size: 35px; line-height: 1.32; color: var(--rose); margin-top: 8px; letter-spacing: .05em; }
 .fv-h em { color: #e0604f; font-size: 44px; background: linear-gradient(transparent 70%, var(--mk) 70%); padding: 0 2px; }
-.fv-sub { font-size: 13px; line-height: 1.6; margin-top: 6px; font-weight: 700; color: var(--ink); }
-.fv-photo { margin-top: 12px; height: 262px; overflow: hidden; clip-path: ellipse(92% 100% at 50% 100%); }
-.fv-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
-.medals { display: flex; justify-content: center; gap: 8px; margin-top: -44px; position: relative; padding: 0 14px; }
-.medals li { width: 106px; height: 106px; border-radius: 50%; background: #fff; position: relative; display: flex;
-  flex-direction: column; align-items: center; justify-content: center; color: var(--rose);
-  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #e8cfa6, 0 3px 8px rgba(154, 68, 96, .14); }
-.medals .ml { position: absolute; width: 16px; height: 34px; left: 6px; top: 40px; color: var(--gold); opacity: .85; }
-.medals .ml.r { left: auto; right: 6px; transform: scaleX(-1); }
+.fv-body { position: relative; height: 262px; margin-top: 2px; }
+/* 写真は淡ピンク地に溶かす（左と下をマスクでフェード、灰色の壁は乗算でピンク寄りに） */
+.fv-photo { position: absolute; right: -18px; top: -38px; width: 268px; height: 330px; z-index: 0; mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 34%), linear-gradient(to bottom, transparent 0, #000 22%, #000 72%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 34%), linear-gradient(to bottom, transparent 0, #000 22%, #000 72%, transparent 100%);
+  mask-composite: intersect; }
+.fv-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 12%; }
+.fv-left { position: relative; z-index: 1; text-align: left; padding: 30px 0 0 16px; }
+.fv-lbl { display: inline-block; background: #fff; border-left: 4px solid var(--coral); font-size: 13px; font-weight: 700; padding: 1px 10px; }
+.fv-bar { display: table; margin-top: 6px; background: var(--rose); color: #fff; font-family: var(--maru); font-weight: 900; font-size: 19px;
+  line-height: 1.45; padding: 2px 12px 3px; letter-spacing: .04em; }
+.fv-bar em { color: var(--mk); }
+.fv-tags { margin-top: 12px; font-family: var(--maru); font-weight: 900; font-size: 16px; line-height: 1.75; color: var(--rose); }
+.fv-tags li::after { content: ' ✓'; color: var(--coral); }
+.medals { display: flex; justify-content: center; gap: 2px; margin-top: -46px; position: relative; z-index: 2; padding: 0 8px; }
+.medals li { position: relative; width: 120px; height: 134px; display: flex; flex-direction: column; align-items: center;
+  padding-top: 31px; color: var(--rose); }
+.medals .md { position: absolute; inset: 0; width: 120px; height: 134px; z-index: -1; filter: drop-shadow(0 2px 3px rgba(154, 68, 96, .15)); }
 .medals span { font-size: 11px; font-weight: 700; line-height: 1.2; letter-spacing: 0; color: var(--ink); }
-.medals b { font-family: var(--maru); font-weight: 900; font-size: 34px; line-height: 1.05; color: #e0604f; }
-.medals b small { font-size: 14px; }
-.medals b.s { font-size: 15px; line-height: 1.25; margin-top: 4px; }
+.medals b { font-family: var(--maru); font-weight: 900; font-size: 36px; line-height: 1.05; color: #e0604f; margin-top: 1px; }
+.medals b small { font-size: 15px; }
+.medals b.s { font-size: 16px; line-height: 1.2; margin-top: 5px; letter-spacing: 0; }
+.fv-photo-note { position: absolute; right: 8px; bottom: 52px; font-size: 9px; line-height: 1.5; color: var(--mute); z-index: 1; background: rgba(255,255,255,.85); padding: 0 5px; border-radius: 3px; }
 
 /* ---------- CTA（競合実測: 高さ60・#06C755・角丸10・下影4px） ---------- */
 .cta { padding: 0 16px; margin-top: 20px; text-align: center; }
@@ -80,20 +95,20 @@ section { padding: 48px 20px; }
   background: #fff; border: 2px solid var(--line); border-radius: 99px; padding: 1px 16px; margin-bottom: -10px; letter-spacing: .04em; }
 .cta-tab::after { content: ''; position: absolute; left: 50%; bottom: -7px; margin-left: -6px; width: 10px; height: 10px;
   background: #fff; border-right: 2px solid var(--line); border-bottom: 2px solid var(--line); transform: rotate(45deg); }
-.btn { position: relative; display: flex; align-items: center; height: 60px; padding: 4px 34px 0 74px; border-radius: 10px;
-  background: var(--line); color: #fff; text-decoration: none; box-shadow: 0 4px 0 var(--line-d); text-align: left;
-  -webkit-tap-highlight-color: transparent; }
-.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--line-d); }
+.btn { position: relative; display: flex; align-items: center; height: 62px; padding: 4px 34px 0 74px; border-radius: 10px;
+  background: linear-gradient(#25d870 0%, #06c755 55%, #00b900 100%); color: #fff; text-decoration: none; text-align: left;
+  box-shadow: 0 4px 0 #008f2a, inset 0 1px 0 rgba(255, 255, 255, .35); -webkit-tap-highlight-color: transparent; }
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #008f2a; }
 .btn-yen { position: absolute; left: -6px; top: -12px; width: 40px; height: 40px; border-radius: 50%; background: #fff;
   border: 3px solid var(--line); color: var(--line-d); font: 900 15px/34px var(--maru); text-align: center; letter-spacing: 0; }
 .btn-ic { position: absolute; left: 30px; top: 50%; margin-top: -13px; width: 36px; height: 24px; border-radius: 12px;
   background: #fff; color: var(--line); font: 900 9.5px/24px Arial, sans-serif; text-align: center; letter-spacing: 0; }
 .btn-ic::after { content: ''; position: absolute; left: 7px; bottom: -4px; border: 4px solid transparent; border-top: 5px solid #fff; border-left-width: 3px; }
-.btn-tx { font-size: 18px; font-weight: 700; line-height: 1.25; letter-spacing: .04em; }
+.btn-tx { font-size: 18px; font-weight: 900; text-shadow: 0 1px 0 rgba(0, 110, 40, .35); line-height: 1.25; letter-spacing: .04em; }
 .btn-tx small { display: block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; }
-.btn-tx em { color: var(--mk); }
-.btn-ar { position: absolute; right: 16px; top: 50%; width: 10px; height: 10px; margin-top: -5px;
-  border-top: 2.5px solid #fff; border-right: 2.5px solid #fff; transform: rotate(45deg); }
+.btn-tx em { color: #fff35a; }
+.btn-ar { position: absolute; right: 16px; top: 50%; width: 12px; height: 12px; margin-top: -6px;
+  border-top: 3.5px solid #fff; border-right: 3.5px solid #fff; transform: rotate(45deg); }
 .cta-note { font-size: 12px; color: var(--mute); margin-top: 12px; letter-spacing: .02em; }
 .cta-wrap { background: var(--beige); padding: 36px 0 38px; text-align: center; }
 .cta-lead { font-family: var(--maru); font-weight: 900; font-size: 20px; color: var(--rose); }
@@ -112,9 +127,9 @@ section { padding: 48px 20px; }
 .bubbles .b3 { margin-right: 6px; } .bubbles .b4 { margin-left: 6px; }
 .bubbles .b5, .bubbles .b6 { background: var(--pink); }
 .bubbles .b5::after, .bubbles .b6::after { transform: rotate(-135deg); bottom: auto; top: -7px; }
-.bubbles .b3, .bubbles .b4 { margin-bottom: 118px; }
+.bubbles .b3, .bubbles .b4 { margin-bottom: 136px; }
 .bubbles b { color: var(--rose); }
-.worry-face { position: absolute; left: 50%; top: 50%; width: 132px; height: 132px; margin: -34px 0 0 -66px; border-radius: 50%;
+.worry-face { position: absolute; left: 50%; top: 50%; width: 132px; height: 132px; margin: -22px 0 0 -66px; border-radius: 50%;
   overflow: hidden; border: 4px solid #fff; box-shadow: 0 0 0 2px #efc9cf; }
 .worry-face img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 .solve { margin: 34px 0 0; padding: 20px 10px 18px; border: 3px double #efc9cf; border-radius: 14px; text-align: center;
@@ -197,7 +212,9 @@ section { padding: 48px 20px; }
   background: var(--line); color: #fff; font-size: 12px; font-weight: 700; box-shadow: 0 2px 0 var(--line-d); }
 .mini-btn i { font: 900 7px/16px Arial, sans-serif; color: var(--line); background: #fff; border-radius: 8px; width: 24px; text-align: center; font-style: normal; }
 .mini-btn em { color: var(--mk); }
-.flow-list .adv { flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; align-self: center; border: 2px solid var(--pink); }
+.flow-list .adv img { flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; align-self: center; border: 2px solid var(--pink); }
+.flow-list .adv { flex: none; width: 64px; align-self: center; text-align: center; }
+.flow-list .adv figcaption { font-size: 8px; color: var(--mute); line-height: 1.3; margin-top: 3px; letter-spacing: 0; }
 .flow-after { font-size: 13px; text-align: center; margin-top: 18px; }
 .flow .cta { margin-top: 26px; padding: 0; }
 
@@ -248,3 +265,4 @@ section { padding: 48px 20px; }
   body { background: #f4ece8 radial-gradient(#efe0dc 1px, transparent 1.2px) 0 0 / 18px 18px; }
   .page { box-shadow: 0 0 0 1px #eadcd8; }
 }
+.medals b.xs { font-size: 14px; }
