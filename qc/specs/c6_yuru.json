@@ -1,0 +1,295 @@
+{
+ "url": "https://career-coming.com/yuru/a001/",
+ "title": "キャリカミ|転職サポートキャリアカミング",
+ "height": 4321,
+ "body": {
+  "tag": "body",
+  "cls": "",
+  "text": "キャリカミ運営事務局 20代のキャリアチェンジをやさしくサポート プライバシーポリシー 会社概要 C",
+  "y": 0,
+  "w": 390,
+  "h": 4321,
+  "font": "\"Noto Sans JP\", sans-serif",
+  "size": "16px",
+  "weight": "400",
+  "lh": "normal",
+  "ls": "normal",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgimg": "none",
+  "radius": "0px",
+  "shadow": "none",
+  "border": "0px none rgb(0, 0, 0)",
+  "borderBottom": "0px none rgb(0, 0, 0)",
+  "pad": "0px 0px 60px"
+ },
+ "imgCoverage": 1.04,
+ "bodyText": {
+  "family": [
+   [
+    "\"Noto Sans JP\", sans-serif",
+    1
+   ]
+  ],
+  "size": [
+   [
+    "12px",
+    1
+   ]
+  ],
+  "lh": [
+   [
+    "14.4px",
+    1
+   ]
+  ],
+  "weight": [
+   [
+    "400",
+    1
+   ]
+  ],
+  "ls": [
+   [
+    "normal",
+    1
+   ]
+  ],
+  "color": [
+   [
+    "rgb(102, 102, 102)",
+    1
+   ]
+  ]
+ },
+ "h1": [],
+ "h2": [],
+ "h3": [],
+ "ctas": [
+  {
+   "tag": "a",
+   "cls": "cta-button",
+   "text": "今すぐ無料で相談する",
+   "y": 553,
+   "w": 353,
+   "h": 103,
+   "font": "\"Noto Sans JP\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "borderBottom": "0px none rgb(0, 0, 238)",
+   "pad": "0px",
+   "img": {
+    "src": "https://career-coming.com/yuru/a001/images/cta.png",
+    "w": 353,
+    "h": 103
+   },
+   "inner": [
+    {
+     "tag": "img",
+     "cls": "",
+     "text": "",
+     "y": 553,
+     "w": 353,
+     "h": 103,
+     "font": "\"Noto Sans JP\", sans-serif",
+     "size": "16px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgimg": "none",
+     "radius": "0px",
+     "shadow": "none",
+     "border": "0px none rgb(0, 0, 238)",
+     "borderBottom": "0px none rgb(0, 0, 238)",
+     "pad": "0px"
+    }
+   ],
+   "href": "https://l-tra.com/ad/QJPFbvYykA"
+  },
+  {
+   "tag": "a",
+   "cls": "cta-button",
+   "text": "今すぐ無料で相談する",
+   "y": 1211,
+   "w": 353,
+   "h": 103,
+   "font": "\"Noto Sans JP\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "borderBottom": "0px none rgb(0, 0, 238)",
+   "pad": "0px",
+   "img": {
+    "src": "https://career-coming.com/yuru/a001/images/cta.png",
+    "w": 353,
+    "h": 103
+   },
+   "inner": [
+    {
+     "tag": "img",
+     "cls": "",
+     "text": "",
+     "y": 1211,
+     "w": 353,
+     "h": 103,
+     "font": "\"Noto Sans JP\", sans-serif",
+     "size": "16px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgimg": "none",
+     "radius": "0px",
+     "shadow": "none",
+     "border": "0px none rgb(0, 0, 238)",
+     "borderBottom": "0px none rgb(0, 0, 238)",
+     "pad": "0px"
+    }
+   ],
+   "href": "https://l-tra.com/ad/QJPFbvYykA"
+  },
+  {
+   "tag": "a",
+   "cls": "cta-button",
+   "text": "今すぐ無料で相談する",
+   "y": 3329,
+   "w": 353,
+   "h": 103,
+   "font": "\"Noto Sans JP\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "borderBottom": "0px none rgb(0, 0, 238)",
+   "pad": "0px",
+   "img": {
+    "src": "https://career-coming.com/yuru/a001/images/cta.png",
+    "w": 353,
+    "h": 103
+   },
+   "inner": [
+    {
+     "tag": "img",
+     "cls": "",
+     "text": "",
+     "y": 3329,
+     "w": 353,
+     "h": 103,
+     "font": "\"Noto Sans JP\", sans-serif",
+     "size": "16px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgimg": "none",
+     "radius": "0px",
+     "shadow": "none",
+     "border": "0px none rgb(0, 0, 238)",
+     "borderBottom": "0px none rgb(0, 0, 238)",
+     "pad": "0px"
+    }
+   ],
+   "href": "https://l-tra.com/ad/QJPFbvYykA"
+  },
+  {
+   "tag": "a",
+   "cls": "cta-button cta-fixed-link",
+   "text": "無料相談はこちら",
+   "y": 740,
+   "w": 373,
+   "h": 98,
+   "font": "\"Noto Sans JP\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 238)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 238)",
+   "borderBottom": "0px none rgb(0, 0, 238)",
+   "pad": "0px",
+   "img": {
+    "src": "https://career-coming.com/yuru/a001/images/cta.png",
+    "w": 336,
+    "h": 98
+   },
+   "inner": [
+    {
+     "tag": "img",
+     "cls": "",
+     "text": "",
+     "y": 740,
+     "w": 336,
+     "h": 98,
+     "font": "\"Noto Sans JP\", sans-serif",
+     "size": "16px",
+     "weight": "400",
+     "lh": "normal",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "bg": "rgba(0, 0, 0, 0)",
+     "bgimg": "none",
+     "radius": "0px",
+     "shadow": "none",
+     "border": "0px none rgb(0, 0, 238)",
+     "borderBottom": "0px none rgb(0, 0, 238)",
+     "pad": "0px"
+    }
+   ],
+   "href": "https://l-tra.com/ad/QJPFbvYykA"
+  }
+ ],
+ "fixed": [
+  {
+   "tag": "div",
+   "cls": "fixed-cta-bar",
+   "text": "無料相談はこちら",
+   "y": 733,
+   "w": 390,
+   "h": 111,
+   "font": "\"Noto Sans JP\", sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "lh": "normal",
+   "ls": "normal",
+   "color": "rgb(0, 0, 0)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 0, 0)",
+   "borderBottom": "0px none rgb(0, 0, 0)",
+   "pad": "4px 0px"
+  }
+ ],
+ "sections": [],
+ "summaries": []
+}
