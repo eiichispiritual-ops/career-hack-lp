@@ -17,4 +17,10 @@
 - 指・歯・耳・髪の境界・スマホの形を 200% で確認。破綻があれば下に修正依頼を追記。
 
 ## 修正依頼ログ
-（なし）
+- 2026-11-14 受領確認（IMAGES_DELIVERED）: gen_fv_woman / gen_call / gen_home_desk / gen_line_phone / gen_advisor の5枚を200%で確認。
+  指の本数・関節、スマホ形状、歯・耳・髪の境界に破綻なし。画面の文字は無地バブルのみで文字化けなし。→ 全数採用、修正依頼なし。
+  注: gen_fv_woman は人物が中央寄り（依頼は右2/3）。LP側で縦積みレイアウト＋object-positionで対応したため再生成不要。
+
+## 納品ログ（PM, 2026-11-14 10:55 JST）
+5枚すべて納品（docs/img/gen_*.jpg、1024px級、JPEG q82）。生成は上表の英語プロンプトに "slight grain, natural skin texture, not glossy, no text, no logos, realistic hands with five fingers" を追記して実行。
+注意: gen_advisor.jpg は実在の担当者ではないため、使う場合は「担当者イメージ」等の注記をつけるか、特定個人の発言と誤認させない使い方にすること（捏造禁止ルール）。gen_line_phone.jpg の画面はLINE公式UIではない抽象チャット。
