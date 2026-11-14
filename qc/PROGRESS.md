@@ -7,3 +7,4 @@
 - [x] x_ads_research.md（サブエージェント、6件）
 - [x] competitor_specs.md
 - [x] round1 実装・比較・score_round1.md（29/30）
+- [x] round2（29/30）、round3 最終（30/30）、final/、DONE.md
