@@ -193,6 +193,11 @@ section { padding: 48px 20px; }
 .flow-list h3 { font-size: 16px; font-weight: 700; color: var(--rose); line-height: 1.5; }
 .flow-list p:not(.step) { font-size: 13.5px; line-height: 1.65; margin-top: 2px; }
 .flow-list li.last { box-shadow: 0 0 0 2px var(--coral) inset; }
+.mini-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; height: 30px; padding: 0 14px 0 6px; border-radius: 6px;
+  background: var(--line); color: #fff; font-size: 12px; font-weight: 700; box-shadow: 0 2px 0 var(--line-d); }
+.mini-btn i { font: 900 7px/16px Arial, sans-serif; color: var(--line); background: #fff; border-radius: 8px; width: 24px; text-align: center; font-style: normal; }
+.mini-btn em { color: var(--mk); }
+.flow-list .adv { flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; align-self: center; border: 2px solid var(--pink); }
 .flow-after { font-size: 13px; text-align: center; margin-top: 18px; }
 .flow .cta { margin-top: 26px; padding: 0; }
 
