@@ -1,402 +1,134 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>未経験からの転職をLINEで完全無料相談｜キャリアハック</title>
-<meta name="description" content="第二新卒・未経験・フリーターOK。20代の転職を、LINEで完全無料相談。営業電話なし・ブロックで終了。">
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600&display=swap">
-<link rel="stylesheet" href="style.css">
-<script src="config.js"></script>
-<script>
-  // 描画前にアカウントを決める（LINEのURLだけに使う）
-  (function () {
-    var C = window.LP_CONFIG || { accounts: {} };
-    var q = new URLSearchParams(location.search);
-    var key = (q.get('a') || q.get('src') || '').toLowerCase();
-    if (!Object.prototype.hasOwnProperty.call(C.accounts, key)) key = C.defaultAccount;
-    window.LP_ACCOUNT = key;
-  })();
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="robots" content="noindex">
+  <title>キャリアハック｜20代・30代の無料転職相談</title>
+  <meta name="description" content="希望の年収や休日、今の経験を活かせる仕事を、転職の担当者と一緒に整理。キャリアハックのLINEで受け付け、フォームからのお申し込み後に提携先の担当者がお電話します。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="img/consult.webp">
+  <script src="config.js" defer></script>
+  <script src="lp.js" defer></script>
 </head>
-<body>
-<!-- 共通の図形（月桂樹・人物アイコン） -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1d27a"/><stop offset=".5" stop-color="#c99a3b"/><stop offset="1" stop-color="#a87a22"/></linearGradient>
-  </defs>
-  <symbol id="laurel" viewBox="4 4 52 96"><path d="M42 93A46 46 0 0 1 40 11" fill="none" stroke="currentColor" stroke-width="2"/><g fill="currentColor"><g transform="rotate(-64 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(-46 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(-28 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(-10 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(8 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(26 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(44 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g><g transform="rotate(62 62 52)"><path d="M16 58c-9-4-10-13-6-19c6 3 8 11 6 19z"/><path d="M16 58c9-4 10-13 6-19c-6 3-8 11-6 19z" opacity=".8"/></g></g></symbol>
-</svg>
-<main class="page">
-
-<!-- ============ 0 ヘッダー（A1: ロゴ＋月桂樹の一行。文言は言い換え・ロゴは自社） ============ -->
-<header class="top">
-  <p class="logo"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリア<br>ハック</p>
-  <p class="laurel"><svg class="lf" aria-hidden="true"><use href="#laurel"/></svg><span>20代の<b>はじめての転職</b>、<br>0円でLINE相談!</span><svg class="lf r" aria-hidden="true"><use href="#laurel"/></svg></p>
-</header>
-
-<!-- ============ 1 FV（参考LP A1とほぼ同じ構成。人物だけ男女ペア） ============ -->
-<section class="fv">
-  <p class="fv-band"><span>経験ゼロでも<b>年収</b>も<b>休み</b>もUP?!</span></p>
-  <p class="fv-target">20代・第二新卒・フリーター・在職中OK</p>
-  <h1 class="fv-h"><span class="k">LINEで</span><em>無料</em>の転職相談</h1>
-  <div class="fv-body">
-    <!-- 人物: 男女ペアの切り抜きPNG（透過・20代・オフィスカジュアル）を img/fv_pair.png に置けば表示される。無い間は差し替え枠の図 -->
-    <div class="fv-photo">
-      <svg class="ph" viewBox="0 0 300 400" aria-hidden="true">
-        <path d="M6 400c4-92 42-124 99-130 57 6 95 38 99 130z" fill="#2c4a86"/><path d="M84 272l21 60 21-60z" fill="#fff"/>
-        <rect x="94" y="232" width="22" height="42" fill="#f0c9a8"/><ellipse cx="105" cy="204" rx="34" ry="40" fill="#f6d5b8"/>
-        <path d="M71 200c-5-40 19-50 37-48 24-2 38 18 32 46-6-16-22-22-36-20-14 0-26 8-33 22z" fill="#2a2421"/>
-        <path d="M164 225c-6-50 21-45 36-45s42-5 36 45l4 70H160z" fill="#4a3428"/>
-        <path d="M108 400c6-84 42-110 92-116 50 6 86 32 92 116z" fill="#f3f1ec"/><path d="M168 300l32 56 32-56" fill="none" stroke="#8fb0dc" stroke-width="12"/>
-        <rect x="190" y="248" width="20" height="40" fill="#f0c9a8"/><ellipse cx="200" cy="222" rx="31" ry="37" fill="#f6d5b8"/>
-        <path d="M169 215c1-25 17-31 31-31s31 8 31 31c-11-15-26-19-41-15-8 3-16 8-21 15z" fill="#4a3428"/>
-        <g fill="#3a2c26"><circle cx="93" cy="208" r="3.2"/><circle cx="117" cy="208" r="3.2"/><circle cx="189" cy="226" r="3"/><circle cx="211" cy="226" r="3"/></g>
-        <g fill="none" stroke="#c46a5a" stroke-width="2.6" stroke-linecap="round"><path d="M95 223q10 9 20 0"/><path d="M191 240q9 8 18 0"/></g>
-      </svg>
-      <img src="img/fv_pair.png" alt="笑顔の20代の男女" width="900" height="1200" fetchpriority="high" onerror="this.remove()">
-      <p class="ph-note">写真差し替え枠（男女ペア）</p>
+<body id="top">
+  <a class="skip" href="#main">本文へ</a>
+  <header class="mast">
+    <div class="wrap mast-inner">
+      <a class="brand" href="#top" aria-label="キャリアハック トップ"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</a>
+      <nav aria-label="ページ内メニュー"><a class="wide-link" href="#consult">相談できること</a><a href="#flow">相談の流れ <span aria-hidden="true">↓</span></a></nav>
     </div>
-    <div class="fv-left">
-      <p class="lbl">専任の担当者が</p>
-      <p class="bar">書類から内定まで</p>
-      <p class="bar"><em>まるごと</em>伴走</p>
-      <ul class="hash">
-        <li>#強み探し</li><li>#書類添削</li><li>#面接対策</li>
-      </ul>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-layout">
+        <div class="hero-text">
+          <p class="audience"><span class="rule" aria-hidden="true"></span>20代・30代の無料転職相談</p>
+          <h1 id="hero-title">年収も、休みも。<br><span class="swash">自分に合う</span>転職を。</h1>
+          <p class="hero-lead">「次はどんな仕事を選べるんだろう？」<br>今の経験で目指せる仕事や働き方を、<br>担当者と一緒に整理できます。</p>
+        </div>
+        <div class="hero-art">
+          <div class="photo-wrap"><img src="img/consult.webp" fetchpriority="high" decoding="async" width="1100" height="825" alt="明るい相談スペースで、相談者の話を聞く担当者のイメージ"></div>
+          <span class="photo-arc" aria-hidden="true"></span>
+        </div>
+        <div class="hero-action">
+          <a class="btn" data-cta="hero" href="#consult-status"><span class="line-icon" aria-hidden="true">LINE</span><span>LINEで無料相談をはじめる</span><i class="arrow" aria-hidden="true"></i></a>
+          <p class="under">LINEで受付後、フォームから申し込むと、<br>提携先の担当者がご入力の番号にお電話します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence" aria-label="キャリカミが公表している転職支援の参考実績">
+      <div class="wrap">
+        <h2><span class="rule" aria-hidden="true"></span>転職支援の参考データ <span class="source-name">キャリカミ公表</span></h2>
+        <dl class="numbers">
+          <div><dt>転職後の<br>平均年収アップ額</dt><dd><span>90.7</span><small>万円</small></dd></div>
+          <div><dt>最終面接進出者の<br>内定率</dt><dd><span>94</span><small>%</small></dd></div>
+          <div><dt>キャリア相談後の<br>満足度</dt><dd><span>98</span><small>%</small></dd></div>
+        </dl>
+        <details class="data-notes"><summary>実績の対象・出典を見る</summary><p>年収と内定率は、キャリカミ経由で転職活動を完了した方の集計（2026年5月時点）。年収は転職前後の差の平均、内定率は最終面接に進んだ方のうち内定を得た方の割合です。満足度は同サービスのキャリア相談後アンケートによるものです。各数値はキャリカミ全体の公表値です。</p><p class="source-links"><a href="https://career-coming.com/tenshoku/about-career-coming/" target="_blank" rel="noopener">サービス概要</a><a href="https://career-coming.com/tenshoku/faq/" target="_blank" rel="noopener">指標の定義</a><a href="https://career-coming.com/tenshoku/our-strengths/" target="_blank" rel="noopener">相談満足度</a></p></details>
+      </div>
+    </section>
+
+    <section class="section consult" id="consult" aria-labelledby="consult-title">
+      <div class="wrap two-col">
+        <div class="intro">
+          <p class="eyeline">電話で相談できること</p>
+          <h2 id="consult-title">気になることから、<br><em>ひとつずつ。</em></h2>
+          <p>在職中の方も、はじめて転職する方も。<br>まだ希望の職種が決まっていなくても、<br>今の仕事で感じていることからお話しください。</p>
+        </div>
+        <div class="topics">
+          <article><h3><span class="topic-icon icon-work" aria-hidden="true"></span>今の経験、どんな仕事に活かせる？</h3><p>接客で相手の希望を聞き出した経験は、営業やサポートの仕事にも活かせます。普段の仕事を振り返り、候補になる職種を一緒に探します。</p></article>
+          <article><h3><span class="topic-icon icon-cal" aria-hidden="true"></span>年収と休日、どちらも見直したい。</h3><p>「今の手取りを保ちたい」「週末は家族と過ごしたい」。譲れない条件を整理して、求人票のどこを比べるとよいか確認します。</p></article>
+          <article><h3><span class="topic-icon icon-doc" aria-hidden="true"></span>短い職歴を、面接でどう話せばいい？</h3><p>前の職場で担った役割や退職の経緯をもとに、応募書類に書く内容と、面接で自分の言葉で話せる伝え方を考えます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" id="flow" aria-labelledby="flow-title">
+      <div class="wrap two-col">
+        <div class="intro">
+          <p class="eyeline">ご利用の流れ</p>
+          <h2 id="flow-title">受付はLINEで。<br><em>ご相談はお電話で。</em></h2>
+          <p>キャリアハックが相談の受付窓口です。<br>実際の相談には、提携する人材紹介会社の<br class="narrow-break">担当者が対応します。</p>
+        </div>
+        <div class="flow-content">
+          <ol class="steps">
+            <li><span class="step" aria-hidden="true">01</span><div><h3>キャリアハックを友だち追加</h3><p>緑のボタンから公式LINEを開き、友だち追加してください。トークに相談のご案内が届きます。</p></div></li>
+            <li><span class="step" aria-hidden="true">02</span><div><h3>LINEに届くフォームから申し込み</h3><p>ご案内に沿って電話番号などを入力。相談を担当する会社と情報の取り扱いを確認して送信します。</p></div></li>
+            <li><span class="step" aria-hidden="true">03</span><div><h3>提携先の担当者からお電話</h3><p>今の仕事内容や、次の職場で変えたいことをお聞きします。応募を考えている方は、求人や選考の進め方も相談できます。</p></div></li>
+          </ol>
+          <a class="btn" data-cta="middle" href="#consult-status"><span class="line-icon" aria-hidden="true">LINE</span><span>LINEで無料相談をはじめる</span><i class="arrow" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gifts" aria-labelledby="gift-title">
+      <div class="wrap gift-grid">
+        <div class="gift-photo"><img src="img/hand-note.webp" width="940" height="529" alt="求人の比較に使うノートとペン" loading="lazy" decoding="async"></div>
+        <div class="gifts-copy">
+          <p class="eyeline">LINE登録特典</p>
+          <h2 id="gift-title">求人を比べるときも、<br><em>面接に備えるときも。</em></h2>
+          <p>スマホで見返せる2つの資料を、<br class="narrow-break">友だち追加後のLINEで受け取れます。</p>
+          <dl class="downloads"><div><dt>求人選びチェックシート</dt><dd>休日・固定残業代・配属先など、確認したい12項目。</dd></div><div><dt>書類・面接の言い換え例文集</dt><dd>接客経験や退職理由を、自分の言葉で伝えるヒント。</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap two-col">
+        <div class="intro"><p class="eyeline">ご利用前の疑問</p><h2 id="faq-title">よくあるご質問</h2></div>
+        <div class="faq-list">
+          <details open><summary>友だち追加した後は、どう進みますか？</summary><div class="answer">LINEのトークに届く面談フォームからお申し込みください。送信後、提携する人材紹介会社の担当者が、入力いただいた番号にお電話します。</div></details>
+          <details><summary>まだ転職するか迷っていても大丈夫？</summary><div class="answer">はい。今の職場を続ける場合も含めて、希望する働き方や選択肢を整理できます。応募するかどうかは、ご相談のあとにご自身で決められます。</div></details>
+          <details><summary>相談や求人紹介に費用はかかりますか？</summary><div class="answer">ご相談・求人紹介は無料です。採用が決まった際に、求人企業が人材紹介会社に紹介手数料を支払う仕組みです。</div></details>
+          <details><summary>未経験の職種についても相談できますか？</summary><div class="answer">はい。アルバイトや前職の経験もお聞きして、活かせるスキルを整理します。紹介できる求人は、ご希望の条件や地域、募集状況により異なります。</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap closing-inner">
+        <div><h2 id="closing-title">転職を決める前に、<br><em>自分の選択肢を知ろう。</em></h2><p>希望の年収も、譲れない休日も。<br>そのまま担当者にお話しください。</p></div>
+        <div><a class="btn" data-cta="final" href="#consult-status"><span class="line-icon" aria-hidden="true">LINE</span><span>LINEで無料相談をはじめる</span><i class="arrow" aria-hidden="true"></i></a><p class="under">フォームからのお申し込み後、<br>提携先の担当者からお電話します。</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <div><a class="brand" href="#top" aria-label="キャリアハック トップ"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</a><small>© キャリアハック</small></div>
+      <div class="footer-info"><p>キャリアハックは転職相談の受付窓口です。お申し込みに応じ、提携先から紹介料を受け取る場合があります。</p>
+        <details id="privacy"><summary>運営・提携先と個人情報の取り扱い</summary>
+          <dl><dt>受付・運営</dt><dd data-operator>キャリアハック運営事務局</dd><dt>電話相談・求人紹介</dt><dd data-partner>面談フォームに記載の提携人材紹介会社</dd><dt>職業紹介の許可番号</dt><dd data-permit>面談フォームの提携先情報をご確認ください。</dd></dl>
+          <p>友だち追加やメッセージの送受信に伴い、LINEの表示名・流入元・トーク内容等が、LINEと運営側の配信システムに記録されます。</p>
+          <p>面談フォームで共有先・利用目的・項目をご確認のうえ、お申し込みください。同意いただいた連絡先・相談内容等を提携先に共有し、電話相談に利用します。求人企業への推薦時には提供先と項目を改めて示し、ご本人の同意を確認します。</p>
+        </details>
+      </div>
     </div>
-  </div>
-  <!-- メダル: 実績3つ（参考LP）。数字はページ内の実績帯と同じ値に揃える -->
-  <ul class="medals">
-    <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>平均年収<sup>※2</sup></span><b>93<small>万円</small></b><span class="up">UP</span></li>
-    <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>入社満足度<sup>※3</sup></span><b>98<small>%</small></b><span>&nbsp;</span></li>
-    <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>転職内定率<sup>※4</sup></span><b>94<small>%</small></b><span>&nbsp;</span></li>
-  </ul>
-  <p class="src fv-src">※提携人材紹介会社の実績値。算出条件はページ下部の※2〜4</p>
-</section>
-
-<div class="cta-block">
-  <p class="cta-head"><small>バイト・販売・1年で退職でも</small>応募できる求人を<em>LINEで見る</em></p>
-  <ul class="assure"><li>電話<b>なし</b></li><li>職場に<b>バレない</b></li><li>費用<b>0円</b></li><li>最短<b>1分</b></li></ul>
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>最短<b>1分</b>・名前なしでOK</small>LINEで無料相談する</span><i class="b-arr"></i></a>
-  <p class="cta-note">最初はスタンプ1つでOK／いつでもブロックで終了</p>
-</div>
-
-<!-- ============ 2 転職の例（A1: 事例を2画面目／男女混在） ============ -->
-<section class="cases">
-  <p class="pill-h">スタートは、みんな「経験なし」</p>
-  <p class="sec-lead">バイト・販売・1年で退職から<br><em class="mk">年収も休みも増えた</em>3人の転職</p>
-  <!-- 仮置き: 掲載許可を得た実際の事例に差し替える。年収の数字は提携先の実績で確認してから -->
-  <article class="case">
-    <p class="case-top"><span class="case-no">CASE<b>01</b></span><span class="case-n1">#フリーター #職歴ゼロ</span></p>
-    <p class="case-h">バイト歴5年・正社員経験なしから<br><b>研修つきのITサポート</b>へ</p>
-    <div class="case-in">
-      <p class="who"><img class="il" src="img/il_case1.svg" alt="" width="200" height="200"><span>Kさん<small>24歳・男性<br>飲食店アルバイト5年</small></span></p>
-      <p class="up-dot"><small>年収</small><b>100<small>万円</small></b>UP</p>
-    </div>
-    <div class="hbars"><p class="hb-b"><span class="l">転職前<small>飲食バイト</small></span><span class="v" style="--w:55%"><b>220</b>万円</span></p><p class="hb-a"><span class="l">転職後<small>ITサポート</small></span><span class="v" style="--w:80%"><b>320</b>万円</span></p></div>
-    <p class="case-q">「バイトの5年が、ちゃんと“職歴”になった」</p>
-    <p class="case-t">正社員経験がない＝書くことがない、と思っていました。シフトリーダーで新人に教えていた話を書類に入れたら、面接でそこばかり聞かれました。</p>
-  </article>
-  <article class="case">
-    <p class="case-top"><span class="case-no">CASE<b>02</b></span><span class="case-n1">#販売職 #土日休み #人間関係</span></p>
-    <p class="case-h">週末ずっとシフトの販売職から<br><b>土日祝休みの一般事務</b>へ</p>
-    <div class="case-in">
-      <p class="who"><img class="il" src="img/il_case2.svg" alt="" width="200" height="200"><span>Mさん<small>25歳・女性<br>アパレル販売3年</small></span></p>
-      <p class="up-dot"><small>年収</small><b>60<small>万円</small></b>UP</p>
-    </div>
-    <div class="hbars"><p class="hb-b"><span class="l">転職前<small>販売・シフト制</small></span><span class="v" style="--w:65%"><b>260</b>万円</span></p><p class="hb-a"><span class="l">転職後<small>一般事務</small></span><span class="v" style="--w:80%"><b>320</b>万円</span></p></div>
-    <p class="case-q">「土曜に友だちと会える。それがいちばん嬉しい」</p>
-    <p class="case-t">店長との関係にも疲れていた頃。クレーム対応が「電話応対の強み」になると教わって、未経験の事務に応募できました。返信は全部、休憩中のLINEで。</p>
-  </article>
-  <article class="case">
-    <p class="case-top"><span class="case-no">CASE<b>03</b></span><span class="case-n1">#第二新卒 #1年で退職</span></p>
-    <p class="case-h">新卒1年目で退職してから<br><b>研修ありの法人営業</b>へ</p>
-    <div class="case-in">
-      <p class="who"><img class="il" src="img/il_case3.svg" alt="" width="200" height="200"><span>Tさん<small>23歳・男性<br>新卒1年で退職</small></span></p>
-      <p class="up-dot"><small>年収</small><b>80<small>万円</small></b>UP</p>
-    </div>
-    <div class="hbars"><p class="hb-b"><span class="l">転職前<small>新卒1年目</small></span><span class="v" style="--w:70%"><b>280</b>万円</span></p><p class="hb-a"><span class="l">転職後<small>法人営業</small></span><span class="v" style="--w:90%"><b>360</b>万円</span></p></div>
-    <p class="case-q">「“なんで1年で辞めたの？”を、先に練習できた」</p>
-    <p class="case-t">いちばん怖かった質問を、LINEで何回も練習。本番でまったく同じことを聞かれても、落ち着いて答えられました。</p>
-  </article>
-  <p class="fine">※掲載例（仮置き）。イラストはイメージです。個人の感想であり、結果を保証するものではありません。</p>
-</section>
-
-<!-- ============ 3 悩み → このまま我慢しても（N1ごとの一言＋人物写真＋暗転） ============ -->
-<section class="worry">
-  <figure class="sunday" aria-label="日曜の夜、スマホに届いた通知のイメージ">
-    <p class="sun-time"><small>日曜日</small>22:47</p>
-    <ul class="notif">
-      <li><i class="ap cal" aria-hidden="true"></i><b>カレンダー<small>いま</small></b>明日 9:00〜22:00 シフト（5連勤の1日目）</li>
-      <li><i class="ap pay" aria-hidden="true"></i><b>給与明細<small>2時間前</small></b>今月の振込額：171,240円</li>
-      <li><i class="ap msg" aria-hidden="true"></i><b>職場のグループ<small>3時間前</small></b>明日、朝イチで少し話せる？</li>
-    </ul>
-    <figcaption>このままで、いいのかな…</figcaption>
-  </figure>
-  <div class="worry-in">
-    <p class="worry-cap">ひとつでも当てはまったら</p>
-    <h2 class="worry-h">日曜の夜、<em>こんなこと</em><br>考えていませんか？</h2>
-    <ul class="voices">
-      <li class="m1"><span>22歳・フリーター</span>バイト歴4年で、<b>正社員の職歴はゼロ</b></li>
-      <li class="f1"><span>23歳・第二新卒</span>1年で辞めて、<b>面接で何て言えば…</b></li>
-      <li class="m2"><span>26歳・在職中</span>辞めたいけど、<b>次がないのが怖い</b></li>
-      <li class="f2"><span>25歳・販売</span>手取り17万で、<b>3年目も昇給なし</b></li>
-      <li class="f1"><span>24歳・事務</span>上司の顔色で、<b>毎朝お腹が痛い</b></li>
-      <li class="m1"><span>27歳・飲食</span>シフト制で、<b>土日休みは月1回</b></li>
-      <li class="m2"><span>25歳・営業</span>残業続きで、<b>平日は帰って寝るだけ</b></li>
-      <li class="f2"><span>21歳・未経験</span>やりたい仕事はあるけど、<b>経験ゼロ</b></li>
-    </ul>
-    <p class="worry-sum">1つでも「わかる」と思ったら、<br>それは<b>動き出していいサイン</b>です。</p>
-  </div>
-  <div class="dark">
-    <p class="d1">このまま、なんとなく1年たつと…</p>
-    <p class="d2">「未経験歓迎」で応募できる求人は<br><b>年齢が上がるほど減りやすい</b></p>
-    <p class="d3">いちばん選べるのは、<br><b>20代のいま</b>です。</p>
-  </div>
-</section>
-
-<!-- ============ 4 でもどうすれば → プロに相談 → ただし → そこで ============ -->
-<section class="how">
-  <p class="how-h"><small>とはいえ…</small>何から手をつければいい？</p>
-  <ul class="checks">
-    <li>「職歴なし」で書類が通るのか分からない</li>
-    <li>接客・販売の経験が、<span class="nw">どこで評価されるのか</span><span class="nw">知りたい</span></li>
-    <li>求人サイトを見ても、<span class="nw">ホワイトかどうか</span><span class="nw">見抜けない</span></li>
-    <li>辞めるのが先？決めるのが先？<span class="nw">順番が分からない</span></li>
-    <li>平日は仕事で、面談に行く時間がない</li>
-    <li>「人間関係で辞めたい」を、面接で<span class="nw">どう言えばいいか</span><span class="nw">分からない</span></li>
-  </ul>
-  <p class="hand-lead">ひとりで求人サイトを眺めるより</p>
-  <p class="how-ans"><b>転職のプロ</b>に<br>聞いてしまうのが近道！</p>
-  <div class="caution">
-    <p class="c-h">ただ、相談先選びに落とし穴</p>
-    <p>希望を聞く前に求人を何十件も送ってくる窓口だと、<b>「自分に合うか」を考える前に応募が進んでしまう</b>ことも。</p>
-  </div>
-  <p class="sokode">だから、まずは</p>
-  <p class="osusume">LINEで気軽に聞ける</p>
-  <p class="logo big"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</p>
-  <figure class="how-photo"><img src="img/pair_consult.jpg" alt="担当者と笑顔で話す20代の女性" width="1200" height="900" loading="lazy"><figcaption>まだ決めていなくても、聞くだけでOK</figcaption></figure>
-</section>
-
-<!-- ============ 5 キャリアハックとは ============ -->
-<section class="about">
-  <h2 class="sec-h"><span class="brand">キャリアハック</span>とは</h2>
-  <p class="about-lead">20代・第二新卒・フリーターの<br><em>「経験なし」からの転職</em>を<br>LINEだけで無料相談できる窓口です</p>
-  <figure class="about-photo"><img src="img/about_line.jpg" alt="スマホのLINEで相談する20代の女性" width="800" height="1200" loading="lazy"><figcaption><b>電話・来社なし</b>やりとりはLINEのトークだけ</figcaption></figure>
-  <h3 class="sub-h">LINEでできること<small>（すべて0円）</small></h3>
-  <ul class="support">
-    <li><span>01</span><p>向いている仕事を、話しながら3つに絞る</p></li>
-    <li><span>02</span><p>バイト・販売経験を「職歴」に変える<span class="nw">書類添削</span></p></li>
-    <li><span>03</span><p>「なぜ辞めたの？」まで先に練習する<span class="nw">面接対策</span></p></li>
-    <li><span>04</span><p>土日休み・未経験OKの求人だけを紹介</p></li>
-    <li><span>05</span><p>今の職場への、退職の切り出し方の相談</p></li>
-  </ul>
-</section>
-
-<!-- ============ 6 選ばれる理由（番号カード4つ。各カードに「こんな人に」） ============ -->
-<section class="reasons">
-  <h2 class="sec-h"><span class="brand">キャリアハック</span>が<br>選ばれる<em class="num">4</em>つの理由</h2>
-  <ol class="reason-list">
-    <li><span class="rn">理由<b>01</b></span><img class="r-ic" src="img/ic_r1.svg" alt="" width="64" height="64"><h3>電話は0回。<br>やりとりはLINEだけ</h3><p>来社も電話もいりません。仕事の休憩中や帰りの電車で、スタンプ1つから始められます。</p><p class="r-for">在職中で時間がない人に</p></li>
-    <li><span class="rn">理由<b>02</b></span><img class="r-ic" src="img/ic_r2.svg" alt="" width="64" height="64"><h3>「まだ辞めるか決めてない」<br>のままでOK</h3><p>求人を見ずに終わっても、<span class="nw">催促の連絡は</span><span class="nw">しません。</span>今の会社に残る、という結論でも大丈夫です。</p><p class="r-for">迷い中・情報収集だけの人に</p></li>
-    <li><span class="rn">理由<b>03</b></span><img class="r-ic" src="img/ic_r3.svg" alt="" width="64" height="64"><h3>「職歴なし」を<br>書ける経歴に変える</h3><p>バイトのリーダー経験、販売の売上、クレーム対応。書類で評価される言い方に、一緒に書き直します。</p><p class="r-for">フリーター・未経験の人に</p></li>
-    <li><span class="rn">理由<b>04</b></span><img class="r-ic" src="img/ic_r4.svg" alt="" width="64" height="64"><h3>「1年で辞めた理由」を<br>本番前に練習</h3><p>「人間関係がつらくて」も、前向きに伝わる言い方があります。答えにくい質問ほど、本番の前にLINEで何度でも。</p><p class="r-for">第二新卒・人間関係で辞めたい人に</p></li>
-  </ol>
-  <div class="stats">
-    <p class="stats-h"><small>だから</small>年収も、<b>入社後の満足度</b>も高い</p>
-    <div class="gain">
-      <p class="gain-cap">掲載例の3人の、年収UP額</p>
-      <ol class="gain-bars">
-        <li style="--k:.6"><img src="img/il_case2.svg" alt="" width="200" height="200"><i class="bar"><b>+60<small>万円</small></b></i><span>Mさん・25歳<br>販売→事務</span></li>
-        <li style="--k:.8"><img src="img/il_case3.svg" alt="" width="200" height="200"><i class="bar"><b>+80<small>万円</small></b></i><span>Tさん・23歳<br>第二新卒→営業</span></li>
-        <li style="--k:1"><img src="img/il_case1.svg" alt="" width="200" height="200"><i class="bar"><b>+100<small>万円</small></b></i><span>Kさん・24歳<br>バイト→IT</span></li>
-      </ol>
-    </div>
-    <ul class="medals in">
-      <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>平均年収<sup>※2</sup></span><b>93<small>万円</small></b><span class="up">UP</span></li>
-      <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>入社満足度<sup>※3</sup></span><b>98<small>%</small></b><span>&nbsp;</span></li>
-      <li><svg class="ml" aria-hidden="true"><use href="#laurel"/></svg><svg class="ml r" aria-hidden="true"><use href="#laurel"/></svg><span>転職内定率<sup>※4</sup></span><b>94<small>%</small></b><span>&nbsp;</span></li>
-    </ul>
-    <p class="src">※提携人材紹介会社の実績値です。算出条件はページ下部の※2〜4</p>
-  </div>
-</section>
-
-<div class="cta-block alt">
-  <p class="cta-head"><small>今の職場にいながら</small>次の候補だけ、<em>先に知っておく</em></p>
-  <ul class="assure"><li>電話<b>なし</b></li><li>職場に<b>バレない</b></li><li>費用<b>0円</b></li><li>最短<b>1分</b></li></ul>
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>最短<b>1分</b>・名前なしでOK</small>LINEで無料相談する</span><i class="b-arr"></i></a>
-  <p class="cta-note">求人を見るだけでもOK／いつでもブロックで終了</p>
-</div>
-
-<!-- ============ 7 求人例 ============ -->
-<section class="jobs">
-  <div class="jobs-band">
-    <p class="bubble-h">たとえば</p>
-    <h2>土日休み・定時帰りも<br>未経験から狙える仕事</h2>
-    <p>相談できる求人の例</p>
-  </div>
-  <!-- 仮置き: 実際に紹介できる求人が決まったら条件を差し替える -->
-  <ul class="job-list">
-    <li><p class="j-for">販売・接客から人気</p><img class="j-ic" src="img/ic_j1.svg" alt="" width="64" height="64"><h3>一般事務・営業事務</h3><ul class="tg"><li>完全週休2日</li><li>土日祝休み</li><li>未経験可</li></ul><p>データ入力・電話対応・受発注など。PCは基本操作からでOKの求人も。</p></li>
-    <li><p class="j-for">飲食・バイトリーダーから人気</p><img class="j-ic" src="img/ic_j2.svg" alt="" width="64" height="64"><h3>法人営業（ルート営業）</h3><ul class="tg"><li>研修あり</li><li>既存顧客中心</li><li>未経験可</li></ul><p>決まった取引先をまわる営業。飛び込みではなく、接客で身についた会話力が活きやすい仕事です。</p></li>
-    <li><p class="j-for">第二新卒・在宅希望から人気</p><img class="j-ic" src="img/ic_j3.svg" alt="" width="64" height="64"><h3>ITサポート・カスタマーサポート</h3><ul class="tg"><li>在宅あり</li><li>研修あり</li><li>未経験可</li></ul><p>問い合わせ対応やアカウント管理など。リモート勤務がある求人も。</p></li>
-  </ul>
-  <p class="fine">※掲載は職種の一例です（仮置き）。紹介できる求人は時期・地域・ご希望により異なります。</p>
-</section>
-
-<!-- ============ 8 こんな自分でも？ → 大丈夫 ============ -->
-<section class="self">
-  <h2 class="self-h">こんな私でも、<br>ほんとに転職できる…？</h2>
-  <ul class="chat">
-    <li class="m1"><small>22歳・飲食バイト</small>バイトだけで、正社員になれる？</li>
-    <li class="f1"><small>23歳・第二新卒</small>前の会社を1年で辞めてしまった…</li>
-    <li class="m2"><small>26歳・在職中</small>忙しくて、<span class="nw">平日に動ける時間がない</span></li>
-    <li class="f2"><small>25歳・アパレル販売</small>資格も特技も、何もない…</li>
-  </ul>
-  <div class="okay-row"><img src="img/il_adv.svg" alt="" width="200" height="200"><p class="okay"><small>担当者より</small>大丈夫です！</p></div>
-  <p class="okay-t">相談の時点で、答えが出ている必要はありません。<br>「まだ何も決まってない」のままで<br>LINEを送ってください。</p>
-</section>
-
-<!-- ============ 9 登録特典（A3の「3大特典」の型。中身は自社） ============ -->
-<!-- 仮置き: 配布物が確定したら名前・中身を合わせる -->
-<section class="gift">
-  <p class="gift-cap">LINEで友だち追加した人だけ</p>
-  <h2 class="sec-h">登録した方に、<br><em class="num">2</em>つの無料特典を<br>ご用意しています</h2>
-  <ol class="gift-list">
-    <li><div class="g-doc"><i>CHECK</i><b>求人選び<br>チェック<br>シート</b><span class="gd-ck"><u class="on"></u><u class="on"></u><u></u></span></div><div class="g-tx"><span class="g-no">特典<b>1</b></span><h3>入社後の「聞いてない」を減らす <br>求人選びチェックシート</h3><p>年収・休み・働き方・人間関係について、「求人票で見ること」と「面接・面談で聞くこと」を分けてまとめたシートです。気になる求人に当てはめて、まだ分からないことを整理できます。</p></div></li>
-    <li><div class="g-doc c"><i>SAMPLE</i><b>言い換え<br>例文集</b><span class="gd-tx"><u></u><u class="mk"></u><u></u><u class="s"></u></span></div><div class="g-tx"><span class="g-no">特典<b>2</b></span><h3>盛らずに書ける・話せる <br>言い換え例文集</h3><p>履歴書・職務経歴書で使える型10個と、面接で使える型10個をまとめました。［ ］の部分に自分の事実を入れて、経験を盛らずに下書きを作れます。</p></div></li>
-  </ol>
-  <p class="gift-how">受け取り方法は、登録後にご案内します。</p>
-  <p class="fine">※特典の内容は変更になる場合があります。</p>
-</section>
-
-<!-- ============ 10 ご利用の流れ（STEP3つ＋最初に届くトーク） ============ -->
-<section class="flow" id="flow">
-  <h2 class="sec-h">登録から相談まで<br><em>最短1分・3ステップ</em></h2>
-  <ol class="flow-list">
-    <li><span class="step">STEP<b>1</b></span><div><h3>ボタンから友だち追加<small>10秒</small></h3><p>本名・電話番号の入力はありません。</p></div></li>
-    <li><span class="step">STEP<b>2</b></span><div><h3>トークで5つの質問に答える<small>1分</small></h3><p>今の仕事・希望の休み・年収などを、<span class="nw">選ぶだけ。</span></p></div></li>
-    <li><span class="step">STEP<b>3</b></span><div><h3>担当者からLINEで返信</h3><p>求人は、あなたが「見たい」と<span class="nw">送ったときだけ。</span>進めると決めたら、書類から面接まで一緒に準備します。</p></div></li>
-  </ol>
-  <div class="talk" aria-label="友だち追加後に最初に届くメッセージの例">
-    <p class="talk-h">追加すると、最初にこれが届きます</p>
-    <div class="talk-in">
-      <p class="t-name"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>キャリアハック</p>
-      <p class="t-bot">友だち追加ありがとうございます！<br>まずは、いまの状況に近いものを1つ選んでください。</p>
-      <ul class="t-opts"><li>バイト・フリーター</li><li>正社員（在職中）</li><li>離職中・第二新卒</li></ul>
-      <p class="t-bot s">選ぶだけで、次の質問が届きます。名前は聞きません。</p>
-    </div>
-    <p class="fine">※画面はイメージです</p>
-  </div>
-  <div class="cta-block in">
-    <p class="cta-head"><small>送るのは、ボタンをタップした回答だけ</small>今日の帰り道に<em>1分ではじめる</em></p>
-    <ul class="assure"><li>電話<b>なし</b></li><li>職場に<b>バレない</b></li><li>費用<b>0円</b></li><li>最短<b>1分</b></li></ul>
-    <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>最短<b>1分</b>・名前なしでOK</small>LINEで無料相談する</span><i class="b-arr"></i></a>
-    <p class="cta-note">特典3つもこのLINEで届きます／いつでもブロックで終了</p>
-  </div>
-</section>
-
-<!-- ============ 11 FAQ ============ -->
-<section class="faq" id="faq">
-  <h2 class="sec-h">よくある質問</h2>
-  <details open><summary>まだ転職するか決めていませんが、<span class="nw">相談だけでも</span><span class="nw">いいですか？</span></summary><div class="a">もちろん大丈夫です。迷っている段階での相談を想定しています。求人を見ずに終わっても、催促はしません。</div></details>
-  <details><summary>今の職場にバレませんか？</summary><div class="a">LINEのトークは、あなたと担当者だけのやりとりです。職場に連絡することはありません。応募先の企業にも、あなたの同意なしに情報が渡ることはありません。</div></details>
-  <details><summary>未経験・資格なしでも大丈夫ですか？</summary><div class="a">大丈夫です。未経験歓迎の求人を中心にご案内します。職務経歴書がまだ無くても、一から作るところから始められます。</div></details>
-  <details><summary>なぜ無料なのですか？</summary><div class="a">採用が決まったときに、提携先が求人企業から紹介手数料を受け取る仕組みのためです。あなたに費用がかかることはありません※1。</div></details>
-  <details><summary>電話がかかってきたりしませんか？</summary><div class="a">担当者から電話をかけることはありません。電話で話したい場合だけ、つながりやすい時間帯を送ってください。</div></details>
-  <details><summary>地方に住んでいても相談できますか？</summary><div class="a">できます。やりとりはLINEで完結します。紹介できる求人は地域によって異なります。</div></details>
-  <details><summary>途中でやめても大丈夫ですか？</summary><div class="a">大丈夫です。相談の途中でも、応募や内定のあとに辞退しても、違約金や罰則はありません。ブロックしても同じです。</div></details>
-</section>
-
-<footer class="foot" id="privacy">
-  <p class="f-name"><span data-operator>運営会社（社名 ※確定後に記載）</span></p>
-  <p class="f-sub">相談対応：<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span><br><span data-permit>厚生労働大臣許可 ※確定後に記載</span></p>
-
-  <details class="f-priv">
-    <summary>個人情報の取り扱い</summary>
-    <p><strong>キャリアハック</strong>は、<span data-operator>当社（運営会社 ※社名は確定後に記載）</span>が運営するInstagramのアカウントです。実際のご相談に対応するのは、<strong>①提携人材紹介会社の担当者</strong>です。</p>
-    <p><strong>①の担当者が読むことへの同意は、LINEの1通目でお示しし、そこで確認します。</strong>送っていただいた求人票・ご相談内容・在職状況は、この担当者が読みます。登録しただけの段階では、担当者に送られるものはありません。</p>
-    <p><strong>②求人企業へのご推薦に進むときは、提供先・提供項目をあらためてお示しし、ご本人の同意をいただいてから提供します。</strong>同意がなければ、ご相談だけで終わりです。</p>
-    <p>これとは別に、LINEでやり取りをする時点で、LINEヤフー株式会社および当社が利用する配信システムに、トークの内容・LINEの表示名・流入経路が記録されます。</p>
-    <dl class="partner">
-      <dt>提供先</dt><dd>①<span data-partner>提携人材紹介会社（社名 ※確定後に記載）</span>＝ご相談の対応<br>②①を通じてご推薦する求人企業＝同意のあと</dd>
-      <dt>許可番号</dt><dd data-permit>（厚生労働大臣許可 ※確定後に記載）</dd>
-      <dt>①へ渡るもの（相談の段階）</dt><dd>LINEの表示名／ご相談内容／送っていただいた求人票／在職状況</dd>
-      <dt>②へ渡るもの（推薦のとき・同意のあと）</dt><dd>氏名／連絡先／希望条件／職務経歴</dd>
-      <dt>提供の方法</dt><dd>電磁的記録の送信</dd>
-    </dl>
-    <p>許可番号は、厚生労働省「人材サービス総合サイト」の事業所検索で確認できます。</p>
-  </details>
-
-  <ol class="sources">
-    <li>※1 職業安定法 第32条の3 第2項。人材紹介会社は原則として求職者から手数料を受け取れません。費用は採用した企業が払います。</li>
-    <li>※2 平均年収93万円UP／※3 入社満足度98%／※4 転職内定率94%：いずれも提携人材紹介会社の支援実績にもとづく数値です。集計期間・対象者・算出方法は確定後に記載します。</li>
-  </ol>
-  <p class="copy">© キャリアハック</p>
-</footer>
-</main>
-
-<!-- 追従CTA（A1: 常時） -->
-<div class="sticky">
-  <a class="btn-line" href="#" data-cta><span class="yen">¥0</span><span class="b-ico">LINE</span><span class="b-txt"><small>最短<b>1分</b>・名前なしでOK</small>LINEで無料相談する</span><i class="b-arr"></i></a>
-</div>
-
-<script>
-(function () {
-  var C = window.LP_CONFIG;
-  var key = window.LP_ACCOUNT;
-  var acc = C.accounts[key];
-  var q = new URLSearchParams(location.search);
-  var i, els;
-
-  // ---- 確定後に入る社名・許可番号 ----
-  function fill(sel, val) {
-    if (!val) return;
-    var e = document.querySelectorAll(sel);
-    for (var k = 0; k < e.length; k++) e[k].textContent = val;
-  }
-  fill('[data-operator]', C.operator);
-  fill('[data-partner]', C.partner);
-  if (C.permit) fill('[data-permit]', '厚生労働大臣許可 ' + C.permit);
-
-  // ---- LINEのURL: ?line= は許可したドメインの https だけ受け付ける ----
-  function okLine(u) {
-    try {
-      var x = new URL(u);
-      if (x.protocol !== 'https:') return false;
-      for (var k = 0; k < C.lineHosts.length; k++) {
-        var h = C.lineHosts[k];
-        if (x.hostname === h || x.hostname.slice(-(h.length + 1)) === '.' + h) return true;
-      }
-    } catch (e) {}
-    return false;
-  }
-  var href = acc.line;
-  var override = q.get('line');
-  if (override && okLine(override)) href = override;
-  if (C.appendParams) {
-    var h = href.indexOf('#');
-    var hash = h > -1 ? href.slice(h) : '';
-    var base = h > -1 ? href.slice(0, h) : href;
-    href = base + (base.indexOf('?') > -1 ? '&' : '?') + 'src=' + encodeURIComponent(key) + hash;
-  }
-  els = document.querySelectorAll('a[data-cta]');
-  for (i = 0; i < els.length; i++) els[i].setAttribute('href', href);
-
-  // ---- 追従CTA: FV直下のボタンが画面から外れてから出す（二重表示を避ける） ----
-  var sticky = document.querySelector('.sticky');
-  var first = document.querySelector('.cta-block');
-  if (sticky && first && 'IntersectionObserver' in window) {
-    sticky.classList.add('is-off');
-    new IntersectionObserver(function (en) {
-      sticky.classList.toggle('is-off', en[0].isIntersecting || en[0].boundingClientRect.top > 0);
-    }).observe(first);
-  }
-})();
-</script>
+  </footer>
+  <div class="sticky" data-sticky hidden><a class="btn" data-cta="sticky" href="#consult-status"><span class="line-icon" aria-hidden="true">LINE</span><span>LINEで無料相談をはじめる</span><i class="arrow" aria-hidden="true"></i></a><p>フォーム送信後、担当者からお電話します。</p></div>
+  <dialog id="consult-status" aria-labelledby="consult-status-title"><h2 id="consult-status-title">ただいま受付準備中です</h2><p>電話相談のお申し込みは、公式LINEの受付開始後にご利用いただけます。</p><form method="dialog"><button type="submit" autofocus>閉じる</button></form></dialog>
 </body>
 </html>
