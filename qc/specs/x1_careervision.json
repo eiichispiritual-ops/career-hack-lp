@@ -1,0 +1,94 @@
+{
+ "url": "https://lp.career-vision.jp/",
+ "title": "404 Error - Not Found",
+ "height": 1153,
+ "body": {
+  "tag": "body",
+  "cls": "",
+  "text": "404error お探しのページが見つかりませんでした。 サイトの管理者の方はURLにお間違いがない",
+  "y": 0,
+  "w": 390,
+  "h": 844,
+  "font": "-apple-system, \"system-ui\", YakuHanJP, Helvetica, ヒラギノ角ゴシック, \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", Verdana, Meiryo, sans-serif",
+  "size": "16px",
+  "weight": "400",
+  "lh": "normal",
+  "ls": "normal",
+  "color": "rgb(64, 50, 48)",
+  "bg": "rgb(255, 255, 255)",
+  "bgimg": "none",
+  "radius": "0px",
+  "shadow": "none",
+  "border": "0px none rgb(64, 50, 48)",
+  "borderBottom": "0px none rgb(64, 50, 48)",
+  "pad": "0px"
+ },
+ "imgCoverage": 0.17,
+ "bodyText": {
+  "family": [
+   [
+    "-apple-system, \"system-ui\", YakuHanJP, Helvetica, ヒラギノ角ゴシック, \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", Verdana, Meiryo, sans-serif",
+    2
+   ]
+  ],
+  "size": [
+   [
+    "16px",
+    2
+   ]
+  ],
+  "lh": [
+   [
+    "27.52px",
+    2
+   ]
+  ],
+  "weight": [
+   [
+    "600",
+    2
+   ]
+  ],
+  "ls": [
+   [
+    "normal",
+    2
+   ]
+  ],
+  "color": [
+   [
+    "rgb(64, 50, 48)",
+    2
+   ]
+  ]
+ },
+ "h1": [
+  {
+   "tag": "h1",
+   "cls": "",
+   "text": "404error",
+   "y": 60,
+   "w": 330,
+   "h": 45,
+   "font": "-apple-system, \"system-ui\", YakuHanJP, Helvetica, ヒラギノ角ゴシック, \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", Verdana, Meiryo, sans-serif",
+   "size": "38.4px",
+   "weight": "700",
+   "lh": "normal",
+   "ls": "1.92px",
+   "color": "rgb(64, 50, 48)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(64, 50, 48)",
+   "borderBottom": "0px none rgb(64, 50, 48)",
+   "pad": "0px"
+  }
+ ],
+ "h2": [],
+ "h3": [],
+ "ctas": [],
+ "fixed": [],
+ "sections": [],
+ "summaries": []
+}

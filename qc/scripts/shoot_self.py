@@ -22,6 +22,7 @@ async def run(tag, acct, width=390, height=844):
         await pg.evaluate("window.scrollTo(0,0)"); await pg.wait_for_timeout(500)
         sw = await pg.evaluate("document.documentElement.scrollWidth")
         hrefs = await pg.evaluate("[...document.querySelectorAll('a[data-cta]')].map(a=>a.href)")
+        secs = await pg.evaluate("Object.fromEntries([...document.querySelectorAll('header.top,section,.cta-wrap,footer,#cta-fv')].map(e=>{const r=e.getBoundingClientRect();return [(e.id||e.className.split(' ')[0]),[Math.round(r.top+scrollY),Math.round(r.bottom+scrollY)]]}))")
         i = 0; y = 0
         while True:
             await pg.evaluate(f"window.scrollTo(0,{y})"); await pg.wait_for_timeout(350)
@@ -29,8 +30,12 @@ async def run(tag, acct, width=390, height=844):
             if y + height >= h: break
             y += height - 84
         await pg.evaluate("window.scrollTo(0,0)"); await pg.wait_for_timeout(300)
+        await pg.evaluate("window.scrollTo(0,2200)"); await pg.wait_for_timeout(600)
+        await pg.screenshot(path=f"{out}/sticky.png")
+        await pg.evaluate("window.scrollTo(0,0)"); await pg.wait_for_timeout(300)
+        await pg.add_style_tag(content=".sticky{display:none!important}")
         await pg.screenshot(path=f"{out}/full.png", full_page=True)
-        res = {"acct": acct, "width": width, "height": h, "scrollWidth": sw, "errors": errs, "cta": len(hrefs), "hrefs": sorted(set(hrefs))}
+        res = {"acct": acct, "width": width, "height": h, "scrollWidth": sw, "errors": errs, "cta": len(hrefs), "hrefs": sorted(set(hrefs)), "secs": secs}
         json.dump(res, open(f"{out}/check.json", "w"), ensure_ascii=False, indent=1); print(res)
         await b.close()
 tag = sys.argv[1]

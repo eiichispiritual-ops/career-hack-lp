@@ -1,0 +1,662 @@
+{
+ "url": "https://choice-career.com/",
+ "title": "転職ならCHOICE!｜無料キャリアカウンセリングで自分にぴったりの仕事探し",
+ "height": 6313,
+ "body": {
+  "tag": "body",
+  "cls": "page-men",
+  "text": "Menu コロナ失業 サポートサービス中！ 【無料】 プロのキャリアカウンセラーが LINE等で仕事",
+  "y": 0,
+  "w": 390,
+  "h": 844,
+  "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+  "size": "16px",
+  "weight": "400",
+  "lh": "24px",
+  "ls": "normal",
+  "color": "rgb(33, 37, 41)",
+  "bg": "rgb(255, 255, 255)",
+  "bgimg": "none",
+  "radius": "0px",
+  "shadow": "none",
+  "border": "0px none rgb(33, 37, 41)",
+  "borderBottom": "0px none rgb(33, 37, 41)",
+  "pad": "0px"
+ },
+ "imgCoverage": 0.12,
+ "bodyText": {
+  "family": [
+   [
+    "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+    22
+   ],
+   [
+    "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+    8
+   ]
+  ],
+  "size": [
+   [
+    "16px",
+    14
+   ],
+   [
+    "8px",
+    7
+   ],
+   [
+    "14.4px",
+    3
+   ],
+   [
+    "18px",
+    2
+   ],
+   [
+    "12.8px",
+    2
+   ]
+  ],
+  "lh": [
+   [
+    "28.8px",
+    8
+   ],
+   [
+    "12px",
+    7
+   ],
+   [
+    "24px",
+    5
+   ],
+   [
+    "25.92px",
+    3
+   ],
+   [
+    "23.04px",
+    2
+   ]
+  ],
+  "weight": [
+   [
+    "400",
+    28
+   ],
+   [
+    "700",
+    2
+   ]
+  ],
+  "ls": [
+   [
+    "normal",
+    25
+   ],
+   [
+    "1.2px",
+    3
+   ],
+   [
+    "1.6px",
+    2
+   ]
+  ],
+  "color": [
+   [
+    "rgb(33, 37, 41)",
+    15
+   ],
+   [
+    "rgb(255, 255, 255)",
+    8
+   ],
+   [
+    "rgb(51, 51, 51)",
+    3
+   ],
+   [
+    "rgb(134, 142, 150)",
+    2
+   ],
+   [
+    "rgb(0, 160, 233)",
+    1
+   ]
+  ]
+ },
+ "h1": [
+  {
+   "tag": "h1",
+   "cls": "catch",
+   "text": "プロのキャリアカウンセラーが",
+   "y": 355,
+   "w": 280,
+   "h": 29,
+   "font": "Montserrat, NotoSansCJKjp-Light, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "19px",
+   "weight": "700",
+   "lh": "28.5px",
+   "ls": "1px",
+   "color": "rgb(0, 160, 233)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 160, 233)",
+   "borderBottom": "0px none rgb(0, 160, 233)",
+   "pad": "0px"
+  }
+ ],
+ "h2": [
+  {
+   "tag": "h2",
+   "cls": "mb-3 u-jp",
+   "text": "LINE等で仕事の悩みを いつでもどこでも解消",
+   "y": 414,
+   "w": 320,
+   "h": 48,
+   "font": "Montserrat, NotoSansCJKjp-Light, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "16px",
+   "weight": "300",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(51, 51, 51)",
+   "borderBottom": "0px none rgb(51, 51, 51)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "転職相談後の変化",
+   "y": 742,
+   "w": 360,
+   "h": 42,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "28px",
+   "weight": "300",
+   "lh": "42px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h2",
+   "cls": "u-jp mb-4",
+   "text": "CHOICE！の3つの 人気ポイント",
+   "y": 2135,
+   "w": 360,
+   "h": 90,
+   "font": "Montserrat, NotoSansCJKjp-Light, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "28px",
+   "weight": "300",
+   "lh": "42px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h2",
+   "cls": "",
+   "text": "利用者インタビュー",
+   "y": 3877,
+   "w": 360,
+   "h": 42,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "28px",
+   "weight": "300",
+   "lh": "42px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h2",
+   "cls": "voiceSlider__title",
+   "text": "未経験でITベンチャーに転職！失くした自信を取り戻せました！",
+   "y": 4126,
+   "w": 310,
+   "h": 95,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "21px",
+   "weight": "300",
+   "lh": "31.5px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  }
+ ],
+ "h3": [
+  {
+   "tag": "h3",
+   "cls": "h5 mb-4",
+   "text": "利用者の67%以上が 年収40万~60万アップ",
+   "y": 871,
+   "w": 295,
+   "h": 48,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "20px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "h5 mb-4",
+   "text": "職場に対する満足度が 平均20%アップ",
+   "y": 1493,
+   "w": 328,
+   "h": 48,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "20px",
+   "weight": "500",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "features__title",
+   "text": "ビデオ通話やLINEなどで気軽に国家資格を持つカウンセラーに相談",
+   "y": 2419,
+   "w": 310,
+   "h": 48,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "16px",
+   "weight": "700",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(0, 160, 233)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 160, 233)",
+   "borderBottom": "0px none rgb(0, 160, 233)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "features__title",
+   "text": "面倒なレジュメ登録など一切なしで企業訪問！(1分登録のみ）",
+   "y": 2772,
+   "w": 310,
+   "h": 48,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "16px",
+   "weight": "700",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(0, 160, 233)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 160, 233)",
+   "borderBottom": "0px none rgb(0, 160, 233)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "features__title",
+   "text": "神戸市など行政連携もしていて安心",
+   "y": 3099,
+   "w": 310,
+   "h": 24,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "16px",
+   "weight": "700",
+   "lh": "24px",
+   "ls": "1.6px",
+   "color": "rgb(0, 160, 233)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(0, 160, 233)",
+   "borderBottom": "0px none rgb(0, 160, 233)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "mb-3",
+   "text": "LINEでキャリアカウンセリングを受けてみませんか？",
+   "y": 3371,
+   "w": 360,
+   "h": 108,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "24px",
+   "weight": "500",
+   "lh": "36px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "mb-3",
+   "text": "お気軽にご相談ください",
+   "y": 5088,
+   "w": 360,
+   "h": 42,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "28px",
+   "weight": "300",
+   "lh": "42px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  },
+  {
+   "tag": "h3",
+   "cls": "mb-3",
+   "text": "CHOICE!の無料LINEキャリア相談",
+   "y": 5724,
+   "w": 360,
+   "h": 72,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "24px",
+   "weight": "500",
+   "lh": "36px",
+   "ls": "1.6px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgb(33, 37, 41)",
+   "borderBottom": "0px none rgb(33, 37, 41)",
+   "pad": "0px"
+  }
+ ],
+ "ctas": [
+  {
+   "tag": "a",
+   "cls": "btn btn-primary btn-block btn-arrow js-scroll-trigger",
+   "text": "無料でLINE相談をはじめる",
+   "y": 559,
+   "w": 320,
+   "h": 55,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "lh": "21px",
+   "ls": "2px",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(68, 176, 46)",
+   "bgimg": "none",
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0.3) 2px 2px 1px 0px",
+   "border": "1px solid rgb(68, 176, 46)",
+   "borderBottom": "1px solid rgb(68, 176, 46)",
+   "pad": "16px 40px 16px 0px",
+   "inner": [],
+   "href": "https://choice-career.com/add_friend.html"
+  },
+  {
+   "tag": "a",
+   "cls": "btn btn-primary btn-arrow js-scroll-trigger",
+   "text": "無料でLINE相談をはじめる",
+   "y": 3684,
+   "w": 360,
+   "h": 55,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "lh": "21px",
+   "ls": "2px",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(68, 176, 46)",
+   "bgimg": "none",
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0.3) 2px 2px 1px 0px",
+   "border": "1px solid rgb(68, 176, 46)",
+   "borderBottom": "1px solid rgb(68, 176, 46)",
+   "pad": "16px 40px 16px 0px",
+   "inner": [],
+   "href": "https://choice-career.com/add_friend.html"
+  },
+  {
+   "tag": "a",
+   "cls": "btn btn-primary btn-block btn-arrow js-scroll-trigger",
+   "text": "無料でLINE相談をはじめる",
+   "y": 5281,
+   "w": 360,
+   "h": 55,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "lh": "21px",
+   "ls": "2px",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(68, 176, 46)",
+   "bgimg": "none",
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0.3) 2px 2px 1px 0px",
+   "border": "1px solid rgb(68, 176, 46)",
+   "borderBottom": "1px solid rgb(68, 176, 46)",
+   "pad": "16px 40px 16px 0px",
+   "inner": [],
+   "href": "https://choice-career.com/add_friend.html"
+  },
+  {
+   "tag": "a",
+   "cls": "btn btn-primary btn-arrow js-scroll-trigger",
+   "text": "無料でLINE相談をはじめる",
+   "y": 5882,
+   "w": 360,
+   "h": 55,
+   "font": "游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "lh": "21px",
+   "ls": "2px",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(68, 176, 46)",
+   "bgimg": "none",
+   "radius": "4px",
+   "shadow": "rgba(0, 0, 0, 0.3) 2px 2px 1px 0px",
+   "border": "1px solid rgb(68, 176, 46)",
+   "borderBottom": "1px solid rgb(68, 176, 46)",
+   "pad": "16px 40px 16px 0px",
+   "inner": [],
+   "href": "https://choice-career.com/add_friend.html"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "O Futuro das Apostas Online: Como a Betano Está Mu",
+   "y": -3881,
+   "w": 293,
+   "h": 33,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "12px",
+   "weight": "400",
+   "lh": "18px",
+   "ls": "normal",
+   "color": "rgba(255, 255, 255, 0.3)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgba(255, 255, 255, 0.3)",
+   "borderBottom": "0px none rgba(255, 255, 255, 0.3)",
+   "pad": "0px",
+   "inner": [],
+   "href": "https://choice-career.com/o-futuro-das-apostas.html"
+  }
+ ],
+ "fixed": [
+  {
+   "tag": "nav",
+   "cls": "navbar navbar-expand-lg navbar-light fixed-top",
+   "text": "Menu",
+   "y": 0,
+   "w": 390,
+   "h": 62,
+   "font": "Montserrat, 游ゴシック体, \"Yu Gothic\", YuGothic, \"ヒラギノ角ゴシック Pro\", \"Hiragino Kaku Gothic Pro\", メイリオ, Meiryo, Osaka, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "lh": "24px",
+   "ls": "1px",
+   "color": "rgb(33, 37, 41)",
+   "bg": "rgb(255, 255, 255)",
+   "bgimg": "none",
+   "radius": "0px",
+   "shadow": "none",
+   "border": "0px none rgba(34, 34, 34, 0.05)",
+   "borderBottom": "0px none rgba(34, 34, 34, 0.05)",
+   "pad": "8px 16px"
+  }
+ ],
+ "sections": [
+  {
+   "cls": "data",
+   "y": 712,
+   "h": 1393,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(240, 240, 240)"
+  },
+  {
+   "cls": "section-heading text-center mb-4",
+   "y": 742,
+   "h": 105,
+   "pt": "0px",
+   "pb": "0px",
+   "pl": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "features",
+   "y": 2105,
+   "h": 1236,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "cls": "section-heading text-center",
+   "y": 2135,
+   "h": 116,
+   "pt": "0px",
+   "pb": "0px",
+   "pl": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "contact",
+   "y": 3341,
+   "h": 506,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(146, 211, 240)"
+  },
+  {
+   "cls": "voiceSlider",
+   "y": 3847,
+   "h": 558,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "cls": "section-heading text-center mb-4",
+   "y": 3877,
+   "h": 105,
+   "pt": "0px",
+   "pb": "0px",
+   "pl": "0px",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "price",
+   "y": 4404,
+   "h": 654,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(255, 255, 255)"
+  },
+  {
+   "cls": "casual",
+   "y": 5058,
+   "h": 636,
+   "pt": "30px",
+   "pb": "0px",
+   "pl": "0px",
+   "bg": "rgb(243, 250, 250)"
+  },
+  {
+   "cls": "contact",
+   "y": 5694,
+   "h": 351,
+   "pt": "30px",
+   "pb": "30px",
+   "pl": "0px",
+   "bg": "rgb(146, 211, 240)"
+  }
+ ],
+ "summaries": []
+}

@@ -4,3 +4,6 @@
 - [ ] x_ads_research.md（X広告系LP 5件以上）
 - [ ] competitor_specs.md
 - [ ] round1 実装 → 比較画像 → score_round1.md → commit/push
+- [x] x_ads_research.md（サブエージェント、6件）
+- [x] competitor_specs.md
+- [x] round1 実装・比較・score_round1.md（29/30）
