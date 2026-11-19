@@ -864,3 +864,16 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .jc-ph,.jc-ph img{height:96px}
 .cc-ph,.cc-ph img{height:116px}
 .st-grid li{min-height:74px!important;padding:6px 1px 5px!important}
+
+/* ---- round 15（Gemini #5 の具体指摘のうち実施可能分）---- */
+/* FV：キラキラ（金の星）で躍動感 */
+.fv-in::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+ background:
+ url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23f6c90e' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/></svg>") 330px 96px/22px no-repeat,
+ url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fff' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/></svg>") 358px 205px/14px no-repeat,
+ url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23f6c90e' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/></svg>") 24px 430px/16px no-repeat,
+ url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fff' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/></svg>") 300px 330px/12px no-repeat}
+/* STEP数字：斜体＋縁取りで勢いを */
+.flow .st-n{font-style:italic;letter-spacing:.06em;text-shadow:2px 2px 0 #1f5f8f,0 0 1px #1f5f8f}
+/* 特典・メダルの立体感 */
+.medals li{filter:drop-shadow(0 7px 7px rgba(31,58,87,.4)) drop-shadow(0 0 1px rgba(150,110,20,.6))}
