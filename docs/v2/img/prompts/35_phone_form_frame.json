@@ -1,0 +1,24 @@
+{
+  "name": "phone_form_frame",
+  "output_file": "phone_form_frame.png",
+  "aspect": "portrait 3:4 (1024x1365)",
+  "subject": "a modern black smartphone seen straight-on from the front, full device with thin bezel, no hand, screen shows a generic questionnaire form: a navy rounded banner on top with abstract white bars, three rows of checkboxes with grey bars, a yellow button at the bottom; no readable words",
+  "composition": "phone centered, filling 70% of the height",
+  "background": "pure flat white (#ffffff) background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "product mockup render, realistic device, flat front view",
+  "text_in_image": "none - no letters, numbers, logos or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "readable text",
+    "real brand logos",
+    "watermark"
+  ]
+}

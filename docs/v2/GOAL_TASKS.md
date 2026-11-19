@@ -40,4 +40,5 @@
 - [x] ベンチ/現v2の390px撮影・比較
 - [x] 画像30枚：プロンプトJSON(img/prompts/*.json)→ Studio の Codex CLI（ChatGPTログイン済み・GPT画像）で生成→box→JPEG化
 - [x] HTML/CSS再構築（画像＋HTML文字重ね。数字は出典のあるもののみ。52回/171,240円などは削除）
+- [x] 2巡目: FV(切り抜き人物＋メダル重ね＋街シルエット)、グラフ、暗転テクスチャ、ロゴ画像、STEP端末枠、理由写真縮小 → 画像計37枚＋切り抜き6枚(rembg)
 - [ ] 残差分は /workspace/lp_compare_v2.png と採点を参照

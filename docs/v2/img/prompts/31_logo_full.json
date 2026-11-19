@@ -1,0 +1,24 @@
+{
+  "name": "logo_full",
+  "output_file": "logo_full.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "a clean modern brand logo: on the left a simple icon of three ascending vertical bars (navy #1f3a57, navy, and the tallest in orange #d2562a) with a small upward arrow, to the right of it the Japanese katakana wordmark exactly 'キャリアハック' in bold heavy Japanese gothic typeface, navy #1f3a57, correct katakana characters, evenly spaced",
+  "composition": "logo centered horizontally, generous margin, icon and wordmark on one line",
+  "background": "pure flat white (#ffffff) background, nothing else",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "flat vector graphic logo design, crisp edges, no shadow, no gradient",
+  "text_in_image": "the katakana wordmark キャリアハック must be rendered exactly and legibly; no other text",
+  "avoid": [
+    "AI look",
+    "extra text",
+    "misspelled katakana",
+    "watermark"
+  ]
+}

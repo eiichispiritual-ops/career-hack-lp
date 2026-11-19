@@ -1,0 +1,24 @@
+{
+  "name": "city_skyline",
+  "output_file": "city_skyline.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "pale line-art illustration of a city skyline of tall office buildings in thin white outlines with faint windows, on a soft sky-blue background, small white four-point sparkle stars scattered in the upper area",
+  "composition": "skyline along the bottom 45%, the upper half is mostly empty sky with a few sparkles",
+  "background": "soft sky blue gradient (#cfe3f0 to #e6eff4)",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "clean flat illustration, low contrast, airy",
+  "text_in_image": "none - no letters, numbers, logos or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "readable text",
+    "real brand logos",
+    "watermark"
+  ]
+}
