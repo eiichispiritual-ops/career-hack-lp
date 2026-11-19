@@ -1,0 +1,39 @@
+{
+  "name": "sec_tokuten",
+  "output_file": "sec_tokuten.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "purpose": "LINE registration bonus section",
+  "layout": "Pale cream (#fff6cf) background with a faint white outline city skyline at the bottom and small gold sparkle stars. Top: small navy text (top_small) flanked by sparkles, then a large navy rounded banner whose title text (title) is huge, with the number part in yellow (#ffe98a) and a thin gold outline. Below: three horizontal white cards with a thick orange (#d2562a) border stacked vertically; in each card at left a round orange badge with white text (badgeN) and a small illustrated booklet/checklist icon (no readable text) in orange, blue and yellow respectively, and at right the bold navy title (titleN) with a smaller grey description (descN) underneath. Tidy, consistent spacing, clean professional campaign look.",
+  "text_blocks": {
+    "top_small": "LINEの友だち追加でもらえる",
+    "title": "3つの特典",
+    "badge1": "特典1",
+    "title1": "求人票の見方チェックリスト",
+    "desc1": "気になる点を見分けるコツ",
+    "badge2": "特典2",
+    "title2": "辞めた理由の言い換えメモ",
+    "desc2": "面接で伝わりやすい言い方の例",
+    "badge3": "特典3",
+    "title3": "職務経歴書テンプレート",
+    "desc3": "アルバイト経験でも書ける形"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "logos",
+    "watermark",
+    "AI look",
+    "any text on the phone other than phone_banner and phone_title"
+  ]
+}
