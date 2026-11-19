@@ -931,3 +931,70 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .postpone-h .p2{font-size:19px;letter-spacing:-.03em}
 .postpone-h .p2 em{color:#ffe98a;font-size:24px;font-style:normal}
 .postpone-h .curl{position:absolute;right:8px;top:8px;width:42px;height:28px}
+
+/* ---- round 17: rubric remainder (medals, boxes, gold frame, headings, FAQ, voice, stats, tokuten, colour, CTA) ---- */
+/* A1: メダル列は左右16px、内側ギャップ12px、3枚同じ幅 */
+.medals{left:0;right:0;bottom:18px;width:100%;padding:0 16px;gap:12px;justify-content:stretch;box-sizing:border-box}
+.medals li{flex:1 1 0;width:auto!important;min-width:0;height:108px;margin:0!important}
+
+/* B1: FV直下3箱は 114px 相当（358px・gap 8px）で等高 */
+.cta1 .boxes3{width:358px!important;max-width:calc(100% - 32px)!important;margin:12px auto 0!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.cta1 .boxes3 li{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:68px;height:68px;padding:8px 4px;box-sizing:border-box;font-size:12px;line-height:1.25;flex:none}
+.cta1 .boxes3 span{display:block;width:100%;text-align:center}
+.cta1 .boxes3 b{display:flex;align-items:center;justify-content:center;width:100%;height:22px;margin-top:4px;font-size:18px;line-height:1;text-align:center;color:#ffe98a}
+
+/* B2 / C1: 金枠は規定の金、見出しの段差を 20/24 に */
+.ccard{border:2px solid #c8a33a}
+.cc-h{font-size:20px;line-height:1.35}
+.cc-h b{font-size:24px;line-height:1.25;margin-top:2px}
+
+/* D2: 強みの行間。写真は 150px で4枚同じ */
+.rcard h3{font-size:20px;line-height:1.5}
+.rcard img{display:block;width:100%;height:150px;object-fit:cover;object-position:50% 15%;border-radius:6px}
+
+/* C3: FAQ の A. を 4.5:1 以上に */
+.q i{color:#1f3a57}
+.a i{color:#b8431c}
+
+/* D4: 声カードの橙面積を減らし、白文字は濃いアクセントに */
+.vcard{border-color:#b8431c}
+.vc-q{background:#fff;color:#b8431c;border:2px solid #b8431c}
+.vc-no{background:#b8431c;color:#fff}
+.vc-a b{color:#b8431c}
+.vc-ph img{border-color:#b8431c}
+
+/* E3: 実績グリッドの密度を緩めて行を揃える */
+.stats .st-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:stretch}
+.stats .st-grid li{display:grid!important;grid-template-rows:26px 22px;align-content:center;justify-items:center;align-items:center;height:84px;min-height:84px!important;max-height:84px;padding:10px 4px!important;box-sizing:border-box}
+.stats .st-grid span{align-self:end;justify-self:center;width:100%;font-size:11px!important;line-height:1.15!important;letter-spacing:-.05em;text-align:center;white-space:nowrap}
+.stats .st-grid b{align-self:start;justify-self:center;font-size:18px!important;line-height:1!important;margin:0!important;white-space:nowrap}
+.stats .st-grid b small{font-size:10px!important;line-height:1}
+.stats .st-grid li.core b{font-size:18px!important}
+.stats .st-awards{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch;margin-top:10px}
+.stats .st-awards li{display:grid;grid-template-rows:18px 34px;align-content:center;justify-items:center;align-items:center;height:84px;min-height:84px;padding:10px 6px!important;box-sizing:border-box;text-align:center}
+.stats .st-awards b{font-size:13px;line-height:18px;white-space:nowrap}
+.stats .st-awards span{display:block;align-self:start;width:100%;margin-top:0!important;font-size:11px!important;line-height:16px!important;text-align:center}
+
+/* F2: 特典画像を枠内に収め、地を画像端の色に */
+.tokuten{background:#fef5ce}
+.tokuten .secimg{width:100%!important;max-width:100%!important;margin:0 0 8px!important;height:auto!important}
+
+/* G: 事例バッジと求人カードをパレット内へ */
+.cc-ch .rb{background:#b8431c;border-color:#fff;box-shadow:0 0 0 2px #b8431c,0 3px 6px rgba(0,0,0,.25)}
+.cc-ch .rb small,.cc-ch .rb b,.cc-ch .rb b small{color:#fff}
+.jcard{border-color:#1f3a57}
+.jc-t{background:#1f3a57}
+.jc-l li{background:#e6eff4;color:#1f3a57}
+.jc-l li:before{border-color:#1f3a57}
+.jc-l li.hl{background:#fff6cf;color:#a03212}
+
+/* H: ¥0 はボタン内。2つ目は白いサブボタン。バッジ色は金地＋#a03212（5.84:1）で統一 */
+.btn{padding-left:50px;overflow:visible}
+.btn .yen{position:absolute;left:8px;top:50%;width:34px;height:34px;margin:0;border:2px solid #fff;background:#ffe98a;color:#a03212;font-size:13px;transform:translateY(-50%) rotate(-8deg);z-index:2;box-shadow:none}
+.cta1 .btn.sub{min-height:48px;margin-top:10px;padding:5px 12px 5px 42px;background:#fff;color:#067a3a;border:2px solid #06c755;box-shadow:0 2px 0 #cfe8d4}
+.cta1 .btn.sub .bt{font-size:15px;line-height:1.2;color:#067a3a;text-shadow:none}
+.cta1 .btn.sub .bt small{font-size:10px;color:#3d6b4f;font-weight:700}
+.cta1 .btn.sub .bt b{color:#b8431c;font-size:1.05em}
+.cta1 .btn.sub .yen{width:26px;height:26px;left:8px;font-size:11px;background:#ffe98a;color:#a03212;border:2px solid #fff;box-shadow:none}
+.cta1 .btn.sub .arr{width:22px;height:22px;background:#06c755}
+.cta1 .btn.sub .arr:after{border-color:#fff}
