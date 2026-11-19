@@ -877,3 +877,57 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .flow .st-n{font-style:italic;letter-spacing:.06em;text-shadow:2px 2px 0 #1f5f8f,0 0 1px #1f5f8f}
 /* 特典・メダルの立体感 */
 .medals li{filter:drop-shadow(0 7px 7px rgba(31,58,87,.4)) drop-shadow(0 0 1px rgba(150,110,20,.6))}
+
+/* ---- round 16: 390px polish (stats / CTA / STEP / badges / contrast / FV boxes / 先延ばし) ---- */
+/* 1. 実績グリッド：12セルを同じ行高・同じベースライン。下段4つの受賞も1グリッドで高さ揃え */
+.stats .st-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:stretch}
+.stats .st-grid li{display:grid!important;grid-template-rows:26px 24px;align-content:center;justify-items:center;align-items:center;height:78px;min-height:78px!important;max-height:78px;padding:8px 3px!important;box-sizing:border-box}
+.stats .st-grid span{align-self:end;justify-self:center;width:100%;font-size:10px!important;line-height:1.15!important;letter-spacing:-.04em;text-align:center;white-space:nowrap}
+.stats .st-grid b{align-self:start;justify-self:center;font-size:19px!important;line-height:1!important;margin:0!important;white-space:nowrap}
+.stats .st-grid b small{font-size:10px!important;line-height:1}
+.stats .st-grid li.core b{font-size:19px!important}
+.stats .st-awards{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:stretch;margin-top:10px}
+.stats .st-awards li{display:grid;grid-template-rows:18px 34px;align-content:center;justify-items:center;align-items:center;height:84px;min-height:84px;padding:10px 8px!important;box-sizing:border-box;text-align:center}
+.stats .st-awards b{font-size:13px;line-height:18px;white-space:nowrap}
+.stats .st-awards span{display:block;align-self:start;width:100%;margin-top:0!important;font-size:11px!important;line-height:16px!important;text-align:center}
+
+/* 2. ¥0 はボタン枠の内側。2つ目だけを小さいサブボタンに */
+.btn{padding-left:50px;overflow:visible}
+.btn .yen{position:absolute;left:8px;top:50%;width:34px;height:34px;margin:0;border:2px solid #fff;font-size:13px;transform:translateY(-50%) rotate(-8deg);z-index:2}
+.cta1 .btn.sub{min-height:48px;margin-top:10px;padding:5px 12px 5px 42px;background:#fff;color:#067a3a;border:2px solid #06c755;box-shadow:0 2px 0 #cfe8d4}
+.cta1 .btn.sub .bt{font-size:15px;line-height:1.2;color:#067a3a;text-shadow:none}
+.cta1 .btn.sub .bt small{font-size:10px;color:#3d6b4f;font-weight:700}
+.cta1 .btn.sub .bt b{color:#b8431c;font-size:1.05em}
+.cta1 .btn.sub .yen{width:26px;height:26px;left:8px;font-size:11px;background:#fff;color:#067a3a;border:2px solid #06c755;box-shadow:none}
+.cta1 .btn.sub .arr{width:22px;height:22px;background:#06c755}
+.cta1 .btn.sub .arr:after{border-color:#fff}
+
+/* 3. STEP2/3 のスマホは 170px、STEP1 見出しは 1 行 */
+.flow .st2 img,.flow .st3 img{width:170px!important;max-width:170px;height:auto!important;aspect-ratio:360/480;object-fit:contain}
+.flow .st:first-of-type .st-t{white-space:nowrap;font-size:16px;letter-spacing:0;line-height:1.4}
+
+/* 4. 事例・相談例バッジをブランドのアクセント（白文字が 4.5:1 を超える濃さ）に揃える */
+.cc-ch .rb{background:#b8431c;border-color:#fff;box-shadow:0 0 0 2px #b8431c,0 3px 6px rgba(0,0,0,.25)}
+.cc-ch .rb small,.cc-ch .rb b,.cc-ch .rb b small{color:#fff}
+.vc-no{background:#b8431c}
+
+/* 5. 「どうすれば」は白文字＋暗い地でコントラストを固定。チェックは水色のまま */
+.how-lead b{color:#fff;text-shadow:0 3px 0 #0a3358}
+.checks li{background:rgba(8,18,34,.88)!important;color:#fff!important;border-color:rgba(255,255,255,.82)!important}
+.checks li:before{background:#38bdf8!important}
+
+/* 6. FV直下3ボックス：幅358・等高・数字サイズと中央揃えを統一 */
+.cta1 .boxes3{width:358px!important;max-width:calc(100% - 32px)!important;margin:12px auto 0!important;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.cta1 .boxes3 li{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:68px;height:100%;padding:8px 4px;box-sizing:border-box;font-size:12px;line-height:1.25}
+.cta1 .boxes3 span{display:block;width:100%;text-align:center}
+.cta1 .boxes3 b{display:flex;align-items:center;justify-content:center;width:100%;height:22px;margin-top:4px;font-size:18px;line-height:1;text-align:center;color:#ffe98a}
+
+/* 7. 「先延ばしにするほど」を画像の3行見出しの上に2行で載せる */
+.postpone{position:relative;width:358px!important;max-width:calc(100% - 32px)!important;margin:0 auto 10px!important}
+.postpone .secimg.dk{width:100%!important;max-width:100%!important;margin:0!important}
+.postpone-h{position:absolute;left:3.2%;right:3.1%;top:2.5%;height:34.6%;background:#07243d;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px 12px 8px 10px;box-sizing:border-box;gap:6px}
+.postpone-h .p1,.postpone-h .p2{margin:0;font-weight:900;white-space:nowrap;line-height:1.2}
+.postpone-h .p1{font-size:17px;letter-spacing:.01em}
+.postpone-h .p2{font-size:19px;letter-spacing:-.03em}
+.postpone-h .p2 em{color:#ffe98a;font-size:24px;font-style:normal}
+.postpone-h .curl{position:absolute;right:8px;top:8px;width:42px;height:28px}
