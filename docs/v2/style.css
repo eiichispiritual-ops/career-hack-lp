@@ -811,3 +811,20 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .cases>:last-child,.reasons>:last-child,.jobs>:last-child,.voices>:last-child{margin-bottom:0!important}
 .cc-ph,.cc-ph img{height:122px}
 .jc-l{gap:4px}.jc-l li{padding-top:5px;padding-bottom:5px}
+/* 顔切れ防止（Gemini 指摘）：写真は上寄せで切り出す */
+.cc-ph img{object-position:50% 12%}
+.vc-ph img{object-position:50% 4%}
+.jc-ph img{object-position:50% 20%}
+.rcard img{object-position:50% 15%}
+/* 相談例：丸アイコン写真（顔切れ回避・Gemini提案） */
+.vc-ph{height:auto!important;display:flex;justify-content:center;margin:0 0 8px;overflow:visible;border-radius:0}
+.vc-ph img{width:92px!important;height:92px!important;border-radius:50%;border:3px solid #d2562a;object-position:50% 25%;box-shadow:0 3px 8px rgba(0,0,0,.2)}
+.vc-no{right:auto;left:0;top:0}
+.cc-ph img{object-position:50% 5%}
+/* 警告デザイン（Gemini：黄×黒ストライプ＋赤！） */
+.cau2{position:relative;border:2px solid #1a1a1a;padding:30px 12px 14px;overflow:hidden}
+.cau2::before,.cau2::after{content:'';position:absolute;left:0;right:0;height:12px;background:repeating-linear-gradient(-45deg,#ffd600 0 10px,#1a1a1a 10px 20px)}
+.cau2::before{top:0}.cau2::after{bottom:0}
+.cau2 img{margin-bottom:12px}
+.cau2 h3:before{content:'!';display:inline-grid;place-items:center;width:24px;height:24px;margin-right:6px;border-radius:50%;background:#e63946;color:#fff;font-size:17px;vertical-align:2px}
+.jc-l li.hl{color:#d2380e}
