@@ -662,3 +662,12 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .st-awards span{font-size:9.5px}
 .tokuten{padding-top:6px}
 .flow{padding-bottom:34px}
+
+/* ---- round 10: カード左右インセット16px統一（x=16 / w=358）・見出し20px・STEPカード幅統一 ---- */
+.cardimg,.secimg.dk,.secimg.cau{width:358px!important;max-width:calc(100% - 32px)!important;margin-left:auto!important;margin-right:auto!important;display:block;height:auto}
+.st{margin-left:16px!important;margin-right:16px!important}
+.rs-h,.vc-h,.jb-h,.st-h,.fq-h,.fl-h{font-size:20px!important;line-height:1.35}
+.flow .stimg{margin-top:10px!important}
+.cases,.dark,.reasons,.voices{padding-left:0!important;padding-right:0!important}
+.cases>:not(img):not(.cardimg),.dark>:not(img),.reasons>:not(img):not(h2),.voices>:not(img):not(h2){box-sizing:border-box;margin-left:auto;margin-right:auto;max-width:calc(100% - 24px)}
+.reasons .rs-h{margin-left:0!important;margin-right:0!important;width:100%}
