@@ -679,3 +679,12 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .cta1,.cta-b,.tokuten{padding-left:0!important;padding-right:0!important}
 .cta1>*:not(.btn),.cta-b>*:not(.btn){box-sizing:border-box;max-width:calc(100% - 24px);margin-left:auto;margin-right:auto}
 .tokuten .btn{margin-top:8px}
+/* round 10c: STEP1/4 のバッジ・文字をSTEP2/3画像と同スケールに、メダル数字を縮小、CTAに立体影 */
+.flow .st-n{font-size:22px;padding:6px 34px;margin:4px 0 12px;letter-spacing:.02em;background:#2f86bd}
+.flow .st-t{font-size:17px;line-height:1.55}
+.flow .st{padding:20px 14px 22px}
+.medals b{font-size:23px}
+.medals b small{font-size:9.5px}
+.btn:not(.b-s){box-shadow:0 4px 0 #0a8f3f,0 8px 14px -4px rgba(6,120,60,.45)}
+.flow .st{padding:14px 14px 16px}.flow .st-n{margin:2px 0 10px}
+.flow .st-n{font-size:28px;padding:4px 46px;line-height:1.3}.flow .st{border-radius:16px}
