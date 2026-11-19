@@ -1,0 +1,26 @@
+{
+  "name": "result_pair",
+  "output_file": "result_pair.png",
+  "aspect": "landscape 4:3 (1536x1152)",
+  "subject": "a Japanese man and a Japanese woman in business suits standing next to each other with confident calm expressions, waist up, holding folders",
+  "composition": "two people on the right 60%, left empty; background warm pale yellow (#fff2b8) with a pale outline silhouette of tall city buildings",
+  "background": "pale yellow with faint city skyline",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

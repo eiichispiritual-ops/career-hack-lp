@@ -1,0 +1,26 @@
+{
+  "name": "reco_woman",
+  "output_file": "reco_woman.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "subject": "Japanese woman in her 30s in a dark navy blazer cupping both hands around her mouth as if calling out loud with a big smile, half body",
+  "composition": "subject centered, plain very light warm-grey (#f3f3f1) background",
+  "background": "plain light grey background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "case1_man",
+  "output_file": "case1_man.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "Japanese man in his late 20s in a light grey suit, smiling at an office window, half body, sunlit modern office",
+  "composition": "subject on the left 45%, right side softly blurred office; leave bottom 15% calm",
+  "background": "soft light office, white and light blue",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

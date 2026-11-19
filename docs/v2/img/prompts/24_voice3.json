@@ -1,0 +1,26 @@
+{
+  "name": "voice3",
+  "output_file": "voice3.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "subject": "Japanese man in his mid 20s in a navy sweater working at a laptop and glancing up with a relaxed smile, upper body",
+  "composition": "subject center",
+  "background": "bright room",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

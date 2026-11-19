@@ -1,0 +1,26 @@
+{
+  "name": "agent_fail",
+  "output_file": "agent_fail.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "subject": "Japanese woman in her late 20s in a navy blouse, shocked worried expression with both hands on her cheeks, half body, with small flat doodles of an open notebook and a laptop beside her",
+  "composition": "subject centered on plain white background with doodles left and right",
+  "background": "white background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking cutout-friendly, plain white background",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

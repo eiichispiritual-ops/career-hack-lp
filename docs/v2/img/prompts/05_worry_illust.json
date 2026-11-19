@@ -1,0 +1,26 @@
+{
+  "name": "worry_illust",
+  "output_file": "worry_illust.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "subject": "illustration of a young woman at a desk resting her chin on her hand, looking down at a smartphone with a worried face, a coffee cup beside her",
+  "composition": "woman in the lower center, a wide empty area above and to the sides for speech-bubble text overlays; slightly top-down view",
+  "background": "pale grey-blue (#dfe4e8) flat background with faint scribble lines",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "clean flat vector-style illustration, simple shapes, soft navy (#1f3a57) outlines, pale sky blue (#d3e4ee) and white fills, small orange (#d2562a) accents, friendly, hand-made feel",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

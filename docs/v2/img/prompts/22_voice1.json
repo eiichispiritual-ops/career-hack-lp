@@ -1,0 +1,26 @@
+{
+  "name": "voice1",
+  "output_file": "voice1.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "subject": "Japanese woman in her mid 20s in a light blue knit sweater smiling softly toward the camera, upper body, café background blurred",
+  "composition": "head and shoulders in the center",
+  "background": "warm café, pale tones",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

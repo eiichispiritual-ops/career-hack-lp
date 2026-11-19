@@ -1,0 +1,26 @@
+{
+  "name": "omakase_woman",
+  "output_file": "omakase_woman.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "subject": "Japanese woman advisor in her 30s in a dark navy suit holding a tablet against her chest, smiling confidently, waist up",
+  "composition": "subject centered-right, plain white background",
+  "background": "plain white background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

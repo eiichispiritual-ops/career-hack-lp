@@ -1,0 +1,26 @@
+{
+  "name": "reason4_man",
+  "output_file": "reason4_man.png",
+  "aspect": "landscape 16:9 (1536x864)",
+  "subject": "Japanese man advisor in his 30s in a dark suit wearing a headset, confident smile, looking at the camera, office background blurred",
+  "composition": "subject center",
+  "background": "soft grey-blue office",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}
