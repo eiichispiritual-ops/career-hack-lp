@@ -1,0 +1,36 @@
+{
+  "name": "sec_reco_r13_m",
+  "output_file": "sec_reco_r13_m.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Recommendation title section",
+  "layout": "Light warm grey (#e8e7e5) background. Top: small navy tag with white text, then the huge orange (#d2562a) bold word. In the middle a Japanese man in his 30s in a dark navy blazer cupping both hands around his mouth, calling out with a big smile, waist-up, as a clean cutout. Overlapping his lower body the very large navy bold outlined (white outline) text big_navy. At the very bottom a brand logo: a small icon of three ascending bars (navy, navy, orange) with an arrow, followed by the wordmark in heavy navy gothic. IMPORTANT DECORATION (benchmark-level impact): behind everything a radial sunburst of alternating pale-yellow (#fff1b8) and white rays radiating from the centre behind the person's head, plus sparse confetti sparkles and small stars in orange, yellow and navy scattered around. The huge orange word big_orange fills about 92 percent of the image width, with a thick white outline (about 10px) and a strong soft dark drop shadow below it. The word big_navy is twice as large as before, very heavy, navy with a thick white outline and a drop shadow, overlapping the person's lower body. The person has a clean white halo edge.",
+  "text_blocks": {
+    "tag": "そこで",
+    "big_orange": "おすすめ",
+    "big_navy": "なのが",
+    "logo_wordmark": "キャリアハック"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look",
+    "thin outlines",
+    "small text",
+    "flat empty background"
+  ],
+  "gender_note": "Male version of the landing page: every person depicted must be a Japanese MAN (same age range, same style, tone, lighting and composition as the original female version)."
+}

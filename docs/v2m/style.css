@@ -761,3 +761,53 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 
 /* ---- round 12: C2 最小文字 10px 以上 ---- */
 .st-grid span,.st-awards span,.st-grid b small,.medals b small,.cc-ch .rb b small,.medals .mt sup{font-size:10px!important}
+
+/* ---- round 13 / B1: FVインパクト（Gemini G1〜G5） ---- */
+.top{height:46px}.brand img{height:27px}
+.top-note{font-size:12px}.top-note b{font-size:20px}
+.fv-h .l1{font-size:35px;letter-spacing:.01em;background:linear-gradient(transparent 82%,rgba(47,134,189,.55) 82%);display:inline-block;padding-right:6px}
+.fv-h .blk{font-size:45px;line-height:1.16;box-shadow:0 4px 0 #0d2238,0 8px 12px -4px rgba(13,34,56,.45);background:linear-gradient(90deg,#16304c,#2c5a8c)}
+.fv-h .blk em{font-size:1.06em;-webkit-text-stroke:.5px #b8860b;text-shadow:0 2px 0 rgba(0,0,0,.25)}
+.fv-blk{font-size:23px;box-shadow:0 3px 0 #0d2238}
+.fv-img{width:334px;right:-18px;bottom:2px}
+.fv-in::before{content:'';position:absolute;z-index:0;right:-40px;bottom:60px;width:300px;height:420px;background:radial-gradient(closest-side,rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.medals li{width:116px;height:116px;grid-template-rows:13px 34px}
+.medals .mt{font-size:11px!important;line-height:13px}
+.medals b{font-size:29px!important;line-height:34px;letter-spacing:-.04em}
+.medals b small{font-size:11px!important}
+/* CTAの奥行き（G4） */
+.btn{min-height:68px;background:linear-gradient(180deg,#38e07a 0,#06c755 50%,#04a548 100%);box-shadow:0 5px 0 #038a3b,0 11px 18px -4px rgba(0,60,25,.45),inset 0 2px 0 rgba(255,255,255,.55),inset 0 -3px 6px rgba(0,80,30,.25)}
+.btn .bt{font-size:21px}.btn.b-s{min-height:56px}.btn.b-s .bt{font-size:17px}
+.brand img{height:25px}
+.top-note{font-size:11px;white-space:nowrap}.top-note b{font-size:17px}
+.fv-h .blk em{-webkit-text-stroke:0;text-shadow:0 2px 0 rgba(0,0,0,.3)}
+
+/* ---- round 13 / B2: 実績グリッド 11px+、カード見出し22px、どうすれば装飾（G6〜G9） ---- */
+.st-grid{gap:8px}
+.st-grid li{min-height:84px!important;padding:8px 1px 7px!important}
+.st-grid span{font-size:11px!important;letter-spacing:-.02em}
+.st-grid b{font-size:21px!important}
+.st-grid b small,.st-awards span{font-size:11px!important}
+.st-grid li.core b{font-size:21px!important}
+.ccard{padding:16px 16px 16px}
+.cc-h{font-size:22px;line-height:1.3}.cc-h b{font-size:27px}
+.cc-ch .rb small{font-size:11px}
+.jcard,.vcard{padding:16px}
+.jc-t{font-size:22px;padding:8px 8px}
+.vc-q{font-size:22px;padding:9px 8px}
+.jc-l li{font-size:15px}
+.vc-a{font-size:14px}
+/* どうすれば…：白フチ＋影で跳ねさせる */
+.how-lead b{font-size:40px;color:#fff;-webkit-text-stroke:0;text-shadow:0 0 0 #fff,0 3px 0 #2f86bd,0 6px 14px rgba(0,0,0,.55);letter-spacing:.04em}
+.how-lead{position:relative}
+.how-lead::before,.how-lead::after{content:'✦';position:absolute;color:#ffe98a;font-size:18px;animation:none}
+.how-lead::before{left:14%;top:-6px}.how-lead::after{right:12%;bottom:-2px;font-size:14px}
+/* 高さ調整（≤103%） */
+.jc-ph,.vc-ph,.jc-ph img,.vc-ph img{height:112px}
+.cc-ph,.cc-ph img{height:130px}
+.st-grid li{min-height:80px!important}
+/* B3: HTMLセクションの上下余白を24pxに統一 */
+.cta1,.cases,.stats,.cta-b,.tokuten,.jobs,.voices,.stripe,.flow,.faq,.reasons{padding-top:24px!important;padding-bottom:24px!important}
+.cases>:last-child,.reasons>:last-child,.jobs>:last-child,.voices>:last-child{margin-bottom:0!important}
+.cc-ph,.cc-ph img{height:122px}
+.jc-l{gap:4px}.jc-l li{padding-top:5px;padding-bottom:5px}
