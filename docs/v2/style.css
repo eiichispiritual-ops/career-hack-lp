@@ -510,3 +510,21 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .voices{padding:20px 12px 8px}
 .dark{background:linear-gradient(180deg,#e1e4e7 0,rgba(110,110,110,.25) 8%,rgba(60,60,60,.35) 100%),#767676 url(img/dark_cracks.jpg) center/cover}
 .cases{padding:18px 4px 24px;gap:28px}
+
+/* ---- round 4: セクション画像（GPT生成・文字入り） ---- */
+.secimg{display:block;width:100%;height:auto}
+.worry{padding:0;background:#dfe3e6}
+.dark{padding:16px 10px 20px}
+.dark .dk{margin:0 0 12px;box-shadow:0 8px 16px -8px rgba(0,0,0,.6)}
+.agent{padding:20px 0 14px;margin-top:0;clip-path:none;background:url(img/city_skyline.jpg) center 40%/cover,linear-gradient(180deg,var(--sky),#dcecf6)}
+.agent .ag{width:100%;margin:0 auto;display:block;filter:none}
+.agent .cau{width:92%;margin:-120px auto 0;position:relative;z-index:3;display:block}
+.jobs .jobimg{margin:0 12px 14px;width:calc(100% - 24px)}
+.flow .stimg{width:100%;margin:0}
+.flow .stimg+.tri{margin:2px auto}
+.jobs .jobimg{width:78%;margin:0 auto 14px}
+.flow .stimg{width:80%;margin:0 auto}
+.flow{padding:26px 0 26px}
+.flow .fl-h{margin-bottom:10px}
+.flow .st{margin:0 12px}
+.dark{padding-top:10px}

@@ -1,0 +1,31 @@
+{
+  "name": "sec_step2",
+  "output_file": "sec_step2.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Flow step card",
+  "layout": "A white card on a pale blue (#cfe6f4) background. Top: a blue (#3a8fc0) rounded pill with white text. Center: a black smartphone straight-on whose screen shows a generic chat-app friend-add screen: round avatar circle with a small navy bar-chart icon, abstract grey bars, a wide green rounded button, no readable text, shown from the top down to about its middle (the lower half cropped by the card's bottom area). Under it navy bold caption lines, the second line in blue.",
+  "text_blocks": {
+    "step_pill": "STEP2",
+    "caption_line1": "LINEを",
+    "caption_line2": "友だち追加"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

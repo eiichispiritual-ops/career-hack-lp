@@ -1,0 +1,33 @@
+{
+  "name": "sec_job3",
+  "output_file": "sec_job3.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Job example card",
+  "layout": "A white card with a 3px blue (#3a8fc0) border. Top: wide landscape photo (Japanese woman working remotely at home with a headset and laptop). Below the photo a blue (#3a8fc0) label with white bold text (tag). Under it a list of four items, each with a blue check mark and navy bold text, left aligned.",
+  "text_blocks": {
+    "tag": "リモート事務職",
+    "bullet1": "在宅でできる仕事も相談可",
+    "bullet2": "出社の頻度は求人ごとに確認",
+    "bullet3": "通勤の負担を減らしたい方に",
+    "bullet4": "未経験歓迎"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}
