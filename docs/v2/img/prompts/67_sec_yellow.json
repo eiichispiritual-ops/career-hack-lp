@@ -1,0 +1,31 @@
+{
+  "name": "sec_yellow",
+  "output_file": "sec_yellow.png",
+  "aspect": "landscape 4:3 (1536x1152)",
+  "purpose": "Reassurance section",
+  "layout": "Pale yellow (#fff6cf) background with a faint white outline skyline. Top: small navy text with small sparkle marks, then a white box with navy border and navy bold text, then a large orange (#d2562a) box with white bold text where '26万人以上' is very large, slightly overlapping. Bottom: a Japanese man and woman in business suits standing side by side with folders, cutout style, in front of the skyline. No footnote.",
+  "text_blocks": {
+    "small": "20代・未経験の就職を支えてきた",
+    "white_box": "就職支援実績",
+    "orange_box": "26万人以上！"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ]
+}
