@@ -828,3 +828,39 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .cau2 img{margin-bottom:12px}
 .cau2 h3:before{content:'!';display:inline-grid;place-items:center;width:24px;height:24px;margin-right:6px;border-radius:50%;background:#e63946;color:#fff;font-size:17px;vertical-align:2px}
 .jc-l li.hl{color:#d2380e}
+
+/* ---- round 14 ---- */
+/* H4: ¥0バッジを左上にはみ出し。shineは専用の内側要素でクリップ（overflow:visible で飛び出し可） */
+.btn{overflow:visible;padding-left:30px}
+.btn::after{display:none!important;content:none!important;animation:none!important}
+.btn .shine{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none;z-index:0}
+.btn .shine::after{content:'';position:absolute;top:0;bottom:0;left:0;width:34%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.55),rgba(255,255,255,0));transform:translateX(-140%) skewX(-20deg);animation:cta-shine 2.5s ease-in-out infinite}
+.btn .bt,.btn .arr{position:relative;z-index:1}
+.btn .yen{position:absolute;left:-8px;top:-15px;width:42px;height:42px;border:3px solid #fff;background:#ffe98a;color:#d2562a;font-size:15px;box-shadow:0 0 0 2px #0aa94a,0 3px 6px rgba(0,0,0,.3);z-index:2;transform:rotate(-8deg)}
+@media (prefers-reduced-motion:reduce){.btn .shine::after{animation:none!important;display:none}}
+/* 2つ目は白地＋緑枠のサブボタン（主従） */
+.cta1 .btn+.btn{background:#fff;color:#04a548;border:2px solid #06c755;outline:0;box-shadow:0 4px 0 #038a3b,0 8px 14px -6px rgba(0,60,25,.3)}
+.cta1 .btn+.btn .bt{text-shadow:none}.cta1 .btn+.btn .bt b{color:#d2562a}
+.cta1 .btn+.btn .shine::after{background:linear-gradient(90deg,rgba(6,199,85,0),rgba(6,199,85,.25),rgba(6,199,85,0))}
+.cta1 .btn+.btn .arr{background:#06c755}.cta1 .btn+.btn .arr:after{border-color:#fff}
+.cta1 .btn+.btn .yen{background:#06c755;color:#fff}
+.btn{margin-top:6px}.cta1 .btn+.btn{margin-top:16px}
+/* H9: FV直下3連ボックスを紺塗り＋白抜き */
+.boxes3 li{background:linear-gradient(180deg,#2c5a8c,#1f3a57);color:#fff;border-color:#16304c;box-shadow:0 3px 0 #0d2238}
+.boxes3 b{color:#ffe98a}
+/* H6: 事例バッジを明るい青に */
+.cc-ch .rb{background:linear-gradient(180deg,#3c9ad3,#2f86bd);border-color:#fff;box-shadow:0 0 0 2px #2f86bd,0 3px 6px rgba(0,0,0,.25);width:74px;height:74px}
+.cc-ch .rb b{color:#fff}.cc-ch .rb b small{color:#fff}
+/* H3: 実績の下段4枠 12px */
+.st-awards span{font-size:12px!important;line-height:1.4!important}
+.st-awards li{padding:10px 8px 9px}
+/* H5: STEP2/3 のスマホ画像 170px */
+.flow .st2 img,.flow .st3 img{width:170px;height:227px}
+.flow .st1 .st-t,.flow .st:first-of-type .st-t{white-space:nowrap}
+/* H8: どうすれば リストのコントラスト */
+.checks li{background:rgba(255,255,255,.14)!important;border-color:rgba(255,255,255,.65)!important;color:#fff!important;font-weight:800}
+.checks li:before{background:#38bdf8!important}
+/* 高さ調整 r14 */
+.jc-ph,.jc-ph img{height:96px}
+.cc-ph,.cc-ph img{height:116px}
+.st-grid li{min-height:74px!important;padding:6px 1px 5px!important}
