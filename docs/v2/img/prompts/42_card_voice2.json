@@ -1,0 +1,31 @@
+{
+  "name": "card_voice2",
+  "output_file": "card_voice2.png",
+  "aspect": "portrait 3:4 (1024x1365)",
+  "purpose": "Typical consultation question card (example, not a real testimonial)",
+  "layout": "A white card with a thick orange (#d2562a) frame drawn as a slanted diagonal-striped orange and white border, set on a pale cream (#fff6cf) background. Top-left: a square photo (Japanese woman in her early 20s, white blouse with lanyard, smiling); top-right: a small orange tab with white text; next to the photo a bold navy heading with a yellow marker highlight; below a dotted line and the body paragraph in dark text with the key phrase in orange.",
+  "text_blocks": {
+    "orange_tab": "# 相談例 02",
+    "heading": "辞めた理由をどう話せばいいかわからない",
+    "paragraph": "短期間で辞めた理由は、言い方を整えるところから始めます。面接の前に、LINEで何度でも練習できます。"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic, flat vector UI layout combined with a natural photograph, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, clean, professional advertising quality, mobile-first",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers not in text_blocks",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}
