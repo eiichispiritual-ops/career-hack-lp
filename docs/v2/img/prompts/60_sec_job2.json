@@ -1,9 +1,9 @@
 {
   "name": "sec_job2",
   "output_file": "sec_job2.png",
-  "aspect": "portrait 4:5 (1024x1280)",
+  "aspect": "square 1:1 (1024x1024)",
   "purpose": "Job example card",
-  "layout": "A white card with a 3px blue (#3a8fc0) border. Top: wide landscape photo (three Japanese coworkers at desks in a bright open office). Below the photo a blue (#3a8fc0) label with white bold text (tag). Under it a list of four items, each with a blue check mark and navy bold text, left aligned.",
+  "layout": "A square white card with a 4px blue (#3a8fc0) border. Top 45%: wide landscape photo (three Japanese coworkers at desks in a bright open office). Below the photo a blue (#3a8fc0) label with white bold text (tag), large. Under it a list of four items, each with a blue check mark and navy bold large text, left aligned; the items bullet2 are in orange (#d2562a) bold. Text is large and fills the card, tight margins.",
   "text_blocks": {
     "tag": "カスタマーサポート",
     "bullet1": "電話・チャット・メール対応",

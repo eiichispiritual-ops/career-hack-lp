@@ -1,0 +1,25 @@
+{
+  "name": "dark_cracks2",
+  "output_file": "dark_cracks2.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "purpose": "Full-bleed background texture for a dark 'anxiety' section of a Japanese landing page (text and cards will be placed on top). Reference look: a mid-dark grey cracked plaster / crumpled paper wall with fine light spiderweb cracks.",
+  "subject": "flat, uniform mid-dark grey (#6f6f6f) surface that looks like old cracked plaster mixed with crumpled grey paper: many fine, thin, irregular light-grey and white hairline cracks branching like spiderwebs and shattered glass, concentrated in clusters at the top-left, top-right and along both side edges, with subtle cloudy mottling and tiny paper creases elsewhere",
+  "composition": "cracks clusters near the edges and the top, calmer center area (about 55% of the width in the center is quieter, low contrast) so cards can sit on it; overall brightness even from top to bottom with no light fade at the top; no objects, no text, no people, no frame",
+  "background": "uniform mid-dark grey (#6f6f6f)",
+  "palette": [
+    "#6f6f6f",
+    "#5a5a5a",
+    "#8a8a8a",
+    "#d9d9d9"
+  ],
+  "style": "photographic macro texture, realistic, low-to-medium contrast, cool neutral grey, slight vignette at the corners, high detail",
+  "text_rule": "Do not render any text, letters, numbers, logos or watermark.",
+  "avoid": [
+    "text",
+    "people",
+    "objects",
+    "color tint",
+    "bright light gradient",
+    "gloss"
+  ]
+}

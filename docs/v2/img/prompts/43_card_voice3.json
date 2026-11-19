@@ -1,9 +1,9 @@
 {
   "name": "card_voice3",
   "output_file": "card_voice3.png",
-  "aspect": "portrait 3:4 (1024x1365)",
+  "aspect": "square 1:1 (1024x1024)",
   "purpose": "Typical consultation question card (example, not a real testimonial)",
-  "layout": "A white card with a thick orange (#d2562a) frame drawn as a slanted diagonal-striped orange and white border, set on a pale cream (#fff6cf) background. Top-left: a square photo (Japanese man in his mid 20s, navy sweater, laptop, relaxed smile); top-right: a small orange tab with white text; next to the photo a bold navy heading with a yellow marker highlight; below a dotted line and the body paragraph in dark text with the key phrase in orange.",
+  "layout": "A square card on a white background. The card has a thick orange (#d2562a) outline. Top area: on the left a square-cropped photo of a Japanese woman in her mid 20s in a beige cardigan, thoughtful smile slightly overlapping a bold orange slanted parallelogram label that spans to the right; on that label at the top a small white tab text (orange_tab) and below it the heading in very large white bold letters over 2-3 lines. Lower area: a white box with a thin orange border containing the body paragraph in dark navy bold-ish text at a large readable size, the key phrase in orange bold. Impactful, tight spacing, text large and filling the space, no empty margins.",
   "text_blocks": {
     "orange_tab": "# 相談例 03",
     "heading": "まだ転職するか決めていない",

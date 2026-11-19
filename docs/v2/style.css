@@ -413,7 +413,7 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .badge{right:-2px;top:6px;width:104px;height:104px;background:radial-gradient(circle at 30% 25%,#2f5a86,var(--navy) 65%);border:3px solid #fff;box-shadow:0 0 0 2px var(--navy),0 6px 10px -4px rgba(0,0,0,.4);transform:rotate(-6deg)}
 .badge u{position:absolute;left:8px;bottom:-9px;width:0;height:0;border:9px solid transparent;border-top-color:var(--navy);border-bottom:0;transform:rotate(25deg)}
 /* 暗転 */
-.dark{background:linear-gradient(180deg,#e1e4e7 0,rgba(90,98,106,.6) 7%,rgba(40,48,58,.55) 100%),url(img/dark_texture.jpg) center/cover;position:relative}
+.dark{background:linear-gradient(180deg,#e1e4e7 0,rgba(90,98,106,.6) 7%,rgba(40,48,58,.55) 100%),url(img/dark_cracks2.jpg) center/cover;position:relative}
 .dk-card{border:3px solid #fff;box-shadow:0 8px 16px -8px rgba(0,0,0,.6)}
 .dk-h b{background:var(--ring) center/100% 100% no-repeat;padding:2px 12px;display:inline-block;color:#ffe98a}
 .how{position:relative;overflow:hidden}
@@ -508,7 +508,7 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .reasons .cardimg{margin:0}
 .voices .cardimg{margin:0 0 16px}
 .voices{padding:20px 12px 8px}
-.dark{background:linear-gradient(180deg,#e1e4e7 0,rgba(110,110,110,.25) 8%,rgba(60,60,60,.35) 100%),#767676 url(img/dark_cracks.jpg) center/cover}
+.dark{background:linear-gradient(180deg,#e1e4e7 0,rgba(110,110,110,.25) 8%,rgba(60,60,60,.35) 100%),#767676 url(img/dark_cracks2.jpg) center/cover}
 .cases{padding:18px 4px 24px;gap:28px}
 
 /* ---- round 4: セクション画像（GPT生成・文字入り） ---- */
@@ -624,3 +624,22 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .omakase .secimg,.stripe .secimg{width:94%;margin:0 auto}
 .omakase,.stripe{background:#fff}
 .tokuten .secimg{height:338px;object-fit:cover;object-position:50% 40%}
+
+/* ===== round 8 ===== */
+.dark{background:#6f6f6f url(img/dark_cracks2.jpg) center top/100% auto repeat-y}
+.dk-lead{position:relative;padding-bottom:16px;margin-bottom:18px;color:#fff}
+.dk-lead:after{content:'';position:absolute;left:4px;right:4px;bottom:0;height:1.5px;background:#fff}
+.dk-lead:before{content:'';position:absolute;left:50%;bottom:-6px;width:12px;height:12px;margin-left:-6px;background:#6f6f6f;border-right:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(45deg) scale(.7);transform-origin:center}
+.dark .sp{opacity:.7}
+.dark .dk{box-shadow:0 6px 14px -6px rgba(0,0,0,.55)}
+.dk-lead .l1{font-size:15px;font-weight:700;letter-spacing:.08em}
+.dk-lead .l2{font-size:21px;font-weight:900;letter-spacing:.04em}
+.fv-img{width:300px;right:-6px;bottom:6px;-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 100%);mask-image:linear-gradient(180deg,#000 80%,transparent 100%)}
+.medals{bottom:16px}
+.voices{background:#fff}
+.voices .vc-h small{color:#e9eef2}
+.jobs .jobimg{width:92%;margin:0 auto 14px}
+.voices .cardimg{width:92%;margin:0 auto 14px}
+.omakase .secimg,.stripe .secimg{width:100%}
+.reasons .cardimg{width:100%}
+.tokuten .secimg{height:380px}
