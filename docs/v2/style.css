@@ -643,3 +643,22 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .omakase .secimg,.stripe .secimg{width:100%}
 .reasons .cardimg{width:100%}
 .tokuten .secimg{height:380px}
+
+/* ---- round 9: メダル再構築（GPT生成の左右対称フレーム + HTMLテキスト、3枚で同一ベースライン） ---- */
+.medals{bottom:16px;left:7px;right:7px;justify-content:space-between}
+.medals li{width:114px;height:114px;background:url(img/medal_frame.webp) center/100% 100% no-repeat;border:0;box-shadow:none;filter:drop-shadow(0 6px 6px rgba(31,58,87,.28));display:grid;grid-template-rows:12px 30px;align-content:center;justify-items:center;row-gap:1px;padding:0 0 3px;line-height:1}
+.medals li:before,.medals li:after{display:none;content:none}
+.medals .mt{font-size:10px;line-height:12px;font-weight:900;color:#1f3a57;letter-spacing:0;white-space:nowrap}
+.medals b{font-size:27px;line-height:30px;font-weight:900;color:#d2562a;margin:0;letter-spacing:-.03em;white-space:nowrap;display:block}
+.medals b small{font-size:11px;font-weight:900;margin-left:1px;letter-spacing:0}
+
+.medals b{font-size:25px}
+.medals b small{font-size:10px}
+.cta1-trail:before,.cta1-trail:after{content:none}
+.fv-small{line-height:19px;padding:0 16px;font-size:12.5px;white-space:nowrap}
+.fv-small:before,.fv-small:after{top:2px;height:16px}
+.st-grid span{font-size:10px}
+.st-grid b small{font-size:9.5px}
+.st-awards span{font-size:9.5px}
+.tokuten{padding-top:6px}
+.flow{padding-bottom:34px}
