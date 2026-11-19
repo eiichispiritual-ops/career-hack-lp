@@ -1,0 +1,33 @@
+{
+  "name": "sec_dakara",
+  "output_file": "sec_dakara.png",
+  "aspect": "landscape 4:3 (1536x1152)",
+  "purpose": "Because-of-that section",
+  "layout": "White to pale blue background. Top center a navy down-pointing arrow banner with white text. Left: an orange box with white bold text (box1, the number '80%以上' extra large in yellow), a navy ampersand, a navy box with white bold text (box2, '96%' extra large in yellow), and a bold orange line (box3). Right: a Japanese man and woman in business suits with folders, standing against a pale outline city skyline, as a cutout. No footnote.",
+  "text_blocks": {
+    "top": "だから",
+    "box1": "内定率80%以上",
+    "amp": "＆",
+    "box2": "定着率96%",
+    "box3": "相談料は0円"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ]
+}

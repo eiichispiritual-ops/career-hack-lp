@@ -1,0 +1,13 @@
+{
+  "name": "fv_woman",
+  "role": "First-view hero photo of a female career advisor, right side of a smartphone-width landing page",
+  "output_file": "fv_woman.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "subject": "Japanese woman in her late 20s, shoulder-length dark brown hair, warm friendly smile, wearing a light grey blazer over a white blouse, arms loosely crossed, half-body (waist up), looking at camera",
+  "composition": "subject positioned in the right 60% of the frame, the left 40% is mostly empty soft background so Japanese headline text can be overlaid later; eye level, slight three-quarter angle",
+  "background": "very light sky-blue (#e6eff4 to #d3e4ee) bright office with softly blurred windows, clean and airy",
+  "palette": ["#e6eff4", "#d3e4ee", "#1f3a57", "#ffffff", "#fbfaf7"],
+  "style": "natural commercial portrait photograph, soft daylight, realistic skin texture, magazine quality, not CGI, not over-smoothed",
+  "text_in_image": "none - no letters, no logos, no watermark",
+  "avoid": ["AI look", "plastic skin", "extra fingers", "distorted hands", "text", "logo", "heavy color grading"]
+}

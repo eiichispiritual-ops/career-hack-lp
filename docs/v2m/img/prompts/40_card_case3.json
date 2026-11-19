@@ -1,0 +1,40 @@
+{
+  "name": "card_case3",
+  "output_file": "card_case3.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "purpose": "Case example card for a career-consulting landing page (example, not a real testimonial)",
+  "layout": "A single white card with a thick yellow (#f6c90e) border and a yellow offset shadow, on a pale sky-blue (#d3e4ee) page background. From top to bottom: (1) two-line bold headline in navy (#1f3a57), the part given as 'orange' written in orange (#d2562a) with a hand-drawn wavy orange underline; (2) a wide landscape photograph: a young Japanese staff member in a store uniform smiling in a bright consumer-electronics store, with a small navy label tag at its bottom-right corner containing the caption; (3) centered banner text with a yellow marker highlight and sparkle stars on both sides; (4) a polished 3D-style bar chart panel with a white rounded background, faint light-grey horizontal gridlines and a thin baseline: on the left a short grey glossy gradient bar, on the right a tall orange (#d2562a to #f08a4b) glossy gradient bar with soft drop shadow, bar heights roughly proportional to the stated figures, each bar with a white pill label above it and its value caption below it, a thick yellow-orange curved arrow rising from the left bar to the right bar, and a navy round badge with a white border and gold ring at the right edge overlapping the chart showing the badge text on short lines with the numeric part large in yellow (#ffe98a) like a track-record medal; (5) a short paragraph in dark text with the key phrase in orange; (6) no footnote. The left bar must be visibly shorter than the right bar.",
+  "text_blocks": {
+    "headline_line1": "派遣3年から家電販売へ",
+    "headline_line1_orange_part": "家電販売",
+    "headline_line2": "月収5万円アップ",
+    "photo_caption": "写真はイメージ",
+    "banner": "残業は月10時間以内、休みもしっかり",
+    "left_bar_pill": "転職前",
+    "left_bar_caption": "派遣",
+    "right_bar_pill": "転職後",
+    "right_bar_caption": "家電販売",
+    "round_badge": "月収5万円UP",
+    "paragraph": "派遣として3年働いたあと、家電販売の仕事へ。月収は5万円アップし、残業は月10時間以内、休日もしっかり休めるようになりました。",
+    "note": "Every number must be rendered exactly as given."
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic, flat vector UI layout combined with a natural photograph, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, clean, professional advertising quality, mobile-first",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers not in text_blocks",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

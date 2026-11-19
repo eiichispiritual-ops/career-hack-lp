@@ -1,0 +1,33 @@
+{
+  "name": "sec_job1",
+  "output_file": "sec_job1.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "purpose": "Job example card",
+  "layout": "A square white card with a 4px blue (#3a8fc0) border. Top 45%: wide landscape photo (bright modern office desk with laptop, plants, no people). Below the photo a blue (#3a8fc0) label with white bold text (tag), large. Under it a list of four items, each with a blue check mark and navy bold large text, left aligned; the items bullet1 and bullet2 are in orange (#d2562a) bold. Text is large and fills the card, tight margins.",
+  "text_blocks": {
+    "tag": "一般事務・営業事務",
+    "bullet1": "土日祝休みの求人を中心に",
+    "bullet2": "未経験歓迎のものから",
+    "bullet3": "残業の少なさも確認",
+    "bullet4": "勤務地・働き方を相談"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "phone_add",
+  "output_file": "phone_add.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "subject": "a modern smartphone held upright straight-on, screen showing a generic light-green chat-app friend-add screen with only abstract shapes (a round avatar circle, a long green rounded button) and absolutely no readable text, thin black bezel, light grey-blue background",
+  "composition": "phone centered, screen facing camera, bottom of phone cropped by frame",
+  "background": "pale grey-blue (#e6eff4)",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "product mock render, realistic",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

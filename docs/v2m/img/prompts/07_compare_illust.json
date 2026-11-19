@@ -1,0 +1,26 @@
+{
+  "name": "compare_illust",
+  "output_file": "compare_illust.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "illustration of the same young woman twice: on the left looking hopeful in a navy blazer, on the right looking tired with a hand on her forehead in a similar blazer, both busts, white background between them",
+  "composition": "two figures symmetrically placed with empty space on top for labels and an arrow",
+  "background": "white (#ffffff) background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "clean flat vector-style illustration, simple shapes, soft navy (#1f3a57) outlines, pale sky blue (#d3e4ee) and white fills, small orange (#d2562a) accents, friendly, hand-made feel",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

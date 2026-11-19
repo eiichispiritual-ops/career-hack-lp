@@ -1,0 +1,27 @@
+{
+  "name": "case3_man",
+  "output_file": "case3_man.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "Japanese man in his mid 20s in a white dress shirt working at a laptop in a bright office, turning to the camera with a gentle smile",
+  "composition": "subject on the right 50%, laptop and desk left, shallow depth of field",
+  "background": "bright airy office, white and pale blue",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ],
+  "gender_note": "Male version of the landing page: every person depicted must be a Japanese MAN (same age range, same style, tone, lighting and composition as the original female version)."
+}

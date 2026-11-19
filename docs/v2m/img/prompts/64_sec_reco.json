@@ -1,0 +1,32 @@
+{
+  "name": "sec_reco",
+  "output_file": "sec_reco.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Recommendation title section",
+  "layout": "Light warm grey (#e8e7e5) background. Top: small navy tag with white text, then the huge orange (#d2562a) bold word. In the middle a Japanese woman in her 30s in a dark navy blazer cupping both hands around her mouth, calling out with a big smile, waist-up, as a clean cutout. Overlapping her lower body the very large navy bold outlined (white outline) text big_navy. At the very bottom a brand logo: a small icon of three ascending bars (navy, navy, orange) with an arrow, followed by the wordmark in heavy navy gothic.",
+  "text_blocks": {
+    "tag": "そこで",
+    "big_orange": "おすすめ",
+    "big_navy": "なのが",
+    "logo_wordmark": "キャリアハック"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ]
+}

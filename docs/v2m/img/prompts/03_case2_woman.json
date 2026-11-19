@@ -1,0 +1,26 @@
+{
+  "name": "case2_woman",
+  "output_file": "case2_woman.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "Japanese woman in her mid 20s in a beige jacket walking on an evening city street holding a smartphone, looking at the screen with a small smile",
+  "composition": "subject centered-left, blurred warm city lights bokeh, dusk with deep navy sky",
+  "background": "dusk city, navy and warm orange bokeh",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "sec_about",
+  "output_file": "sec_about.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "purpose": "About-the-service section",
+  "layout": "Light grey (#f3f3f1) background. A white card at top with a navy tag (white text), the small sub line, then three big orange (#d2562a) bold lines. Below, two white boxes with thin orange borders and dotted separators: the first has its text on the left and a photo of three Japanese business advisors in suits on the right; the second has a photo of a Japanese woman advisor with a thin headset on the left and its text on the right. Below, centered bold navy heading with yellow marker highlight, and a white box listing the five items with small yellow dot bullets.",
+  "text_blocks": {
+    "tag": "キャリアハックとは",
+    "sub": "未経験・第二新卒の方の転職相談を、LINEで受けて",
+    "big_line1": "0から内定まで",
+    "big_line2": "“すべて”を",
+    "big_line3": "サポートします！",
+    "row1": "あなたの希望を第一に考え、最適な転職サポーターをご紹介",
+    "row2": "自己分析から応募の準備までを“すべて”寄り添える転職サポーター",
+    "list_title": "具体的なサポート内容",
+    "item1": "自己分析",
+    "item2": "職務経歴書の作成",
+    "item3": "面接対策・言い方の練習",
+    "item4": "未経験歓迎の求人の紹介",
+    "item5": "キャリア相談"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ]
+}

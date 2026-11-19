@@ -1,0 +1,28 @@
+{
+  "name": "fv_man",
+  "role": "First-view hero photo of a male career advisor, right side of a smartphone-width landing page",
+  "output_file": "fv_man.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "subject": "Japanese man in his late 20s, short neat black hair, warm friendly smile, wearing a light grey blazer over a white shirt without a tie, arms loosely crossed, half-body (waist up), looking at camera",
+  "composition": "subject positioned in the right 60% of the frame, the left 40% is mostly empty soft background so Japanese headline text can be overlaid later; eye level, slight three-quarter angle",
+  "background": "very light sky-blue (#e6eff4 to #d3e4ee) bright office with softly blurred windows, clean and airy",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#ffffff",
+    "#fbfaf7"
+  ],
+  "style": "natural commercial portrait photograph, soft daylight, realistic skin texture, magazine quality, not CGI, not over-smoothed",
+  "text_in_image": "none - no letters, no logos, no watermark",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra fingers",
+    "distorted hands",
+    "text",
+    "logo",
+    "heavy color grading"
+  ],
+  "gender_note": "Male version of the landing page: every person depicted must be a Japanese MAN (same age range, same style, tone, lighting and composition as the original female version)."
+}

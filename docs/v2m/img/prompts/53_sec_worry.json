@@ -1,0 +1,34 @@
+{
+  "name": "sec_worry",
+  "output_file": "sec_worry.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Worry section: user pain points",
+  "layout": "Pale grey-blue (#dfe3e6) background. At the top a large navy (#1f3a57) speech bubble with a tail pointing down, containing the two white lines (line2 larger, with a yellow marker highlight on 'お悩み'). Below it a clean flat illustration of a young Japanese woman sitting at a desk resting her chin on her hand, looking worried, with a smartphone and a coffee cup. Four hand-drawn-looking yellow (#ffe27a) cloud-shaped speech bubbles with navy bold text around her, two on each side, text exactly as given.",
+  "text_blocks": {
+    "bubble_line1": "仕事でお困りのあなたへ",
+    "bubble_line2": "こんなお悩みありませんか？",
+    "cloud1": "職場の人間関係がストレス",
+    "cloud2": "プライベートの時間がもっと欲しい",
+    "cloud3": "今の仕事内容が辛い・やりがいがない",
+    "cloud4": "休みが少ない・日曜の夜がつらい"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

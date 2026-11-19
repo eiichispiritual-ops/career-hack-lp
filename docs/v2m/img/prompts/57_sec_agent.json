@@ -1,0 +1,34 @@
+{
+  "name": "sec_agent",
+  "output_file": "sec_agent.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "purpose": "Agent introduction section",
+  "layout": "Soft sky-blue (#cfe3f0 to #e6eff4) background with a faint white outline skyline of tall buildings and white four-point sparkle stars. Top: small tag text, then the two-line headline in navy with 'エージェント' in orange. Then a navy rounded pill with white text, then the two big navy lines with yellow marker highlights on 'キャリア' and 'サポート'. Bottom half: a cheerful Japanese woman in her late 20s with shoulder-length brown hair and a navy blouse holding up a yellow highlighter pen, waist-up, centered.",
+  "text_blocks": {
+    "small_tag": "そんな方は",
+    "headline_line1": "転職エージェントを",
+    "headline_line2": "活用しましょう！",
+    "pill": "転職に詳しいプロが",
+    "big_line1": "あなたのキャリアを",
+    "big_line2": "サポートしてくれます"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "dark_headhand",
+  "output_file": "dark_headhand.png",
+  "aspect": "landscape 3:2 (1536x1024)",
+  "subject": "close view of a person in an olive jacket holding their head with both hands, face hidden, desaturated, plus a small flat illustration of an alarm clock and banknotes drawn as thin navy outline doodles around",
+  "composition": "person center-bottom, doodles in upper-left and upper-right corners, grey-blue background",
+  "background": "dark grey-blue (#44505c)",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking with a few thin outline doodles",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "medal_frame",
+  "output_file": "medal_frame.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "purpose": "Blank achievement medal frame for a Japanese landing page: text (label, big number) will be overlaid in HTML, so the inside must be completely empty.",
+  "subject": "a front-view circular gold laurel-wreath medal badge: a thin double gold ring forming the outer circle, a wreath of two laurel branches hugging the ring's left and right sides, perfectly mirror-symmetrical left to right, branches rising from a small gold ribbon bow at the bottom center and ending near the top center with a small gap; a large perfectly circular empty inner disc filled with soft white-to-cream (#fff6cf) gradient, about 62% of the badge diameter, no text",
+  "composition": "exactly centered, the badge fills about 94% of the canvas width and height, equal margins on all four sides, left and right halves identical mirror images, circle perfectly round",
+  "background": "pure flat white (#ffffff) background, nothing else, no shadow outside the badge",
+  "palette": [
+    "#c8a33a",
+    "#e8c75a",
+    "#f5e6b0",
+    "#fff6cf",
+    "#ffffff"
+  ],
+  "style": "clean vector-like flat illustration with subtle metallic gold gradients and a soft inner highlight, crisp edges, premium advertising quality",
+  "text_rule": "Do not render any text, letters, numbers, logos or watermark anywhere.",
+  "avoid": [
+    "text",
+    "numbers",
+    "asymmetry",
+    "tilted badge",
+    "drop shadow outside the badge",
+    "photo background",
+    "stars",
+    "crown"
+  ]
+}

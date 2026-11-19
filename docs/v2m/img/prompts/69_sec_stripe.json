@@ -1,0 +1,34 @@
+{
+  "name": "sec_stripe",
+  "output_file": "sec_stripe.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Request-one-thing caution section",
+  "layout": "A yellow (#f6c90e) and dark charcoal diagonal hazard-stripe border around the whole image. Inside, a white card with a thick orange (#d2562a) border and rounded corners: the title in navy bold with a yellow marker highlight, the lines in navy with '前日までに一言' in orange and bigger, and at the bottom a Japanese woman in a black business suit bowing politely, in front view.",
+  "text_blocks": {
+    "title": "たった1つだけお願い…",
+    "line1": "ご相談をはじめたあとで、",
+    "line2": "連絡なしにやめてしまうと、",
+    "line3": "こちらも進められません。",
+    "line4": "やめるときは、前日までに一言",
+    "line5": "LINEで送ってください"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ]
+}

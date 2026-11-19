@@ -1,0 +1,34 @@
+{
+  "name": "sec_step3",
+  "output_file": "sec_step3.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Flow step card",
+  "layout": "A white card on a pale blue (#cfe6f4) background. Top: a blue (#3a8fc0) rounded pill with white text. Center: a black smartphone straight-on, its screen showing a LINE-style chat with a hero banner image: a blue banner with the phone_banner text on top, and under it the phone_title in large bold navy letters, and next to the title three small bonus booklet covers (orange, blue, yellow, no readable text) fanned out, drawn like a campaign poster; the phone is shown from the top down to about its middle (lower half cropped by the card's bottom). Under it navy bold caption lines, the second and third in green (#06c755).",
+  "text_blocks": {
+    "step_pill": "STEP3",
+    "phone_banner": "3つの特典付き",
+    "phone_title": "無料キャリア相談",
+    "caption_line1": "LINEのトーク画面から",
+    "caption_line2": "無料相談アンケートに",
+    "caption_line3": "回答する"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "logos",
+    "watermark",
+    "AI look",
+    "any text on the phone other than phone_banner and phone_title"
+  ]
+}

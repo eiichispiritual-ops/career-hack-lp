@@ -1,0 +1,31 @@
+{
+  "name": "sec_dark3",
+  "output_file": "sec_dark3.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "purpose": "Dark section card 3",
+  "layout": "A card with a thick white border on a grey textured background. Top: navy (#1f3a57) panel with the two-line white headline (first line yellow). Middle: a moody desaturated photo of a person in an olive jacket holding their head in both hands with face hidden, with thin white outline doodles of an alarm clock and banknotes around. Bottom: large white text end_text on a dark grey band.",
+  "text_blocks": {
+    "headline_line1": "心にも時間にも",
+    "headline_line2": "余裕ナシ",
+    "end_text": "なんてことに、、！"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

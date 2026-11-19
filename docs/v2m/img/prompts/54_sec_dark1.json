@@ -1,0 +1,33 @@
+{
+  "name": "sec_dark1",
+  "output_file": "sec_dark1.png",
+  "aspect": "portrait 3:4 (1024x1365)",
+  "purpose": "Dark section card 1",
+  "layout": "A card with a thick white border on a grey textured background. Top part: navy (#1f3a57) panel with the three-line headline in white, the second line in yellow (#ffe98a) and larger, a small hand-drawn yellow scribble mark at the upper right. Below: a photograph of a Japanese woman in her mid 20s with a worried thoughtful expression, hand on chin, on a sofa. A white rounded label with navy bold text overlaps the photo at the upper right (label_top, with the words '未経験歓迎' in orange) and a navy-bordered white label at the bottom-left of the photo (label_bottom).",
+  "text_blocks": {
+    "headline_line1": "先延ばしにするほど、",
+    "headline_line2": "選べる道は",
+    "headline_line3": "少しずつ狭まりがち",
+    "label_top": "20代のうちは未経験歓迎が多い",
+    "label_bottom": "年齢が上がると経験を求められがち"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

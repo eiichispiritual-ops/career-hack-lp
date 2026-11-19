@@ -1,0 +1,32 @@
+{
+  "name": "card_reason2",
+  "output_file": "card_reason2.png",
+  "aspect": "landscape 4:3 (1536x1152)",
+  "purpose": "Reason card for a career-consulting service",
+  "layout": "A white rounded card with a thick orange (#d2562a) border on a light grey (#f3f3f1) background. At the top center a decorative number badge overlapping the border: an orange circle with a white ring, a small laurel-wreath or ribbon rosette around it, tiny orange sparkle marks, with the white bold number inside. Below it two centered lines of navy bold text (the part marked orange is orange). Below the text a medium-sized photograph centered with white margin: Japanese woman advisor in a cream blazer at a desk with a laptop, bright office.",
+  "text_blocks": {
+    "badge_number": "02",
+    "line1": "あなた専用の担当者が",
+    "line2": "最後まで寄り添って相談",
+    "line2_orange_part": "最後まで"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic, flat vector UI layout combined with a natural photograph, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, clean, professional advertising quality, mobile-first",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers not in text_blocks",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

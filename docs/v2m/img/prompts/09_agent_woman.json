@@ -1,0 +1,26 @@
+{
+  "name": "agent_woman",
+  "output_file": "agent_woman.png",
+  "aspect": "portrait 2:3 (1024x1536)",
+  "subject": "cheerful Japanese woman in her late 20s with shoulder-length brown hair, navy blouse, holding a yellow highlighter pen up with one hand and smiling, half body (waist up)",
+  "composition": "subject centered, background very light sky blue with a pale outline silhouette of city buildings and a few small white sparkle stars; empty space above head",
+  "background": "pale sky blue (#d3e4ee) gradient with faint city skyline",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

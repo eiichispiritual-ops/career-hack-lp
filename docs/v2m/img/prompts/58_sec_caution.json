@@ -1,0 +1,34 @@
+{
+  "name": "sec_caution",
+  "output_file": "sec_caution.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Caution card",
+  "layout": "A white card with a thick orange (#d2562a) border and rounded corners. Orange header bar with a white warning triangle icon and the white title. Navy bold centered lines, a thin orange divider, then the two big lines: 'big_line1' navy, 'big_line2' large orange with yellow marker highlight. At the bottom a Japanese woman in her late 20s in a navy blouse with a shocked worried face, hands on cheeks, with small doodles of an open notebook and a laptop beside her.",
+  "text_blocks": {
+    "title": "ただし、注意点が一つ！",
+    "line1": "転職エージェントは",
+    "line2": "“自分に合った”",
+    "line3": "エージェントを選べなければ、",
+    "big_line1": "転職成功に",
+    "big_line2": "遠ざかってしまいます"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

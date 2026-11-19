@@ -1,0 +1,37 @@
+{
+  "name": "sec_omakase_m",
+  "output_file": "sec_omakase_m.png",
+  "aspect": "portrait 4:5 (1024x1280)",
+  "purpose": "Leave-it-to-us section",
+  "layout": "Gradient background from grey (#cfd8df) at the top to white. Top: three white rounded speech bubbles with small round avatar icons (flat illustrated faces, no text) and navy bold text, staggered left-right. Middle: big navy title text 'お任せください！' with small sparkle marks. Bottom: the body text on the left (navy bold, the words '転職サポーター' and '理想の働き方' in orange) and on the right a Japanese man advisor in a navy suit holding a tablet, cutout.",
+  "text_blocks": {
+    "bubble1": "前職は短期間で辞めてしまったから厳しいかも",
+    "bubble2": "経験ナシ・学歴ナシの私でも大丈夫？",
+    "bubble3": "自分に合った仕事がわからない…",
+    "title": "お任せください！",
+    "body_line1": "同じ悩みを抱える方の相談に、",
+    "body_line2": "あなたに合った転職サポーターが",
+    "body_line3": "0から全てサポートするので、",
+    "body_line4": "理想の働き方をめざせます！"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#fff6cf",
+    "#f6c90e",
+    "#ffffff"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "watermark",
+    "AI look"
+  ],
+  "gender_note": "Male version of the landing page: every person depicted must be a Japanese MAN (same age range, same style, tone, lighting and composition as the original female version)."
+}

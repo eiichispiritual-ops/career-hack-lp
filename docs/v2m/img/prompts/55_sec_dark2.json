@@ -1,0 +1,33 @@
+{
+  "name": "sec_dark2",
+  "output_file": "sec_dark2.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "purpose": "Dark section card 2",
+  "layout": "A card with a thick white border on a grey textured background. Top: navy (#1f3a57) panel with the two-line white headline (first line yellow #ffe98a). Below on white: flat illustration of the same young Japanese woman twice, left looking tired with a hand on her forehead, right looking hopeful, with a small curved dotted arrow between them and the small note text above, and two round pill labels under them (left navy, right orange) with white text.",
+  "text_blocks": {
+    "headline_line1": "休みも手取りも",
+    "headline_line2": "ずっと変わらないまま",
+    "note": "数年後…",
+    "left_label": "いまの職場",
+    "right_label": "動いた場合"
+  },
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff",
+    "#767676"
+  ],
+  "style": "Japanese landing-page section graphic for smartphone, flat vector UI layout combined with natural photography or clean flat illustration, crisp heavy Japanese gothic (bold sans-serif) lettering, high contrast, professional advertising quality",
+  "text_rule": "Render every Japanese string EXACTLY as given in text_blocks, character by character, with correct kanji/hiragana/katakana. Do not add any other text, numbers, logos or watermark. Text must be sharp and legible.",
+  "avoid": [
+    "garbled or invented characters",
+    "extra text",
+    "numbers",
+    "logos",
+    "watermark",
+    "AI look"
+  ]
+}

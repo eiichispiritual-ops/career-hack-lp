@@ -1,0 +1,26 @@
+{
+  "name": "caution_bow",
+  "output_file": "caution_bow.png",
+  "aspect": "square 1:1 (1024x1024)",
+  "subject": "Japanese woman in a black business suit bowing politely at the waist with hands in front, shown from the front, plain white background",
+  "composition": "full upper body centered",
+  "background": "plain white background",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ]
+}

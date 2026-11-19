@@ -1,0 +1,27 @@
+{
+  "name": "reason2_desk_m",
+  "output_file": "reason2_desk_m.png",
+  "aspect": "landscape 16:9 (1536x864)",
+  "subject": "Japanese man advisor in a cream blazer at a desk with a laptop, looking at the camera warmly, bright office windows behind",
+  "composition": "subject center-left, window light",
+  "background": "bright airy office",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "natural commercial photograph, soft daylight, realistic skin texture and fabric, magazine quality, not CGI, not over-smoothed, not AI-looking",
+  "text_in_image": "none - no letters, numbers, logos, signs or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "plastic skin",
+    "extra or distorted fingers",
+    "text",
+    "logo",
+    "watermark"
+  ],
+  "gender_note": "Male version of the landing page: every person depicted must be a Japanese MAN (same age range, same style, tone, lighting and composition as the original female version)."
+}

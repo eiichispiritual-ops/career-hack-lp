@@ -1,0 +1,19 @@
+{
+  "name": "dark_cracks",
+  "output_file": "dark_cracks.png",
+  "aspect": "portrait 3:4 (1024x1365)",
+  "subject": "medium neutral grey (#777777) wall texture covered with thin white hairline cracks radiating like shattered glass, subtle vignette, no objects",
+  "composition": "cracks mostly near the top and edges, center calmer",
+  "background": "neutral mid grey",
+  "palette": [
+    "#777777",
+    "#ffffff"
+  ],
+  "style": "photographic texture, low contrast, seamless-looking",
+  "text_in_image": "none",
+  "avoid": [
+    "text",
+    "objects",
+    "color tint"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "dark_texture",
+  "output_file": "dark_texture.png",
+  "aspect": "portrait 3:4 (1024x1365)",
+  "subject": "dark grey concrete wall texture with faint hairline cracks and subtle scratches, slightly cool tone, evenly lit, no objects",
+  "composition": "fills the whole frame uniformly, no focal point",
+  "background": "mid-dark grey (#59616a to #3a424b)",
+  "palette": [
+    "#e6eff4",
+    "#d3e4ee",
+    "#1f3a57",
+    "#d2562a",
+    "#ffe98a",
+    "#ffffff"
+  ],
+  "style": "photographic seamless texture",
+  "text_in_image": "none - no letters, numbers, logos or watermark anywhere in the image",
+  "avoid": [
+    "AI look",
+    "readable text",
+    "real brand logos",
+    "watermark"
+  ]
+}
