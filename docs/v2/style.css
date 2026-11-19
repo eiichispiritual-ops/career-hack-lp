@@ -671,3 +671,11 @@ h1,h2,h3,p,li{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
 .cases,.dark,.reasons,.voices{padding-left:0!important;padding-right:0!important}
 .cases>:not(img):not(.cardimg),.dark>:not(img),.reasons>:not(img):not(h2),.voices>:not(img):not(h2){box-sizing:border-box;margin-left:auto;margin-right:auto;max-width:calc(100% - 24px)}
 .reasons .rs-h{margin-left:0!important;margin-right:0!important;width:100%}
+/* round 10b: ボタン・実績グリッド・求人チップも x=16 / w=358 に統一 */
+.btn:not(.b-s){width:358px!important;max-width:calc(100% - 32px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box}
+.stats{padding-left:16px!important;padding-right:16px!important}
+.stats .st-h,.stats .st-grid,.stats .st-awards{width:auto!important;margin-left:0!important;margin-right:0!important;box-sizing:border-box}
+.jb-chips{width:358px;max-width:calc(100% - 32px);margin-left:auto!important;margin-right:auto!important;box-sizing:border-box}
+.cta1,.cta-b,.tokuten{padding-left:0!important;padding-right:0!important}
+.cta1>*:not(.btn),.cta-b>*:not(.btn){box-sizing:border-box;max-width:calc(100% - 24px);margin-left:auto;margin-right:auto}
+.tokuten .btn{margin-top:8px}
